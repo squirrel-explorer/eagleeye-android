@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eagleeye-android.iml" filepath="$PROJECT_DIR$/eagleeye-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lint-base/lint-base.iml" filepath="$PROJECT_DIR$/lint-base/lint-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rules-performance/rules-performance.iml" filepath="$PROJECT_DIR$/rules-performance/rules-performance.iml" />
+    </modules>
+  </component>
+</project>
