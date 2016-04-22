@@ -1,13 +1,17 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-project.ext.appName = 'eagle_eye'
+project.extensions.add('appName', 'eagle_eye')
+project.extensions.add('compileSdkVersion', 23)
+project.extensions.add('buildToolsVersion', '23.0.3')
+project.extensions.add('minSdkVersion', 14)
+project.extensions.add('targetSdkVersion', 23)
 
 buildscript {
     repositories {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.tools.build:gradle:2.0.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,8 +22,4 @@ allprojects {
     repositories {
         jcenter()
     }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
