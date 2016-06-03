@@ -17,11 +17,11 @@ import lombok.ast.AstVisitor;
 public class ConcurrentModificationDetector extends Detector implements Detector.JavaScanner {
     public static final Issue ISSUE = Issue.create(
             "ConcurrentModificationDetector",
-            "Use constants instead of enums",
-            "This app should use constants instead of enums.",
-            Category.PERFORMANCE,
-            2,
-            Severity.WARNING,
+            "Modify contents of a collection when traversing it",
+            "DONOT invoke add/remove of a collection when traversing it",
+            Category.CORRECTNESS,
+            7,
+            Severity.ERROR,
             new Implementation(
                     ConcurrentModificationDetector.class,
                     Scope.JAVA_FILE_SCOPE));
