@@ -1,1 +1,1 @@
-include ':lint-base', ':rules-performance'
+include ':main', ':lint-base', ':rules-defect', ':rules-performance', ':rules-security', ':api-checker'

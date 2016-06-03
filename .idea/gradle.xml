@@ -9,15 +9,23 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api-checker" />
             <option value="$PROJECT_DIR$/lint-base" />
+            <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/rules-defect" />
             <option value="$PROJECT_DIR$/rules-performance" />
+            <option value="$PROJECT_DIR$/rules-security" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api-checker" />
             <option value="$PROJECT_DIR$/lint-base" />
+            <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/rules-defect" />
             <option value="$PROJECT_DIR$/rules-performance" />
+            <option value="$PROJECT_DIR$/rules-security" />
           </set>
         </option>
       </GradleProjectSettings>

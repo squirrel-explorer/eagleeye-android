@@ -1,11 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-project.extensions.add('appName', 'eagle_eye')
-project.extensions.add('compileSdkVersion', 23)
-project.extensions.add('buildToolsVersion', '23.0.3')
-project.extensions.add('minSdkVersion', 14)
-project.extensions.add('targetSdkVersion', 23)
-
 buildscript {
     repositories {
         jcenter()
@@ -22,4 +16,12 @@ allprojects {
     repositories {
         jcenter()
     }
+}
+
+ext {
+    appName = 'eagleeye'
+    compileSdkVersion = 23
+    buildToolsVersion = '23.0.1'
+    minSdkVersion = 14
+    targetSdkVersion = 23
 }
