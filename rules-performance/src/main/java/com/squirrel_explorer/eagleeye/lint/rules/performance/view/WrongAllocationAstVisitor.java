@@ -2,8 +2,8 @@ package com.squirrel_explorer.eagleeye.lint.rules.performance.view;
 
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
-import com.eagleeye.types.base.BaseAstVisitor;
-import com.eagleeye.utils.NodeUtils;
+import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
+import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import java.util.Arrays;
 import java.util.List;

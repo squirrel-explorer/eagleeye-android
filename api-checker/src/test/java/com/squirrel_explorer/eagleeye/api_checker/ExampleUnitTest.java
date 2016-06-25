@@ -1,4 +1,4 @@
-package com.eagleeye.api_checker;
+package com.squirrel_explorer.eagleeye.api_checker;
 
 import org.junit.Test;
 

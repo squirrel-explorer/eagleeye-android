@@ -1,4 +1,4 @@
-package com.eagleeye.types.base;
+package com.squirrel_explorer.eagleeye.types.base;
 
 import com.android.tools.lint.detector.api.JavaContext;
 

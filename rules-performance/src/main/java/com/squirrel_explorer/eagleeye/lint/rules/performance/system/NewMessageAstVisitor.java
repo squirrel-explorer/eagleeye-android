@@ -1,7 +1,7 @@
 package com.squirrel_explorer.eagleeye.lint.rules.performance.system;
 
 import com.android.tools.lint.detector.api.JavaContext;
-import com.eagleeye.types.base.BaseAstVisitor;
+import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
 
 import lombok.ast.ConstructorInvocation;
 import lombok.ast.TypeReference;

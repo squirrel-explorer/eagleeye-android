@@ -1,4 +1,4 @@
-package com.eagleeye.utils;
+package com.squirrel_explorer.eagleeye.utils;
 
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;

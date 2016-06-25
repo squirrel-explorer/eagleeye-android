@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eagleeye">
+    package="com.squirrel_explorer.eagleeye">
 
     <application
         android:allowBackup="true"
