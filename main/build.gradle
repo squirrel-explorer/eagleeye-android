@@ -52,6 +52,7 @@ task buildJar(dependsOn: ['compileReleaseSources'], type: Jar) {
 
     // Remove useless files
     exclude '**/BuildConfig.class'
+    exclude '**/BuildConfig\$*.class'
     exclude '**/R.class'
     exclude '**/R\$*.class'
 
