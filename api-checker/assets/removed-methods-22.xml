@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<removed-methods version="22">
+    <class name="android.view.View">
+        <method signature="protected void initializeFadingEdge(android.content.res.TypedArray) "/>
+        <method signature="protected void initializeScrollbars(android.content.res.TypedArray) "/>
+    </class>
+    <class name="android.widget.TextView">
+        <method signature="public static android.content.res.ColorStateList getTextColors(android.content.Context, android.content.res.TypedArray) "/>
+        <method signature="public static int getTextColor(android.content.Context, android.content.res.TypedArray, int) "/>
+    </class>
+    <class name="android.os.UserManager">
+        <method signature="public android.graphics.drawable.Drawable getBadgedIconForUser(android.graphics.drawable.Drawable, android.os.UserHandle) "/>
+        <method signature="public android.graphics.drawable.Drawable getBadgedDrawableForUser(android.graphics.drawable.Drawable, android.os.UserHandle, android.graphics.Rect, int) "/>
+        <method signature="public java.lang.CharSequence getBadgedLabelForUser(java.lang.CharSequence, android.os.UserHandle) "/>
+    </class>
+    <class name="android.os.PowerManager">
+        <method signature="public void userActivity(long, boolean) "/>
+        <method signature="public void goToSleep(long) "/>
+        <method signature="public void wakeUp(long) "/>
+    </class>
+</removed-methods>

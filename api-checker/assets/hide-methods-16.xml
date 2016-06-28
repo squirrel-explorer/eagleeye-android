@@ -1,0 +1,2724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hide-methods version="16">
+    <class name="android.os.MemoryFile">
+        <method signature="public java.io.FileDescriptor getFileDescriptor() throws java.io.IOException"/>
+        <method signature="public static int getSize(java.io.FileDescriptor) throws java.io.IOException"/>
+    </class>
+    <class name="android.test.mock.MockPackageManager">
+        <method signature="public void grantPermission(java.lang.String, java.lang.String) "/>
+        <method signature="public void revokePermission(java.lang.String, java.lang.String) "/>
+        <method signature="public int getUidForSharedUser(java.lang.String) "/>
+        <method signature="public void installPackage(android.net.Uri, IPackageInstallObserver, int, java.lang.String) "/>
+        <method signature="public void movePackage(java.lang.String, IPackageMoveObserver, int) "/>
+        <method signature="public void clearApplicationUserData(java.lang.String, IPackageDataObserver) "/>
+        <method signature="public void deleteApplicationCacheFiles(java.lang.String, IPackageDataObserver) "/>
+        <method signature="public void freeStorageAndNotify(long, IPackageDataObserver) "/>
+        <method signature="public void freeStorage(long, android.content.IntentSender) "/>
+        <method signature="public void deletePackage(java.lang.String, IPackageDeleteObserver, int) "/>
+        <method signature="public void replacePreferredActivity(android.content.IntentFilter, int, android.content.ComponentName[], android.content.ComponentName) "/>
+        <method signature="public void getPackageSizeInfo(java.lang.String, IPackageStatsObserver) "/>
+        <method signature="public android.content.pm.UserInfo createUser(java.lang.String, int) "/>
+        <method signature="public List&lt;android.content.pm.UserInfo&gt; getUsers() "/>
+        <method signature="public android.content.pm.UserInfo getUser(int) "/>
+        <method signature="public boolean removeUser(int) "/>
+        <method signature="public void updateUserName(int, java.lang.String) "/>
+        <method signature="public void updateUserFlags(int, int) "/>
+        <method signature="public void installPackageWithVerification(android.net.Uri, IPackageInstallObserver, int, java.lang.String, android.net.Uri, android.content.pm.ManifestDigest, android.content.pm.ContainerEncryptionParams) "/>
+        <method signature="public android.content.pm.VerifierDeviceIdentity getVerifierDeviceIdentity() "/>
+    </class>
+    <class name="android.webkit.WebViewCore">
+        <method signature="public void sendMessage(android.os.Message) "/>
+    </class>
+    <class name="java.util.BitSet">
+        <method signature="public int previousSetBit(int) "/>
+        <method signature="public int previousClearBit(int) "/>
+        <method signature="public static java.util.BitSet valueOf(long[]) "/>
+        <method signature="public static java.util.BitSet valueOf(java.nio.LongBuffer) "/>
+        <method signature="public static java.util.BitSet valueOf(byte[]) "/>
+        <method signature="public static java.util.BitSet valueOf(java.nio.ByteBuffer) "/>
+        <method signature="public long[] toLongArray() "/>
+        <method signature="public byte[] toByteArray() "/>
+    </class>
+    <class name="android.net.http.SslCertificate">
+        <method signature="public android.view.View inflateCertificateView(android.content.Context) "/>
+    </class>
+    <class name="android.net.sip.SipSession.Listener">
+        <method signature="public void onCallTransferring(android.net.sip.SipSession, java.lang.String) "/>
+    </class>
+    <class name="android.app.ActivityThread">
+        <method signature="public static android.content.Intent getIntentBeingBroadcast() "/>
+    </class>
+    <class name="android.text.format.DateUtils">
+        <method signature="public static java.lang.String getStandaloneMonthString(int, int) "/>
+        <method signature="public static final java.lang.CharSequence timeString(long) "/>
+        <method signature="public static java.util.Calendar newCalendar(boolean) "/>
+        <method signature="public static boolean isUTC(java.lang.String) "/>
+        <method signature="public static java.lang.String writeDateTime(java.util.Calendar) "/>
+        <method signature="public static java.lang.String writeDateTime(java.util.Calendar, boolean) "/>
+        <method signature="public static java.lang.String writeDateTime(java.util.Calendar, java.lang.StringBuilder) "/>
+        <method signature="public static void assign(java.util.Calendar, java.util.Calendar) "/>
+    </class>
+    <class name="android.net.wifi.WifiManager">
+        <method signature="public boolean startScanActive() "/>
+        <method signature="public void setCountryCode(java.lang.String, boolean) "/>
+        <method signature="public void setFrequencyBand(int, boolean) "/>
+        <method signature="public int getFrequencyBand() "/>
+        <method signature="public boolean isDualBandSupported() "/>
+        <method signature="public boolean setWifiApEnabled(android.net.wifi.WifiConfiguration, boolean) "/>
+        <method signature="public int getWifiApState() "/>
+        <method signature="public boolean isWifiApEnabled() "/>
+        <method signature="public android.net.wifi.WifiConfiguration getWifiApConfiguration() "/>
+        <method signature="public boolean setWifiApConfiguration(android.net.wifi.WifiConfiguration) "/>
+        <method signature="public boolean startWifi() "/>
+        <method signature="public boolean stopWifi() "/>
+        <method signature="public boolean addToBlacklist(java.lang.String) "/>
+        <method signature="public boolean clearBlacklist() "/>
+        <method signature="public android.net.wifi.WifiManager.Channel initialize(android.content.Context, android.os.Looper, android.net.wifi.WifiManager.ChannelListener) "/>
+        <method signature="public void connect(android.net.wifi.WifiManager.Channel, android.net.wifi.WifiConfiguration, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public void connect(android.net.wifi.WifiManager.Channel, int, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public void save(android.net.wifi.WifiManager.Channel, android.net.wifi.WifiConfiguration, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public void forget(android.net.wifi.WifiManager.Channel, int, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public void disable(android.net.wifi.WifiManager.Channel, int, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public void startWps(android.net.wifi.WifiManager.Channel, android.net.wifi.WpsInfo, android.net.wifi.WifiManager.WpsListener) "/>
+        <method signature="public void cancelWps(android.net.wifi.WifiManager.Channel, android.net.wifi.WifiManager.ActionListener) "/>
+        <method signature="public android.os.Messenger getWifiServiceMessenger() "/>
+        <method signature="public android.os.Messenger getWifiStateMachineMessenger() "/>
+        <method signature="public java.lang.String getConfigFile() "/>
+        <method signature="public boolean isMulticastEnabled() "/>
+        <method signature="public boolean initializeMulticastFiltering() "/>
+    </class>
+    <class name="android.hardware.SensorManager">
+        <method signature="protected abstract List&lt;android.hardware.Sensor&gt; getFullSensorList() "/>
+        <method signature="protected abstract void unregisterListenerImpl(android.hardware.SensorEventListener, android.hardware.Sensor) "/>
+        <method signature="protected abstract boolean registerListenerImpl(android.hardware.SensorEventListener, android.hardware.Sensor, int, android.os.Handler) "/>
+    </class>
+    <class name="android.os.Environment">
+        <method signature="public static java.io.File getSystemSecureDirectory() "/>
+        <method signature="public static java.io.File getSecureDataDirectory() "/>
+        <method signature="public static java.io.File getMediaStorageDirectory() "/>
+        <method signature="public static boolean isEncryptedFilesystemEnabled() "/>
+        <method signature="public static java.io.File getExternalStorageAndroidDataDir() "/>
+        <method signature="public static java.io.File getExternalStorageAppDataDirectory(java.lang.String) "/>
+        <method signature="public static java.io.File getExternalStorageAppMediaDirectory(java.lang.String) "/>
+        <method signature="public static java.io.File getExternalStorageAppObbDirectory(java.lang.String) "/>
+        <method signature="public static java.io.File getExternalStorageAppFilesDirectory(java.lang.String) "/>
+        <method signature="public static java.io.File getExternalStorageAppCacheDirectory(java.lang.String) "/>
+    </class>
+    <class name="android.os.RecoverySystem">
+        <method signature="public static java.lang.String handleAftermath() "/>
+    </class>
+    <class name="android.app.DownloadManager">
+        <method signature="public void setAccessAllDownloads(boolean) "/>
+        <method signature="public transient int markRowDeleted(long[]) "/>
+        <method signature="public transient void restartDownload(long[]) "/>
+        <method signature="public static boolean isActiveNetworkExpensive(android.content.Context) "/>
+        <method signature="public static long getActiveNetworkWarningBytes(android.content.Context) "/>
+    </class>
+    <class name="android.database.sqlite.SQLiteDatabase">
+        <method signature="public void reopenReadWrite() "/>
+        <method signature="public void addCustomFunction(java.lang.String, int, android.database.sqlite.SQLiteDatabase.CustomFunction) "/>
+        <method signature="public boolean isInMemoryDatabase() "/>
+    </class>
+    <class name="java.net.DatagramPacket">
+        <method signature="public void resetLengthForReceive() "/>
+        <method signature="public void setReceivedLength(int) "/>
+    </class>
+    <class name="com.android.internal.view.menu.IconMenuView">
+        <method signature="public int[] getLayout() "/>
+        <method signature="public int getLayoutNumRows() "/>
+    </class>
+    <class name="android.media.RemoteControlClient.MetadataEditor">
+        <method signature="public java.lang.Object clone() throws java.lang.CloneNotSupportedException"/>
+    </class>
+    <class name="android.net.sip.SipAudioCall">
+        <method signature="public android.net.sip.SipSession getSipSession() "/>
+        <method signature="public android.net.rtp.AudioStream getAudioStream() "/>
+        <method signature="public android.net.rtp.AudioGroup getAudioGroup() "/>
+        <method signature="public void setAudioGroup(android.net.rtp.AudioGroup) "/>
+    </class>
+    <class name="android.os.UserId">
+        <method signature="public static final boolean isSameUser(int, int) "/>
+        <method signature="public static final boolean isSameApp(int, int) "/>
+        <method signature="public static final int getUserId(int) "/>
+        <method signature="public static final int getUid(int, int) "/>
+        <method signature="public static final int getAppId(int) "/>
+    </class>
+    <class name="android.os.storage.StorageManager">
+        <method signature="public void registerListener(android.os.storage.StorageEventListener) "/>
+        <method signature="public void unregisterListener(android.os.storage.StorageEventListener) "/>
+        <method signature="public void enableUsbMassStorage() "/>
+        <method signature="public void disableUsbMassStorage() "/>
+        <method signature="public boolean isUsbMassStorageConnected() "/>
+        <method signature="public boolean isUsbMassStorageEnabled() "/>
+        <method signature="public java.lang.String getVolumeState(java.lang.String) "/>
+        <method signature="public android.os.storage.StorageVolume[] getVolumeList() "/>
+        <method signature="public java.lang.String[] getVolumePaths() "/>
+    </class>
+    <class name="java.net.ServerSocket">
+        <method signature="public java.net.SocketImpl getImpl$() "/>
+    </class>
+    <class name="android.view.InputQueue">
+        <method signature="public android.view.InputChannel getInputChannel() "/>
+    </class>
+    <class name="android.text.Selection">
+        <method signature="public static boolean moveToPreceding(android.text.Spannable, android.text.Selection.PositionIterator, boolean) "/>
+        <method signature="public static boolean moveToFollowing(android.text.Spannable, android.text.Selection.PositionIterator, boolean) "/>
+    </class>
+    <class name="android.widget.PopupWindow">
+        <method signature="public void setClipToScreenEnabled(boolean) "/>
+        <method signature="public boolean isLayoutInScreenEnabled() "/>
+        <method signature="public void setLayoutInScreenEnabled(boolean) "/>
+        <method signature="public void setLayoutInsetDecor(boolean) "/>
+        <method signature="public void setWindowLayoutType(int) "/>
+        <method signature="public int getWindowLayoutType() "/>
+        <method signature="public void setTouchModal(boolean) "/>
+        <method signature="public void showAtLocation(android.os.IBinder, int, int, int) "/>
+        <method signature="public int getMaxAvailableHeight(android.view.View, int, boolean) "/>
+    </class>
+    <class name="android.view.InputDevice">
+        <method signature="public int getGeneration() "/>
+        <method signature="public boolean isExternal() "/>
+        <method signature="public boolean isFullKeyboard() "/>
+    </class>
+    <class name="android.support.v4.app.DialogFragment">
+        <method signature="public android.view.LayoutInflater getLayoutInflater(android.os.Bundle) "/>
+    </class>
+    <class name="android.preference.DialogPreference">
+        <method signature="protected boolean needInputMethod() "/>
+    </class>
+    <class name="java.util.concurrent.locks.AbstractQueuedSynchronizer">
+        <method signature="public final boolean hasQueuedPredecessors() "/>
+    </class>
+    <class name="com.android.internal.policy.impl.PhoneWindow">
+        <method signature="public void alwaysReadCloseOnTouchAttr() "/>
+    </class>
+    <class name="android.net.LinkProperties">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.content.ContentProvider">
+        <method signature="public static android.content.ContentProvider coerceToLocalContentProvider(android.content.IContentProvider) "/>
+        <method signature="public android.content.IContentProvider getIContentProvider() "/>
+        <method signature="public void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) "/>
+    </class>
+    <class name="android.content.Intent">
+        <method signature="public void setAllowFds(boolean) "/>
+        <method signature="public java.lang.Object getExtra(java.lang.String) "/>
+        <method signature="public android.os.IBinder getIBinderExtra(java.lang.String) "/>
+        <method signature="public java.lang.Object getExtra(java.lang.String, java.lang.Object) "/>
+        <method signature="public boolean isExcludingStopped() "/>
+        <method signature="public android.content.Intent putExtra(java.lang.String, android.os.IBinder) "/>
+        <method signature="public java.lang.String toInsecureString() "/>
+        <method signature="public java.lang.String toInsecureStringWithClip() "/>
+        <method signature="public java.lang.String toShortString(boolean, boolean, boolean, boolean) "/>
+        <method signature="public void toShortString(java.lang.StringBuilder, boolean, boolean, boolean, boolean) "/>
+        <method signature="public boolean migrateExtraStreamToClipData() "/>
+    </class>
+    <class name="android.accounts.AccountManagerService">
+        <method signature="public static android.accounts.AccountManagerService getSingleton() "/>
+        <method signature="public android.accounts.Account[] getAccounts(int) "/>
+        <method signature="public android.accounts.AccountAndUser[] getAllAccounts() "/>
+    </class>
+    <class name="android.content.AsyncTaskLoader">
+        <method signature="public void waitForLoader() "/>
+    </class>
+    <class name="android.animation.LayoutTransition">
+        <method signature="public void startChangingAnimations() "/>
+        <method signature="public void endChangingAnimations() "/>
+        <method signature="public void cancel() "/>
+        <method signature="public void cancel(int) "/>
+        <method signature="public void layoutChange(android.view.ViewGroup) "/>
+    </class>
+    <class name="com.android.internal.telephony.MccTable">
+        <method signature="public static void setSystemLocale(android.content.Context, java.lang.String, java.lang.String) "/>
+    </class>
+    <class name="android.media.Metadata">
+        <method signature="public boolean parse(android.os.Parcel) "/>
+        <method signature="public java.lang.String getString(int) "/>
+        <method signature="public int getInt(int) "/>
+        <method signature="public long getLong(int) "/>
+        <method signature="public double getDouble(int) "/>
+        <method signature="public byte[] getByteArray(int) "/>
+        <method signature="public java.util.Date getDate(int) "/>
+        <method signature="public static int lastSytemId() "/>
+        <method signature="public static int firstCustomId() "/>
+        <method signature="public static int lastType() "/>
+    </class>
+    <class name="android.app.backup.BackupDataInput">
+        <method signature="protected void finalize() throws java.lang.Throwable"/>
+    </class>
+    <class name="android.content.res.AssetManager">
+        <method signature="public static android.content.res.AssetManager getSystem() "/>
+        <method signature="public final java.io.InputStream openNonAsset(java.lang.String) throws java.io.IOException"/>
+        <method signature="public final java.io.InputStream openNonAsset(java.lang.String, int) throws java.io.IOException"/>
+        <method signature="public final java.io.InputStream openNonAsset(int, java.lang.String) throws java.io.IOException"/>
+        <method signature="public final java.io.InputStream openNonAsset(int, java.lang.String, int) throws java.io.IOException"/>
+        <method signature="public final native int addAssetPath(java.lang.String) "/>
+        <method signature="public final int[] addAssetPaths(java.lang.String[]) "/>
+        <method signature="public final native boolean isUpToDate() "/>
+        <method signature="public final native void setLocale(java.lang.String) "/>
+        <method signature="public final native void setConfiguration(int, int, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int, int) "/>
+        <method signature="public final native java.lang.String getCookieName(int) "/>
+        <method signature="public static final native int getGlobalAssetCount() "/>
+        <method signature="public static final native java.lang.String getAssetAllocations() "/>
+        <method signature="public static final native int getGlobalAssetManagerCount() "/>
+    </class>
+    <class name="com.android.internal.telephony.PhoneProxy">
+        <method signature="public int getVoiceMessageCount() "/>
+    </class>
+    <class name="android.provider.Settings.System">
+        <method signature="public static void clearConfiguration(android.content.res.Configuration) "/>
+        <method signature="public static boolean hasInterestingConfigurationChanges(int) "/>
+    </class>
+    <class name="android.net.wifi.p2p.WifiP2pDeviceList">
+        <method signature="public boolean clear() "/>
+        <method signature="public void update(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public void updateGroupCapability(java.lang.String, int) "/>
+        <method signature="public void updateStatus(java.lang.String, int) "/>
+        <method signature="public android.net.wifi.p2p.WifiP2pDevice get(java.lang.String) "/>
+        <method signature="public boolean remove(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public boolean isGroupOwner(java.lang.String) "/>
+    </class>
+    <class name="android.os.BatteryStats.Uid">
+        <method signature="public abstract int getUid() "/>
+        <method signature="public abstract long getTcpBytesReceived(int) "/>
+        <method signature="public abstract long getTcpBytesSent(int) "/>
+    </class>
+    <class name="android.view.KeyCharacterMap">
+        <method signature="public android.view.KeyCharacterMap.FallbackAction getFallbackAction(int, int) "/>
+    </class>
+    <class name="android.view.textservice.TextServicesManager">
+        <method signature="public static android.view.textservice.TextServicesManager getInstance() "/>
+        <method signature="public android.view.textservice.SpellCheckerInfo[] getEnabledSpellCheckers() "/>
+        <method signature="public android.view.textservice.SpellCheckerInfo getCurrentSpellChecker() "/>
+        <method signature="public void setCurrentSpellChecker(android.view.textservice.SpellCheckerInfo) "/>
+        <method signature="public android.view.textservice.SpellCheckerSubtype getCurrentSpellCheckerSubtype(boolean) "/>
+        <method signature="public void setSpellCheckerSubtype(android.view.textservice.SpellCheckerSubtype) "/>
+        <method signature="public void setSpellCheckerEnabled(boolean) "/>
+        <method signature="public boolean isSpellCheckerEnabled() "/>
+    </class>
+    <class name="android.accounts.AccountManagerResponse">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.provider.Browser">
+        <method signature="public static final void sendString(android.content.Context, java.lang.String, java.lang.String) "/>
+        <method signature="public static final java.lang.String[] getVisitedHistory(android.content.ContentResolver) "/>
+    </class>
+    <class name="android.view.ViewConfiguration">
+        <method signature="public static int getHoverTapTimeout() "/>
+        <method signature="public static int getHoverTapSlop() "/>
+        <method signature="public int getScaledDoubleTapTouchSlop() "/>
+        <method signature="public static int getDoubleTapSlop() "/>
+        <method signature="public static long getSendRecurringAccessibilityEventsInterval() "/>
+        <method signature="public boolean isFadingMarqueeEnabled() "/>
+    </class>
+    <class name="android.test.suitebuilder.TestSuiteBuilder">
+        <method signature="public android.test.suitebuilder.TestSuiteBuilder addTestClassByName(java.lang.String, java.lang.String, android.content.Context) "/>
+        <method signature="public android.test.suitebuilder.TestSuiteBuilder addTestSuite(junit.framework.TestSuite) "/>
+        <method signature="protected android.test.suitebuilder.TestGrouping getTestGrouping() "/>
+    </class>
+    <class name="android.view.VelocityTracker">
+        <method signature="public static android.view.VelocityTracker obtain(java.lang.String) "/>
+        <method signature="public void setNextPoolable(android.view.VelocityTracker) "/>
+        <method signature="public android.view.VelocityTracker getNextPoolable() "/>
+        <method signature="public boolean isPooled() "/>
+        <method signature="public void setPooled(boolean) "/>
+        <method signature="public boolean getEstimator(int, android.view.VelocityTracker.Estimator) "/>
+    </class>
+    <class name="android.os.Message">
+        <method signature="public boolean isAsynchronous() "/>
+        <method signature="public void setAsynchronous(boolean) "/>
+    </class>
+    <class name="android.inputmethodservice.InputMethodService">
+        <method signature="public void onExtractedDeleteText(int, int) "/>
+        <method signature="public void onExtractedReplaceText(int, int, java.lang.CharSequence) "/>
+        <method signature="public void onExtractedSetSpan(java.lang.Object, int, int, int) "/>
+    </class>
+    <class name="android.media.RemoteControlClient">
+        <method signature="public void setPlaybackInformation(int, int) "/>
+        <method signature="public int getIntPlaybackInformation(int) "/>
+        <method signature="public android.app.PendingIntent getRcMediaIntent() "/>
+        <method signature="public IRemoteControlClient getIRemoteControlClient() "/>
+        <method signature="public void setRcseId(int) "/>
+        <method signature="public int getRcseId() "/>
+    </class>
+    <class name="android.hardware.input.InputManager">
+        <method signature="public static android.hardware.input.InputManager getInstance() "/>
+        <method signature="public android.view.InputDevice getInputDeviceByDescriptor(java.lang.String) "/>
+        <method signature="public android.hardware.input.KeyboardLayout[] getKeyboardLayouts() "/>
+        <method signature="public android.hardware.input.KeyboardLayout getKeyboardLayout(java.lang.String) "/>
+        <method signature="public java.lang.String getCurrentKeyboardLayoutForInputDevice(java.lang.String) "/>
+        <method signature="public void setCurrentKeyboardLayoutForInputDevice(java.lang.String, java.lang.String) "/>
+        <method signature="public java.lang.String[] getKeyboardLayoutsForInputDevice(java.lang.String) "/>
+        <method signature="public void addKeyboardLayoutForInputDevice(java.lang.String, java.lang.String) "/>
+        <method signature="public void removeKeyboardLayoutForInputDevice(java.lang.String, java.lang.String) "/>
+        <method signature="public int getPointerSpeed(android.content.Context) "/>
+        <method signature="public void setPointerSpeed(android.content.Context, int) "/>
+        <method signature="public void tryPointerSpeed(int) "/>
+        <method signature="public boolean[] deviceHasKeys(int[]) "/>
+        <method signature="public boolean injectInputEvent(android.view.InputEvent, int) "/>
+        <method signature="public android.os.Vibrator getInputDeviceVibrator(int) "/>
+    </class>
+    <class name="android.net.http.HttpResponseCache">
+        <method signature="public void trackResponse(java.net.ResponseSource) "/>
+        <method signature="public void trackConditionalCacheHit() "/>
+        <method signature="public void update(java.net.CacheResponse, java.net.HttpURLConnection) "/>
+    </class>
+    <class name="android.view.Choreographer">
+        <method signature="public static long getFrameDelay() "/>
+        <method signature="public static void setFrameDelay(long) "/>
+        <method signature="public static long subtractFrameDelay(long) "/>
+        <method signature="public void postCallback(int, java.lang.Runnable, java.lang.Object) "/>
+        <method signature="public void postCallbackDelayed(int, java.lang.Runnable, java.lang.Object, long) "/>
+        <method signature="public void removeCallbacks(int, java.lang.Runnable, java.lang.Object) "/>
+        <method signature="public long getFrameTime() "/>
+        <method signature="public long getFrameTimeNanos() "/>
+    </class>
+    <class name="android.content.ContentProviderOperation">
+        <method signature="public int getType() "/>
+    </class>
+    <class name="android.util.LocaleUtil">
+        <method signature="public static int getLayoutDirectionFromLocale(java.util.Locale) "/>
+    </class>
+    <class name="android.view.ActionProvider">
+        <method signature="public void subUiVisibilityChanged(boolean) "/>
+        <method signature="public void setSubUiVisibilityListener(android.view.ActionProvider.SubUiVisibilityListener) "/>
+    </class>
+    <class name="android.view.MotionEvent.PointerProperties">
+        <method signature="public static android.view.MotionEvent.PointerProperties[] createArray(int) "/>
+    </class>
+    <class name="android.app.Service">
+        <method signature="public final void setForeground(boolean) "/>
+        <method signature="public final void attach(android.content.Context, android.app.ActivityThread, java.lang.String, android.os.IBinder, android.app.Application, java.lang.Object) "/>
+    </class>
+    <class name="android.net.SSLCertificateSocketFactory">
+        <method signature="public static void verifyHostname(java.net.Socket, java.lang.String) throws java.io.IOException"/>
+    </class>
+    <class name="android.bluetooth.BluetoothHealthAppConfiguration">
+        <method signature="public int getChannelType() "/>
+    </class>
+    <class name="android.net.NetworkPolicyManager">
+        <method signature="public static long computeLastCycleBoundary(long, android.net.NetworkPolicy) "/>
+        <method signature="public static long computeNextCycleBoundary(long, android.net.NetworkPolicy) "/>
+        <method signature="public static void snapToCycleDay(android.text.format.Time, int) "/>
+        <method signature="public static void dumpPolicy(java.io.PrintWriter, int) "/>
+        <method signature="public static void dumpRules(java.io.PrintWriter, int) "/>
+    </class>
+    <class name="android.app.ActivityGroup">
+        <method signature="public HashMap&lt;java.lang.String,java.lang.Object&gt; onRetainNonConfigurationChildInstances() "/>
+    </class>
+    <class name="android.net.wifi.WifiConfiguration">
+        <method signature="public int getAuthType() "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.telephony.CellLocation">
+        <method signature="public static android.telephony.CellLocation newFromBundle(android.os.Bundle) "/>
+        <method signature="public abstract void fillInNotifierBundle(android.os.Bundle) "/>
+        <method signature="public abstract boolean isEmpty() "/>
+    </class>
+    <class name="android.telephony.PhoneStateListener">
+        <method signature="public void onOtaspChanged(int) "/>
+        <method signature="public void onCellInfoChanged(android.telephony.CellInfo) "/>
+    </class>
+    <class name="android.view.accessibility.AccessibilityNodeProvider">
+        <method signature="public android.view.accessibility.AccessibilityNodeInfo findAccessibilityFocus(int) "/>
+        <method signature="public android.view.accessibility.AccessibilityNodeInfo accessibilityFocusSearch(int, int) "/>
+    </class>
+    <class name="android.os.Bundle">
+        <method signature="public static android.os.Bundle forPair(java.lang.String, java.lang.String) "/>
+        <method signature="public java.lang.String getPairValue() "/>
+        <method signature="public boolean setAllowFds(boolean) "/>
+        <method signature="public boolean isParcelled() "/>
+        <method signature="public void putIBinder(java.lang.String, android.os.IBinder) "/>
+        <method signature="public android.os.IBinder getIBinder(java.lang.String) "/>
+    </class>
+    <class name="android.net.wifi.p2p.nsd.WifiP2pServiceRequest">
+        <method signature="public int getTransactionId() "/>
+        <method signature="public void setTransactionId(int) "/>
+        <method signature="public java.lang.String getSupplicantQuery() "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.view.Window">
+        <method signature="public final void destroy() "/>
+        <method signature="public final boolean isDestroyed() "/>
+        <method signature="public void setCloseOnTouchOutside(boolean) "/>
+        <method signature="public void setCloseOnTouchOutsideIfNotSet(boolean) "/>
+        <method signature="public abstract void alwaysReadCloseOnTouchAttr() "/>
+        <method signature="public boolean shouldCloseOnTouch(android.content.Context, android.view.MotionEvent) "/>
+        <method signature="protected void removeFeature(int) "/>
+        <method signature="protected boolean haveDimAmount() "/>
+    </class>
+    <class name="android.renderscript.Allocation">
+        <method signature="public void ioSendOutput() "/>
+        <method signature="public void resize(int, int) "/>
+        <method signature="public android.graphics.SurfaceTexture getSurfaceTexture() "/>
+        <method signature="public void setSurfaceTexture(android.graphics.SurfaceTexture) "/>
+    </class>
+    <class name="android.graphics.drawable.StateListDrawable">
+        <method signature="public int getStateCount() "/>
+        <method signature="public int[] getStateSet(int) "/>
+        <method signature="public android.graphics.drawable.Drawable getStateDrawable(int) "/>
+        <method signature="public int getStateDrawableIndex(int[]) "/>
+    </class>
+    <class name="android.app.backup.FullBackup">
+        <method signature="public static native int backupToTar(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, android.app.backup.BackupDataOutput) "/>
+    </class>
+    <class name="android.net.wifi.p2p.WifiP2pGroup">
+        <method signature="public void setNetworkName(java.lang.String) "/>
+        <method signature="public void setIsGroupOwner(boolean) "/>
+        <method signature="public void setOwner(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public void addClient(java.lang.String) "/>
+        <method signature="public void addClient(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public boolean removeClient(java.lang.String) "/>
+        <method signature="public boolean removeClient(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public boolean isClientListEmpty() "/>
+        <method signature="public boolean contains(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public void setPassphrase(java.lang.String) "/>
+        <method signature="public void setInterface(java.lang.String) "/>
+    </class>
+    <class name="android.net.Uri">
+        <method signature="public java.lang.String toSafeString() "/>
+    </class>
+    <class name="android.app.ActivityOptions">
+        <method signature="public static android.app.ActivityOptions makeCustomAnimation(android.content.Context, int, int, android.os.Handler, android.app.ActivityOptions.OnAnimationStartedListener) "/>
+        <method signature="public static android.app.ActivityOptions makeThumbnailScaleUpAnimation(android.view.View, android.graphics.Bitmap, int, int, android.app.ActivityOptions.OnAnimationStartedListener) "/>
+        <method signature="public static android.app.ActivityOptions makeDelayedThumbnailScaleUpAnimation(android.view.View, android.graphics.Bitmap, int, int, android.app.ActivityOptions.OnAnimationStartedListener) "/>
+        <method signature="public java.lang.String getPackageName() "/>
+        <method signature="public int getAnimationType() "/>
+        <method signature="public int getCustomEnterResId() "/>
+        <method signature="public int getCustomExitResId() "/>
+        <method signature="public android.graphics.Bitmap getThumbnail() "/>
+        <method signature="public int getStartX() "/>
+        <method signature="public int getStartY() "/>
+        <method signature="public int getStartWidth() "/>
+        <method signature="public int getStartHeight() "/>
+        <method signature="public IRemoteCallback getOnAnimationStartListener() "/>
+        <method signature="public void abort() "/>
+        <method signature="public static void abort(android.os.Bundle) "/>
+    </class>
+    <class name="android.os.SystemClock">
+        <method signature="public static native long currentThreadTimeMicro() "/>
+        <method signature="public static native long currentTimeMicro() "/>
+    </class>
+    <class name="android.net.wifi.p2p.nsd.WifiP2pServiceResponse">
+        <method signature="public int getTransactionId() "/>
+        <method signature="public void setSrcDevice(android.net.wifi.p2p.WifiP2pDevice) "/>
+        <method signature="public static List&lt;android.net.wifi.p2p.nsd.WifiP2pServiceResponse&gt; newInstance(java.lang.String) "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.app.backup.BackupDataOutput">
+        <method signature="public void setKeyPrefix(java.lang.String) "/>
+        <method signature="protected void finalize() throws java.lang.Throwable"/>
+    </class>
+    <class name="java.lang.Thread">
+        <method signature="public final void pushInterruptAction$(java.lang.Runnable) "/>
+        <method signature="public final void popInterruptAction$(java.lang.Runnable) "/>
+        <method signature="public void unpark() "/>
+        <method signature="public void parkFor(long) "/>
+        <method signature="public void parkUntil(long) "/>
+    </class>
+    <class name="android.app.ActivityManager">
+        <method signature="public int getFrontActivityScreenCompatMode() "/>
+        <method signature="public void setFrontActivityScreenCompatMode(int) "/>
+        <method signature="public int getPackageScreenCompatMode(java.lang.String) "/>
+        <method signature="public void setPackageScreenCompatMode(java.lang.String, int) "/>
+        <method signature="public boolean getPackageAskScreenCompat(java.lang.String) "/>
+        <method signature="public void setPackageAskScreenCompat(java.lang.String, boolean) "/>
+        <method signature="public static int staticGetMemoryClass() "/>
+        <method signature="public static int staticGetLargeMemoryClass() "/>
+        <method signature="public static boolean isHighEndGfx(android.view.Display) "/>
+        <method signature="public static boolean isLargeRAM() "/>
+        <method signature="public List&lt;android.app.ActivityManager.RunningTaskInfo&gt; getRunningTasks(int, int, IThumbnailReceiver) throws java.lang.SecurityException"/>
+        <method signature="public boolean removeSubTask(int, int) throws java.lang.SecurityException"/>
+        <method signature="public boolean removeTask(int, int) throws java.lang.SecurityException"/>
+        <method signature="public android.app.ActivityManager.TaskThumbnails getTaskThumbnails(int) throws java.lang.SecurityException"/>
+        <method signature="public boolean clearApplicationUserData(java.lang.String, IPackageDataObserver) "/>
+        <method signature="public List&lt;android.content.pm.ApplicationInfo&gt; getRunningExternalApplications() "/>
+        <method signature="public void forceStopPackage(java.lang.String) "/>
+        <method signature="public Map&lt;java.lang.String,java.lang.Integer&gt; getAllPackageLaunchCounts() "/>
+        <method signature="public static int checkComponentPermission(java.lang.String, int, int, boolean) "/>
+        <method signature="public com.android.internal.os.PkgUsageStats[] getAllPackageUsageStats() "/>
+        <method signature="public boolean switchUser(int) "/>
+    </class>
+    <class name="java.util.Collections">
+        <method signature="public static Enumeration&lt;T&gt; emptyEnumeration() "/>
+        <method signature="public static Iterator&lt;T&gt; emptyIterator() "/>
+        <method signature="public static ListIterator&lt;T&gt; emptyListIterator() "/>
+    </class>
+    <class name="android.view.animation.AnimationSet">
+        <method signature="public boolean hasAlpha() "/>
+        <method signature="public void initializeInvalidateRegion(int, int, int, int) "/>
+    </class>
+    <class name="android.net.sip.SipManager">
+        <method signature="public static android.content.Intent createIncomingCallBroadcast(java.lang.String, java.lang.String) "/>
+        <method signature="public android.net.sip.SipProfile[] getListOfProfiles() "/>
+    </class>
+    <class name="android.content.BroadcastReceiver.PendingResult">
+        <method signature="public void setExtrasClassLoader(java.lang.ClassLoader) "/>
+        <method signature="public void sendFinished(android.app.IActivityManager) "/>
+    </class>
+    <class name="android.content.BroadcastReceiver">
+        <method signature="public final void setPendingResult(android.content.BroadcastReceiver.PendingResult) "/>
+        <method signature="public final android.content.BroadcastReceiver.PendingResult getPendingResult() "/>
+    </class>
+    <class name="android.net.nsd.NsdServiceInfo">
+        <method signature="public android.net.nsd.DnsSdTxtRecord getTxtRecord() "/>
+        <method signature="public void setTxtRecord(android.net.nsd.DnsSdTxtRecord) "/>
+    </class>
+    <class name="android.accessibilityservice.AccessibilityServiceInfo">
+        <method signature="public void updateDynamicallyConfigurableProperties(android.accessibilityservice.AccessibilityServiceInfo) "/>
+    </class>
+    <class name="android.app.FragmentManager">
+        <method signature="public android.app.FragmentTransaction openTransaction() "/>
+    </class>
+    <class name="android.telephony.gsm.SmsMessage">
+        <method signature="public static android.telephony.gsm.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String, java.lang.String, java.lang.String, boolean, byte[]) "/>
+        <method signature="public int getStatusOnIcc() "/>
+        <method signature="public int getIndexOnIcc() "/>
+    </class>
+    <class name="android.view.accessibility.AccessibilityRecord">
+        <method signature="public boolean isImportantForAccessibility() "/>
+        <method signature="public long getSourceNodeId() "/>
+        <method signature="public void setConnectionId(int) "/>
+        <method signature="public void setSealed(boolean) "/>
+    </class>
+    <class name="android.speech.srec.Recognizer">
+        <method signature="public void resetAcousticState() "/>
+        <method signature="public void setAcousticState(java.lang.String) "/>
+        <method signature="public java.lang.String getAcousticState() "/>
+    </class>
+    <class name="android.webkit.WebIconDatabase">
+        <method signature="public void bulkRequestIconForPageUrl(android.content.ContentResolver, java.lang.String, android.webkit.WebIconDatabase.IconListener) "/>
+    </class>
+    <class name="android.widget.AbsListView">
+        <method signature="protected boolean isVerticalScrollBarHidden() "/>
+        <method signature="public android.view.View findViewToTakeAccessibilityFocusFromHover(android.view.View, android.view.View) "/>
+        <method signature="protected boolean setFrame(int, int, int, int) "/>
+        <method signature="public boolean showContextMenu(float, float, int) "/>
+        <method signature="public void setOverScrollEffectPadding(int, int) "/>
+    </class>
+    <class name="android.view.PointerIcon">
+        <method signature="public android.view.PointerIcon load(android.content.Context) "/>
+    </class>
+    <class name="android.app.DownloadManager.Request">
+        <method signature="public android.app.DownloadManager.Request setDestinationToSystemCache() "/>
+    </class>
+    <class name="android.widget.Chronometer">
+        <method signature="public void setStarted(boolean) "/>
+    </class>
+    <class name="android.service.textservice.SpellCheckerService.Session">
+        <method signature="public final void setInternalISpellCheckerSession(android.service.textservice.SpellCheckerService.InternalISpellCheckerSession) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothInputDevice">
+        <method signature="public boolean connect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean disconnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean setPriority(android.bluetooth.BluetoothDevice, int) "/>
+        <method signature="public int getPriority(android.bluetooth.BluetoothDevice) "/>
+    </class>
+    <class name="android.preference.Preference">
+        <method signature="public boolean onKey(android.view.View, int, android.view.KeyEvent) "/>
+        <method signature="protected boolean persistStringSet(Set&lt;java.lang.String&gt;) "/>
+        <method signature="protected Set&lt;java.lang.String&gt; getPersistedStringSet(Set&lt;java.lang.String&gt;) "/>
+    </class>
+    <class name="java.lang.Enum">
+        <method signature="public static T[] getSharedConstants(Class&lt;T&gt;) "/>
+    </class>
+    <class name="android.content.pm.PackageItemInfo">
+        <method signature="protected android.graphics.drawable.Drawable loadDefaultIcon(android.content.pm.PackageManager) "/>
+        <method signature="protected android.graphics.drawable.Drawable loadDefaultLogo(android.content.pm.PackageManager) "/>
+        <method signature="protected android.content.pm.ApplicationInfo getApplicationInfo() "/>
+    </class>
+    <class name="android.opengl.EGLLogWrapper">
+        <method signature="public boolean eglReleaseThread() "/>
+    </class>
+    <class name="android.database.AbstractWindowedCursor">
+        <method signature="protected void closeWindow() "/>
+        <method signature="protected void clearOrCreateWindow(java.lang.String) "/>
+        <method signature="protected void onDeactivateOrClose() "/>
+    </class>
+    <class name="android.content.SyncContext">
+        <method signature="public void setStatusText(java.lang.String) "/>
+    </class>
+    <class name="android.view.WindowManager.LayoutParams">
+        <method signature="public void scale(float) "/>
+    </class>
+    <class name="android.support.v4.app.Fragment">
+        <method signature="public android.view.LayoutInflater getLayoutInflater(android.os.Bundle) "/>
+    </class>
+    <class name="android.webkit.PluginList">
+        <method signature="public synchronized List#RAW getList() "/>
+        <method signature="public synchronized void addPlugin(android.webkit.Plugin) "/>
+        <method signature="public synchronized void removePlugin(android.webkit.Plugin) "/>
+        <method signature="public synchronized void clear() "/>
+        <method signature="public synchronized void pluginClicked(android.content.Context, int) "/>
+    </class>
+    <class name="android.widget.EdgeEffect">
+        <method signature="public android.graphics.Rect getBounds(boolean) "/>
+    </class>
+    <class name="android.test.AndroidTestRunner">
+        <method signature="public void setPerformanceResultsWriter(android.os.PerformanceCollector.PerformanceResultsWriter) "/>
+    </class>
+    <class name="android.view.accessibility.AccessibilityManager">
+        <method signature="public static android.view.accessibility.AccessibilityManager getInstance(android.content.Context) "/>
+    </class>
+    <class name="android.app.WallpaperManager">
+        <method signature="public IWallpaperManager getIWallpaperManager() "/>
+        <method signature="public android.graphics.Bitmap getBitmap() "/>
+    </class>
+    <class name="java.lang.Throwable">
+        <method signature="public final void addSuppressed(java.lang.Throwable) "/>
+        <method signature="public final java.lang.Throwable[] getSuppressed() "/>
+    </class>
+    <class name="android.database.ContentObserver">
+        <method signature="public IContentObserver getContentObserver() "/>
+        <method signature="public IContentObserver releaseContentObserver() "/>
+    </class>
+    <class name="android.os.CancellationSignal">
+        <method signature="public void setRemote(ICancellationSignal) "/>
+        <method signature="public static ICancellationSignal createTransport() "/>
+        <method signature="public static android.os.CancellationSignal fromTransport(ICancellationSignal) "/>
+    </class>
+    <class name="android.widget.LinearLayout">
+        <method signature="public int getDividerWidth() "/>
+        <method signature="protected boolean hasDividerBeforeChildAt(int) "/>
+    </class>
+    <class name="android.content.pm.Signature">
+        <method signature="public java.security.PublicKey getPublicKey() throws java.security.cert.CertificateException"/>
+    </class>
+    <class name="android.webkit.WebChromeClient">
+        <method signature="public void openFileChooser(ValueCallback&lt;android.net.Uri&gt;, java.lang.String, java.lang.String) "/>
+        <method signature="public void setInstallableWebApp() "/>
+        <method signature="public void setupAutoFill(android.os.Message) "/>
+    </class>
+    <class name="android.telephony.GsmCellIdentity">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.provider.Settings">
+        <method signature="public static java.lang.String getGTalkDeviceId(long) "/>
+    </class>
+    <class name="android.view.TextureView">
+        <method signature="protected void destroyHardwareResources() "/>
+    </class>
+    <class name="android.content.ContentValues">
+        <method signature="public void putStringArrayList(java.lang.String, ArrayList&lt;java.lang.String&gt;) "/>
+        <method signature="public ArrayList&lt;java.lang.String&gt; getStringArrayList(java.lang.String) "/>
+    </class>
+    <class name="android.preference.EditTextPreference">
+        <method signature="protected boolean needInputMethod() "/>
+    </class>
+    <class name="android.database.sqlite.SQLiteDebug">
+        <method signature="public static final boolean shouldLogSlowQuery(long) "/>
+    </class>
+    <class name="android.service.wallpaper.WallpaperService">
+        <method signature="public void setCallbackLooper(android.os.Looper) "/>
+    </class>
+    <class name="android.os.StrictMode">
+        <method signature="public static int getThreadPolicyMask() "/>
+        <method signature="public static boolean conditionallyEnableDebugLogging() "/>
+        <method signature="public static void enableDeathOnNetwork() "/>
+        <method signature="public static void conditionallyCheckInstanceCounts() "/>
+        <method signature="public static boolean vmSqliteObjectLeaksEnabled() "/>
+        <method signature="public static boolean vmClosableObjectLeaksEnabled() "/>
+        <method signature="public static boolean vmRegistrationLeaksEnabled() "/>
+        <method signature="public static void onSqliteObjectLeaked(java.lang.String, java.lang.Throwable) "/>
+        <method signature="public static void onWebViewMethodCalledOnWrongThread(java.lang.Throwable) "/>
+        <method signature="public static void onIntentReceiverLeaked(java.lang.Throwable) "/>
+        <method signature="public static void onServiceConnectionLeaked(java.lang.Throwable) "/>
+        <method signature="public static void onVmPolicyViolation(java.lang.String, java.lang.Throwable) "/>
+        <method signature="public static android.os.StrictMode.Span enterCriticalSpan(java.lang.String) "/>
+        <method signature="public static void noteDiskRead() "/>
+        <method signature="public static void noteDiskWrite() "/>
+        <method signature="public static java.lang.Object trackActivity(java.lang.Object) "/>
+        <method signature="public static void incrementExpectedActivityCount(Class#RAW) "/>
+        <method signature="public static void decrementExpectedActivityCount(Class#RAW) "/>
+    </class>
+    <class name="android.test.InstrumentationTestRunner">
+        <method signature="public android.os.Bundle getBundle() "/>
+        <method signature="protected void addTestListener(junit.framework.TestListener) "/>
+    </class>
+    <class name="android.net.NetworkUtils">
+        <method signature="public static java.net.InetAddress numericToInetAddress(java.lang.String) throws java.lang.IllegalArgumentException"/>
+    </class>
+    <class name="android.app.Instrumentation">
+        <method signature="public android.app.Instrumentation.ActivityResult execStartActivity(android.content.Context, android.os.IBinder, android.os.IBinder, android.app.Activity, android.content.Intent, int, android.os.Bundle) "/>
+        <method signature="public void execStartActivities(android.content.Context, android.os.IBinder, android.os.IBinder, android.app.Activity, android.content.Intent[], android.os.Bundle) "/>
+        <method signature="public android.app.Instrumentation.ActivityResult execStartActivity(android.content.Context, android.os.IBinder, android.os.IBinder, android.app.Fragment, android.content.Intent, int, android.os.Bundle) "/>
+    </class>
+    <class name="android.preference.PreferenceActivity">
+        <method signature="public List&lt;android.preference.PreferenceActivity.Header&gt; getHeaders() "/>
+        <method signature="protected boolean hasNextButton() "/>
+        <method signature="protected android.widget.Button getNextButton() "/>
+    </class>
+    <class name="android.text.format.DateFormat">
+        <method signature="public static java.text.DateFormat getDateFormatForSetting(android.content.Context, java.lang.String) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothPan">
+        <method signature="public boolean connect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean disconnect(android.bluetooth.BluetoothDevice) "/>
+    </class>
+    <class name="android.os.ParcelFileDescriptor">
+        <method signature="public static android.os.ParcelFileDescriptor fromData(byte[], java.lang.String) throws java.io.IOException"/>
+        <method signature="public native long seekTo(long) "/>
+    </class>
+    <class name="android.provider.Downloads.Impl">
+        <method signature="public static java.lang.String statusToString(int) "/>
+    </class>
+    <class name="android.webkit.WebStorageClassic">
+        <method signature="public void createUIHandler() "/>
+        <method signature="public synchronized void createHandler() "/>
+        <method signature="public void update() "/>
+    </class>
+    <class name="android.os.PowerManager.WakeLock">
+        <method signature="public void release(int) "/>
+    </class>
+    <class name="android.telephony.gsm.SmsManager">
+        <method signature="public final boolean copyMessageToSim(byte[], byte[], int) "/>
+        <method signature="public final boolean deleteMessageFromSim(int) "/>
+        <method signature="public final boolean updateMessageOnSim(int, int, byte[]) "/>
+        <method signature="public final ArrayList&lt;android.telephony.SmsMessage&gt; getAllMessagesFromSim() "/>
+    </class>
+    <class name="android.database.CursorWindow">
+        <method signature="public java.lang.String getName() "/>
+    </class>
+    <class name="com.android.internal.telephony.SmsMessageBase">
+        <method signature="public com.android.internal.telephony.SmsHeader getUserDataHeader() "/>
+    </class>
+    <class name="android.os.Debug">
+        <method signature="public static java.lang.String[] getVmFeatureList() "/>
+        <method signature="public static void startMethodTracing(java.lang.String, java.io.FileDescriptor, int, int) "/>
+        <method signature="public static void startMethodTracingDdms(int, int) "/>
+        <method signature="public static boolean isMethodTracingActive() "/>
+        <method signature="public static native void getMemoryInfo(int, android.os.Debug.MemoryInfo) "/>
+        <method signature="public static native long getPss(int) "/>
+        <method signature="public static void dumpHprofData(java.lang.String, java.io.FileDescriptor) throws java.io.IOException"/>
+        <method signature="public static void dumpHprofDataDdms() "/>
+        <method signature="public static native void dumpNativeHeap(java.io.FileDescriptor) "/>
+        <method signature="public static long countInstancesOfClass(Class#RAW) "/>
+        <method signature="public static final boolean cacheRegisterMap(java.lang.String) "/>
+        <method signature="public static final void dumpReferenceTables() "/>
+        <method signature="public static void setFieldsOn(Class&lt;?&gt;) "/>
+        <method signature="public static void setFieldsOn(Class&lt;?&gt;, boolean) "/>
+        <method signature="public static native void dumpNativeBacktraceToFile(int, java.lang.String) "/>
+        <method signature="public static java.lang.String getCallers(int) "/>
+        <method signature="public static java.lang.String getCaller() "/>
+    </class>
+    <class name="android.animation.ValueAnimator">
+        <method signature="public static void setDurationScale(float) "/>
+        <method signature="public static int getCurrentAnimationsCount() "/>
+        <method signature="public static void clearAllAnimations() "/>
+    </class>
+    <class name="android.app.SearchableInfo">
+        <method signature="public boolean useBadgeLabel() "/>
+        <method signature="public boolean useBadgeIcon() "/>
+        <method signature="public android.content.Context getActivityContext(android.content.Context) "/>
+        <method signature="public android.content.Context getProviderContext(android.content.Context, android.content.Context) "/>
+        <method signature="public android.app.SearchableInfo.ActionKeyInfo findActionKey(int) "/>
+        <method signature="public static android.app.SearchableInfo getActivityMetaData(android.content.Context, android.content.pm.ActivityInfo) "/>
+        <method signature="public int getLabelId() "/>
+        <method signature="public int getIconId() "/>
+        <method signature="public int getSearchButtonText() "/>
+    </class>
+    <class name="com.android.vcard.VCardComposer">
+        <method signature="public boolean init(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String[], java.lang.String, android.net.Uri) "/>
+        <method signature="public boolean init(android.database.Cursor) "/>
+        <method signature="public java.lang.String createOneEntry(java.lang.reflect.Method) "/>
+    </class>
+    <class name="android.content.SyncInfo">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.test.mock.MockContentResolver">
+        <method signature="protected android.content.IContentProvider acquireProvider(android.content.Context, java.lang.String) "/>
+        <method signature="protected android.content.IContentProvider acquireExistingProvider(android.content.Context, java.lang.String) "/>
+        <method signature="public boolean releaseProvider(android.content.IContentProvider) "/>
+        <method signature="protected android.content.IContentProvider acquireUnstableProvider(android.content.Context, java.lang.String) "/>
+        <method signature="public boolean releaseUnstableProvider(android.content.IContentProvider) "/>
+        <method signature="public void unstableProviderDied(android.content.IContentProvider) "/>
+    </class>
+    <class name="android.net.wifi.SupplicantState">
+        <method signature="public static boolean isHandshakeState(android.net.wifi.SupplicantState) "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.os.Handler">
+        <method signature="public final boolean hasCallbacks(java.lang.Runnable) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothServerSocket">
+        <method signature="public int getChannel() "/>
+    </class>
+    <class name="android.nfc.tech.BasicTagTechnology">
+        <method signature="public void reconnect() throws java.io.IOException"/>
+    </class>
+    <class name="android.view.WindowManagerPolicy">
+        <method signature="public abstract boolean isScreenSaverEnabled() "/>
+        <method signature="public abstract boolean startScreenSaver() "/>
+        <method signature="public abstract void stopScreenSaver() "/>
+        <method signature="public abstract void setLastInputMethodWindowLw(android.view.WindowManagerPolicy.WindowState, android.view.WindowManagerPolicy.WindowState) "/>
+    </class>
+    <class name="android.webkit.CacheManager.CacheResult">
+        <method signature="public void setContentLength(long) "/>
+    </class>
+    <class name="android.provider.Settings.Secure">
+        <method signature="public static final java.lang.String getBluetoothHeadsetPriorityKey(java.lang.String) "/>
+        <method signature="public static final java.lang.String getBluetoothA2dpSinkPriorityKey(java.lang.String) "/>
+        <method signature="public static final java.lang.String getBluetoothInputDevicePriorityKey(java.lang.String) "/>
+    </class>
+    <class name="android.hardware.usb.UsbManager">
+        <method signature="public boolean isFunctionEnabled(java.lang.String) "/>
+        <method signature="public java.lang.String getDefaultFunction() "/>
+        <method signature="public void setCurrentFunction(java.lang.String, boolean) "/>
+        <method signature="public void setMassStorageBackingFile(java.lang.String) "/>
+    </class>
+    <class name="android.hardware.Camera">
+        <method signature="public final native boolean previewEnabled() "/>
+        <method signature="public final void addRawImageCallbackBuffer(byte[]) "/>
+        <method signature="public static android.hardware.Camera.Parameters getEmptyParameters() "/>
+    </class>
+    <class name="android.provider.Contacts.People">
+        <method signature="public static long tryGetMyContactsGroupId(android.content.ContentResolver) "/>
+    </class>
+    <class name="android.net.ProxyProperties">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.net.http.HttpsConnection">
+        <method signature="public static void initializeEngine(java.io.File) "/>
+    </class>
+    <class name="android.webkit.GeolocationPermissionsClassic">
+        <method signature="public void createUIHandler() "/>
+        <method signature="public synchronized void createHandler() "/>
+    </class>
+    <class name="android.app.NotificationManager">
+        <method signature="public static INotificationManager getService() "/>
+    </class>
+    <class name="java.io.Console">
+        <method signature="public static java.io.Console getConsole() "/>
+    </class>
+    <class name="android.provider.ContactsContract.Contacts.AggregationSuggestions">
+        <method signature="public static final android.provider.ContactsContract.Contacts.AggregationSuggestions.Builder builder() "/>
+    </class>
+    <class name="android.app.LocalActivityManager">
+        <method signature="public HashMap&lt;java.lang.String,java.lang.Object&gt; dispatchRetainNonConfigurationInstance() "/>
+    </class>
+    <class name="android.text.DynamicLayout">
+        <method signature="public int[] getBlockEndLines() "/>
+        <method signature="public int[] getBlockIndices() "/>
+        <method signature="public int getNumberOfBlocks() "/>
+    </class>
+    <class name="android.database.AbstractCursor">
+        <method signature="protected void onDeactivateOrClose() "/>
+        <method signature="public void setExtras(android.os.Bundle) "/>
+    </class>
+    <class name="android.nfc.Tag">
+        <method signature="public static android.nfc.Tag createMockTag(byte[], int[], android.os.Bundle[]) "/>
+        <method signature="public int getServiceHandle() "/>
+        <method signature="public android.nfc.Tag rediscover() throws java.io.IOException"/>
+        <method signature="public boolean hasTech(int) "/>
+        <method signature="public android.os.Bundle getTechExtras(int) "/>
+        <method signature="public INfcTag getTagService() "/>
+        <method signature="public synchronized void setConnectedTechnology(int) "/>
+        <method signature="public int getConnectedTechnology() "/>
+        <method signature="public void setTechnologyDisconnected() "/>
+    </class>
+    <class name="android.provider.BrowserContract.Bookmarks">
+        <method signature="public static final android.net.Uri buildFolderUri(long) "/>
+    </class>
+    <class name="java.net.ExtendedResponseCache">
+        <method signature="public abstract void trackResponse(java.net.ResponseSource) "/>
+        <method signature="public abstract void trackConditionalCacheHit() "/>
+        <method signature="public abstract void update(java.net.CacheResponse, java.net.HttpURLConnection) "/>
+    </class>
+    <class name="android.widget.VideoView">
+        <method signature="public void setVideoURI(android.net.Uri, Map&lt;java.lang.String,java.lang.String&gt;) "/>
+    </class>
+    <class name="android.widget.ListPopupWindow">
+        <method signature="public void setForceIgnoreOutsideTouch(boolean) "/>
+        <method signature="public void setDropDownAlwaysVisible(boolean) "/>
+        <method signature="public boolean isDropDownAlwaysVisible() "/>
+    </class>
+    <class name="java.lang.Long">
+        <method signature="public static int compare(long, long) "/>
+    </class>
+    <class name="android.app.backup.FullBackupDataOutput">
+        <method signature="public android.app.backup.BackupDataOutput getData() "/>
+    </class>
+    <class name="java.lang.System">
+        <method signature="public static java.lang.String lineSeparator() "/>
+        <method signature="public static void logE(java.lang.String) "/>
+        <method signature="public static void logE(java.lang.String, java.lang.Throwable) "/>
+        <method signature="public static void logI(java.lang.String) "/>
+        <method signature="public static void logI(java.lang.String, java.lang.Throwable) "/>
+        <method signature="public static void logW(java.lang.String) "/>
+        <method signature="public static void logW(java.lang.String, java.lang.Throwable) "/>
+    </class>
+    <class name="android.os.Binder">
+        <method signature="public static final int getOrigCallingUid() "/>
+        <method signature="public static final int getOrigCallingUser() "/>
+        <method signature="public static final native void setThreadStrictModePolicy(int) "/>
+        <method signature="public static final native int getThreadStrictModePolicy() "/>
+    </class>
+    <class name="android.view.ViewParent">
+        <method signature="public abstract void childHasTransientStateChanged(android.view.View, boolean) "/>
+        <method signature="public abstract void childAccessibilityStateChanged(android.view.View) "/>
+        <method signature="public abstract android.view.View findViewToTakeAccessibilityFocusFromHover(android.view.View, android.view.View) "/>
+    </class>
+    <class name="android.speech.tts.TextToSpeech">
+        <method signature="public java.lang.String getCurrentEngine() "/>
+    </class>
+    <class name="android.net.Proxy">
+        <method signature="public static final java.net.Proxy getProxy(android.content.Context, java.lang.String) "/>
+        <method signature="public static final HttpHost getPreferredHttpHost(android.content.Context, java.lang.String) "/>
+        <method signature="public static void validate(java.lang.String, java.lang.String, java.lang.String) "/>
+        <method signature="public static final HttpRoutePlanner getAndroidProxySelectorRoutePlanner(android.content.Context) "/>
+        <method signature="public static final void setHttpProxySystemProperty(android.net.ProxyProperties) "/>
+        <method signature="public static final void setHttpProxySystemProperty(java.lang.String, java.lang.String, java.lang.String) "/>
+    </class>
+    <class name="android.os.Parcel">
+        <method signature="public final boolean pushAllowFds(boolean) "/>
+        <method signature="public final void restoreAllowFds(boolean) "/>
+        <method signature="public final void writeCharSequence(java.lang.CharSequence) "/>
+        <method signature="public final void writeCharSequenceArray(java.lang.CharSequence[]) "/>
+        <method signature="public final int readExceptionCode() "/>
+        <method signature="public final java.lang.CharSequence readCharSequence() "/>
+        <method signature="public final java.lang.String[] readStringArray() "/>
+        <method signature="public final java.lang.CharSequence[] readCharSequenceArray() "/>
+        <method signature="public final T[] readTypedArray(Creator&lt;T&gt;) "/>
+    </class>
+    <class name="android.media.audiofx.AudioEffect">
+        <method signature="public static android.media.audiofx.AudioEffect.Descriptor[] queryPreProcessings(int) "/>
+        <method signature="public static boolean isEffectTypeAvailable(java.util.UUID) "/>
+        <method signature="public int setParameter(byte[], byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int, int) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int, short) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int, byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int[], int[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int[], short[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int setParameter(int[], byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(byte[], byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int, byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int, int[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int, short[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int[], int[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int[], short[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int getParameter(int[], byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public int command(int, byte[], byte[]) throws java.lang.IllegalStateException"/>
+        <method signature="public void setParameterListener(android.media.audiofx.AudioEffect.OnParameterChangeListener) "/>
+        <method signature="public void checkState(java.lang.String) throws java.lang.IllegalStateException"/>
+        <method signature="public void checkStatus(int) "/>
+        <method signature="public static boolean isError(int) "/>
+        <method signature="public int byteArrayToInt(byte[]) "/>
+        <method signature="public int byteArrayToInt(byte[], int) "/>
+        <method signature="public byte[] intToByteArray(int) "/>
+        <method signature="public short byteArrayToShort(byte[]) "/>
+        <method signature="public short byteArrayToShort(byte[], int) "/>
+        <method signature="public byte[] shortToByteArray(short) "/>
+        <method signature="public transient byte[] concatArrays(byte[][]) "/>
+    </class>
+    <class name="java.nio.charset.Charset">
+        <method signature="public static java.nio.charset.Charset forNameUEE(java.lang.String) throws java.io.UnsupportedEncodingException"/>
+    </class>
+    <class name="android.support.v4.content.ModernAsyncTask">
+        <method signature="public static void init() "/>
+        <method signature="public static void setDefaultExecutor(java.util.concurrent.Executor) "/>
+    </class>
+    <class name="android.text.method.MetaKeyKeyListener">
+        <method signature="public static void startSelecting(android.view.View, android.text.Spannable) "/>
+        <method signature="public static void stopSelecting(android.view.View, android.text.Spannable) "/>
+    </class>
+    <class name="android.app.Dialog">
+        <method signature="public boolean takeCancelAndDismissListeners(java.lang.String, android.content.DialogInterface.OnCancelListener, android.content.DialogInterface.OnDismissListener) "/>
+    </class>
+    <class name="android.view.animation.Animation">
+        <method signature="public void detach() "/>
+        <method signature="public void setListenerHandler(android.os.Handler) "/>
+        <method signature="public void getInvalidateRegion(int, int, int, int, android.graphics.RectF, android.view.animation.Transformation) "/>
+        <method signature="public void initializeInvalidateRegion(int, int, int, int) "/>
+        <method signature="public boolean hasAlpha() "/>
+    </class>
+    <class name="android.widget.Filter">
+        <method signature="public void setDelayer(android.widget.Filter.Delayer) "/>
+    </class>
+    <class name="android.widget.MediaController">
+        <method signature="protected android.view.View makeControllerView() "/>
+    </class>
+    <class name="android.text.BoringLayout">
+        <method signature="public static android.text.BoringLayout.Metrics isBoring(java.lang.CharSequence, android.text.TextPaint, android.text.TextDirectionHeuristic) "/>
+        <method signature="public static android.text.BoringLayout.Metrics isBoring(java.lang.CharSequence, android.text.TextPaint, android.text.TextDirectionHeuristic, android.text.BoringLayout.Metrics) "/>
+    </class>
+    <class name="android.view.accessibility.AccessibilityNodeInfo">
+        <method signature="public static int getAccessibilityViewId(long) "/>
+        <method signature="public static int getVirtualDescendantId(long) "/>
+        <method signature="public static long makeNodeId(int, int) "/>
+        <method signature="public android.util.SparseLongArray getChildNodeIds() "/>
+        <method signature="public long getParentNodeId() "/>
+        <method signature="public void setConnectionId(int) "/>
+        <method signature="public long getSourceNodeId() "/>
+        <method signature="public void setSealed(boolean) "/>
+        <method signature="public boolean isSealed() "/>
+        <method signature="protected void enforceSealed() "/>
+        <method signature="protected void enforceNotSealed() "/>
+    </class>
+    <class name="android.webkit.WebIconDatabaseClassic">
+        <method signature="public void bulkRequestIconForPageUrl(android.content.ContentResolver, java.lang.String, android.webkit.WebIconDatabase.IconListener) "/>
+    </class>
+    <class name="android.text.style.SuggestionSpan">
+        <method signature="public java.lang.String getNotificationTargetClassName() "/>
+        <method signature="public int getUnderlineColor() "/>
+    </class>
+    <class name="android.util.TimeUtils">
+        <method signature="public static ArrayList&lt;java.util.TimeZone&gt; getTimeZonesWithUniqueOffsets(java.lang.String) "/>
+        <method signature="public static ArrayList&lt;java.util.TimeZone&gt; getTimeZones(java.lang.String) "/>
+        <method signature="public static void formatDuration(long, java.lang.StringBuilder) "/>
+        <method signature="public static void formatDuration(long, java.io.PrintWriter, int) "/>
+        <method signature="public static void formatDuration(long, java.io.PrintWriter) "/>
+        <method signature="public static void formatDuration(long, long, java.io.PrintWriter) "/>
+        <method signature="public static java.lang.String logTimeOfDay(long) "/>
+    </class>
+    <class name="android.view.GLES20Canvas">
+        <method signature="public static int getStencilSize() "/>
+        <method signature="public static void flushCaches(int) "/>
+        <method signature="public static void terminateCaches() "/>
+        <method signature="public static void initCaches() "/>
+    </class>
+    <class name="android.app.ApplicationPackageManager">
+        <method signature="public android.content.pm.UserInfo createUser(java.lang.String, int) "/>
+        <method signature="public List&lt;android.content.pm.UserInfo&gt; getUsers() "/>
+        <method signature="public android.content.pm.UserInfo getUser(int) "/>
+        <method signature="public boolean removeUser(int) "/>
+        <method signature="public void updateUserName(int, java.lang.String) "/>
+        <method signature="public void updateUserFlags(int, int) "/>
+        <method signature="public android.content.pm.VerifierDeviceIdentity getVerifierDeviceIdentity() "/>
+    </class>
+    <class name="java.util.Arrays">
+        <method signature="public static void checkOffsetAndCount(int, int, int) "/>
+        <method signature="public static void checkStartAndEnd(int, int, int) "/>
+    </class>
+    <class name="android.inputmethodservice.ExtractEditText">
+        <method signature="protected void viewClicked(android.view.inputmethod.InputMethodManager) "/>
+        <method signature="protected void deleteText_internal(int, int) "/>
+        <method signature="protected void replaceText_internal(int, int, java.lang.CharSequence) "/>
+        <method signature="protected void setSpan_internal(java.lang.Object, int, int, int) "/>
+        <method signature="protected void setCursorPosition_internal(int, int) "/>
+    </class>
+    <class name="android.view.animation.AlphaAnimation">
+        <method signature="public boolean hasAlpha() "/>
+    </class>
+    <class name="android.graphics.Rect">
+        <method signature="public java.lang.String toShortString(java.lang.StringBuilder) "/>
+        <method signature="public void printShortString(java.io.PrintWriter) "/>
+        <method signature="public void scale(float) "/>
+    </class>
+    <class name="android.webkit.WebViewClient">
+        <method signature="public void onProceededAfterSslError(android.webkit.WebView, android.net.http.SslError) "/>
+        <method signature="public void onReceivedClientCertRequest(android.webkit.WebView, android.webkit.ClientCertRequestHandler, java.lang.String) "/>
+    </class>
+    <class name="android.util.Log">
+        <method signature="public static android.util.Log.TerribleFailureHandler setWtfHandler(android.util.Log.TerribleFailureHandler) "/>
+        <method signature="public static native int println_native(int, int, java.lang.String, java.lang.String) "/>
+    </class>
+    <class name="android.app.Notification.Builder">
+        <method signature="public android.app.Notification.Builder addKind(java.lang.String) "/>
+        <method signature="public android.app.Notification.Builder setExtras(android.os.Bundle) "/>
+    </class>
+    <class name="android.net.TrafficStats">
+        <method signature="public static void setThreadStatsUid(int) "/>
+        <method signature="public static void clearThreadStatsUid() "/>
+        <method signature="public static void startDataProfiling(android.content.Context) "/>
+        <method signature="public static android.net.NetworkStats stopDataProfiling(android.content.Context) "/>
+        <method signature="public static void closeQuietly(INetworkStatsSession) "/>
+        <method signature="public static long getTxPackets(java.lang.String) "/>
+        <method signature="public static long getRxPackets(java.lang.String) "/>
+        <method signature="public static long getTxBytes(java.lang.String) "/>
+        <method signature="public static long getRxBytes(java.lang.String) "/>
+    </class>
+    <class name="android.view.ViewDebug">
+        <method signature="public static long getViewInstanceCount() "/>
+        <method signature="public static long getViewRootImplCount() "/>
+    </class>
+    <class name="android.media.MediaRouter">
+        <method signature="public android.media.MediaRouter.RouteInfo getSystemAudioRoute() "/>
+        <method signature="public android.media.MediaRouter.RouteCategory getSystemAudioCategory() "/>
+        <method signature="public void selectRouteInt(int, android.media.MediaRouter.RouteInfo) "/>
+        <method signature="public void addRouteInt(android.media.MediaRouter.RouteInfo) "/>
+        <method signature="public void removeRouteInt(android.media.MediaRouter.RouteInfo) "/>
+    </class>
+    <class name="android.graphics.Bitmap">
+        <method signature="public static void setDefaultDensity(int) "/>
+        <method signature="public void setNinePatchChunk(byte[]) "/>
+        <method signature="public void setLayoutBounds(int[]) "/>
+        <method signature="public int[] getLayoutBounds() "/>
+        <method signature="public static int scaleFromDensity(int, int, int) "/>
+    </class>
+    <class name="android.view.animation.Transformation">
+        <method signature="public void postCompose(android.view.animation.Transformation) "/>
+        <method signature="public void toShortString(java.lang.StringBuilder) "/>
+        <method signature="public void printShortString(java.io.PrintWriter) "/>
+    </class>
+    <class name="android.view.accessibility.AccessibilityEvent">
+        <method signature="public void setSealed(boolean) "/>
+        <method signature="protected void clear() "/>
+    </class>
+    <class name="android.app.admin.DevicePolicyManager">
+        <method signature="public static android.app.admin.DevicePolicyManager create(android.content.Context, android.os.Handler) "/>
+        <method signature="public boolean packageHasActiveAdmins(java.lang.String) "/>
+        <method signature="public android.content.ComponentName setGlobalProxy(android.content.ComponentName, java.net.Proxy, List&lt;java.lang.String&gt;) "/>
+        <method signature="public android.content.ComponentName getGlobalProxyAdmin() "/>
+        <method signature="public void setActiveAdmin(android.content.ComponentName, boolean) "/>
+        <method signature="public android.app.admin.DeviceAdminInfo getAdminInfo(android.content.ComponentName) "/>
+        <method signature="public void getRemoveWarning(android.content.ComponentName, android.os.RemoteCallback) "/>
+        <method signature="public void setActivePasswordState(int, int, int, int, int, int, int, int) "/>
+        <method signature="public void reportFailedPasswordAttempt() "/>
+        <method signature="public void reportSuccessfulPasswordAttempt() "/>
+    </class>
+    <class name="android.telephony.ServiceState">
+        <method signature="public static android.telephony.ServiceState newFromBundle(android.os.Bundle) "/>
+        <method signature="public boolean isEmergencyOnly() "/>
+        <method signature="public int getCdmaRoamingIndicator() "/>
+        <method signature="public int getCdmaDefaultRoamingIndicator() "/>
+        <method signature="public int getCdmaEriIconIndex() "/>
+        <method signature="public int getCdmaEriIconMode() "/>
+        <method signature="public static java.lang.String rilRadioTechnologyToString(int) "/>
+        <method signature="public void setEmergencyOnly(boolean) "/>
+        <method signature="public void setCdmaRoamingIndicator(int) "/>
+        <method signature="public void setCdmaDefaultRoamingIndicator(int) "/>
+        <method signature="public void setCdmaEriIconIndex(int) "/>
+        <method signature="public void setCdmaEriIconMode(int) "/>
+        <method signature="public void setOperatorAlphaLong(java.lang.String) "/>
+        <method signature="public void fillInNotifierBundle(android.os.Bundle) "/>
+        <method signature="public void setRadioTechnology(int) "/>
+        <method signature="public void setCssIndicator(int) "/>
+        <method signature="public void setSystemAndNetworkId(int, int) "/>
+        <method signature="public int getRilRadioTechnology() "/>
+        <method signature="public int getRadioTechnology() "/>
+        <method signature="public int getNetworkType() "/>
+        <method signature="public int getCssIndicator() "/>
+        <method signature="public int getNetworkId() "/>
+        <method signature="public int getSystemId() "/>
+        <method signature="public static boolean isGsm(int) "/>
+        <method signature="public static boolean isCdma(int) "/>
+    </class>
+    <class name="android.net.DhcpInfo">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.text.SpannableStringBuilder">
+        <method signature="public java.lang.String substring(int, int) "/>
+        <method signature="public void drawText(android.graphics.Canvas, int, int, float, float, android.graphics.Paint) "/>
+        <method signature="public void drawTextRun(android.graphics.Canvas, int, int, int, int, float, float, int, android.graphics.Paint) "/>
+        <method signature="public float measureText(int, int, android.graphics.Paint) "/>
+        <method signature="public int getTextWidths(int, int, float[], android.graphics.Paint) "/>
+        <method signature="public float getTextRunAdvances(int, int, int, int, int, float[], int, android.graphics.Paint) "/>
+        <method signature="public float getTextRunAdvances(int, int, int, int, int, float[], int, android.graphics.Paint, int) "/>
+    </class>
+    <class name="android.gesture.OrientedBoundingBox">
+        <method signature="public android.graphics.Path toPath() "/>
+    </class>
+    <class name="android.widget.Spinner">
+        <method signature="public void setOnItemClickListenerInt(OnItemClickListener) "/>
+    </class>
+    <class name="android.app.ContextImpl">
+        <method signature="public void sendBroadcast(android.content.Intent, int) "/>
+        <method signature="public boolean bindService(android.content.Intent, android.content.ServiceConnection, int, int) "/>
+    </class>
+    <class name="android.app.backup.BackupManager">
+        <method signature="public android.app.backup.RestoreSession beginRestoreSession() "/>
+    </class>
+    <class name="android.view.ViewGroup.LayoutParams">
+        <method signature="public void onResolveLayoutDirection(int) "/>
+        <method signature="public java.lang.String debug(java.lang.String) "/>
+        <method signature="public void onDebugDraw(android.view.View, android.graphics.Canvas) "/>
+        <method signature="protected static java.lang.String sizeToString(int) "/>
+    </class>
+    <class name="android.media.ThumbnailUtils">
+        <method signature="public static android.graphics.Bitmap createImageThumbnail(java.lang.String, int) "/>
+    </class>
+    <class name="android.content.pm.PackageParser">
+        <method signature="public static void setCompatibilityModeEnabled(boolean) "/>
+    </class>
+    <class name="android.hardware.SystemSensorManager">
+        <method signature="protected List&lt;android.hardware.Sensor&gt; getFullSensorList() "/>
+        <method signature="protected boolean registerListenerImpl(android.hardware.SensorEventListener, android.hardware.Sensor, int, android.os.Handler) "/>
+        <method signature="protected void unregisterListenerImpl(android.hardware.SensorEventListener, android.hardware.Sensor) "/>
+    </class>
+    <class name="android.nfc.tech.MifareClassic">
+        <method signature="public boolean isEmulated() "/>
+    </class>
+    <class name="android.app.backup.RestoreObserver">
+        <method signature="public void restoreSetsAvailable(android.app.backup.RestoreSet[]) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothAdapter">
+        <method signature="public android.os.ParcelUuid[] getUuids() "/>
+        <method signature="public boolean setScanMode(int, int) "/>
+        <method signature="public boolean setScanMode(int) "/>
+        <method signature="public int getDiscoverableTimeout() "/>
+        <method signature="public void setDiscoverableTimeout(int) "/>
+        <method signature="public int getConnectionState() "/>
+        <method signature="public android.bluetooth.BluetoothServerSocket listenUsingRfcommOn(int) throws java.io.IOException"/>
+        <method signature="public android.bluetooth.BluetoothServerSocket listenUsingEncryptedRfcommWithServiceRecord(java.lang.String, java.util.UUID) throws java.io.IOException"/>
+        <method signature="public android.bluetooth.BluetoothServerSocket listenUsingInsecureRfcommOn(int) throws java.io.IOException"/>
+        <method signature="public android.bluetooth.BluetoothServerSocket listenUsingEncryptedRfcommOn(int) throws java.io.IOException"/>
+        <method signature="public static android.bluetooth.BluetoothServerSocket listenUsingScoOn() throws java.io.IOException"/>
+        <method signature="public Pair&lt;byte[],byte[]&gt; readOutOfBandData() "/>
+        <method signature="public boolean enableNoAutoConnect() "/>
+        <method signature="public boolean changeApplicationBluetoothState(boolean, android.bluetooth.BluetoothAdapter.BluetoothStateChangeCallback) "/>
+    </class>
+    <class name="android.os.PowerManager">
+        <method signature="public void setBacklightBrightness(int) "/>
+        <method signature="public int getSupportedWakeLockFlags() "/>
+    </class>
+    <class name="android.webkit.UrlInterceptRegistry">
+        <method signature="public static synchronized void setUrlInterceptDisabled(boolean) "/>
+        <method signature="public static synchronized boolean urlInterceptDisabled() "/>
+        <method signature="public static synchronized boolean registerHandler(android.webkit.UrlInterceptHandler) "/>
+        <method signature="public static synchronized boolean unregisterHandler(android.webkit.UrlInterceptHandler) "/>
+        <method signature="public static synchronized android.webkit.CacheManager.CacheResult getSurrogate(java.lang.String, Map&lt;java.lang.String,java.lang.String&gt;) "/>
+        <method signature="public static synchronized android.webkit.PluginData getPluginData(java.lang.String, Map&lt;java.lang.String,java.lang.String&gt;) "/>
+    </class>
+    <class name="android.widget.Scroller">
+        <method signature="public boolean isScrollingInDirection(float, float) "/>
+    </class>
+    <class name="android.net.wifi.WpsResult">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.provider.CallLog.Calls">
+        <method signature="public static android.net.Uri addCall(com.android.internal.telephony.CallerInfo, android.content.Context, java.lang.String, int, int, long, int) "/>
+    </class>
+    <class name="android.view.ViewGroup.MarginLayoutParams">
+        <method signature="public void setMarginsRelative(int, int, int, int) "/>
+        <method signature="public int getMarginStart() "/>
+        <method signature="public int getMarginEnd() "/>
+        <method signature="public boolean isMarginRelative() "/>
+        <method signature="public void onResolveLayoutDirection(int) "/>
+        <method signature="public void onDebugDraw(android.view.View, android.graphics.Canvas) "/>
+    </class>
+    <class name="android.view.ViewTreeObserver">
+        <method signature="public void addOnComputeInternalInsetsListener(android.view.ViewTreeObserver.OnComputeInternalInsetsListener) "/>
+        <method signature="public void removeOnComputeInternalInsetsListener(android.view.ViewTreeObserver.OnComputeInternalInsetsListener) "/>
+    </class>
+    <class name="android.security.KeyChain">
+        <method signature="public static android.security.KeyChain.KeyChainConnection bind(android.content.Context) throws java.lang.InterruptedException"/>
+    </class>
+    <class name="android.bluetooth.BluetoothA2dp">
+        <method signature="public boolean connect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean disconnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean setPriority(android.bluetooth.BluetoothDevice, int) "/>
+        <method signature="public int getPriority(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean suspendSink(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean resumeSink(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean shouldSendVolumeKeys(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean allowIncomingConnect(android.bluetooth.BluetoothDevice, boolean) "/>
+        <method signature="public static java.lang.String stateToString(int) "/>
+    </class>
+    <class name="android.test.mock.MockContext">
+        <method signature="public java.io.File getSharedPrefsFile(java.lang.String) "/>
+        <method signature="public void sendBroadcast(android.content.Intent, int) "/>
+        <method signature="public boolean bindService(android.content.Intent, android.content.ServiceConnection, int, int) "/>
+    </class>
+    <class name="com.android.internal.widget.SizeAdaptiveLayout">
+        <method signature="public android.animation.Animator getTransitionAnimation() "/>
+        <method signature="public android.view.View getModestyPanel() "/>
+    </class>
+    <class name="android.content.ClipDescription">
+        <method signature="public void validate() "/>
+        <method signature="public boolean toShortString(java.lang.StringBuilder) "/>
+    </class>
+    <class name="java.net.Socket">
+        <method signature="public java.io.FileDescriptor getFileDescriptor$() "/>
+    </class>
+    <class name="com.android.internal.os.BinderInternal">
+        <method signature="public static final native void disableBackgroundScheduling(boolean) "/>
+    </class>
+    <class name="java.net.InetAddress">
+        <method signature="public static void clearDnsCache() "/>
+        <method signature="public static boolean isNumeric(java.lang.String) "/>
+        <method signature="public static java.net.InetAddress parseNumericAddress(java.lang.String) "/>
+        <method signature="public static java.net.InetAddress getLoopbackAddress() "/>
+    </class>
+    <class name="android.database.DatabaseUtils">
+        <method signature="public static int getTypeOfObject(java.lang.Object) "/>
+        <method signature="public static void cursorFillWindow(android.database.Cursor, int, android.database.CursorWindow) "/>
+        <method signature="public static int cursorPickFillWindowStartPosition(int, int) "/>
+        <method signature="public static int findRowIdColumnIndex(java.lang.String[]) "/>
+    </class>
+    <class name="android.view.MotionEvent">
+        <method signature="public android.view.MotionEvent copy() "/>
+        <method signature="public final void scale(float) "/>
+        <method signature="public final boolean isTouchEvent() "/>
+        <method signature="public final boolean isTainted() "/>
+        <method signature="public final void setTainted(boolean) "/>
+        <method signature="public final void setDownTime(long) "/>
+        <method signature="public final long getEventTimeNano() "/>
+        <method signature="public final long getHistoricalEventTimeNano(int) "/>
+        <method signature="public final boolean addBatch(android.view.MotionEvent) "/>
+        <method signature="public final boolean isWithinBoundsNoHistory(float, float, float, float) "/>
+        <method signature="public final android.view.MotionEvent clampNoHistory(float, float, float, float) "/>
+        <method signature="public final int getPointerIdBits() "/>
+        <method signature="public final android.view.MotionEvent split(int) "/>
+        <method signature="public static java.lang.String actionToString(int) "/>
+        <method signature="public static java.lang.String buttonStateToString(int) "/>
+        <method signature="public static java.lang.String toolTypeToString(int) "/>
+        <method signature="public static android.view.MotionEvent createFromParcelBody(android.os.Parcel) "/>
+    </class>
+    <class name="android.renderscript.AllocationAdapter">
+        <method signature="public void subData(int, android.renderscript.FieldPacker) "/>
+        <method signature="public void subElementData(int, int, android.renderscript.FieldPacker) "/>
+        <method signature="public void subData1D(int, int, int[]) "/>
+        <method signature="public void subData1D(int, int, short[]) "/>
+        <method signature="public void subData1D(int, int, byte[]) "/>
+        <method signature="public void subData1D(int, int, float[]) "/>
+        <method signature="public void subData2D(int, int, int, int, int[]) "/>
+        <method signature="public void subData2D(int, int, int, int, float[]) "/>
+        <method signature="public void readData(int[]) "/>
+        <method signature="public void readData(float[]) "/>
+    </class>
+    <class name="java.util.ServiceLoader">
+        <method signature="public static S loadFromSystemProperty(Class&lt;S&gt;) "/>
+    </class>
+    <class name="android.content.Context">
+        <method signature="public int getThemeResId() "/>
+        <method signature="public abstract java.io.File getSharedPrefsFile(java.lang.String) "/>
+        <method signature="public void sendBroadcast(android.content.Intent, int) "/>
+        <method signature="public boolean bindService(android.content.Intent, android.content.ServiceConnection, int, int) "/>
+    </class>
+    <class name="android.graphics.drawable.DrawableContainer">
+        <method signature="public android.graphics.Insets getLayoutInsets() "/>
+    </class>
+    <class name="android.preference.PreferenceManager">
+        <method signature="public android.preference.PreferenceScreen inflateFromResource(android.content.Context, int, android.preference.PreferenceScreen) "/>
+    </class>
+    <class name="android.provider.ContactsContract.CommonDataKinds.Phone">
+        <method signature="public static final java.lang.CharSequence getDisplayLabel(android.content.Context, int, java.lang.CharSequence, java.lang.CharSequence[]) "/>
+        <method signature="public static final java.lang.CharSequence getDisplayLabel(android.content.Context, int, java.lang.CharSequence) "/>
+    </class>
+    <class name="android.view.WindowManagerImpl">
+        <method signature="public void startTrimMemory(int) "/>
+        <method signature="public void endTrimMemory() "/>
+        <method signature="public void trimLocalMemory() "/>
+        <method signature="public void dumpGfxInfo(java.io.FileDescriptor) "/>
+    </class>
+    <class name="android.nfc.tech.TagTechnology">
+        <method signature="public abstract void reconnect() throws java.io.IOException"/>
+    </class>
+    <class name="android.hardware.Camera.Parameters">
+        <method signature="public void dump() "/>
+    </class>
+    <class name="android.view.InputEvent">
+        <method signature="public abstract void setSource(int) "/>
+        <method signature="public abstract android.view.InputEvent copy() "/>
+        <method signature="public void recycle() "/>
+        <method signature="public void recycleIfNeededAfterDispatch() "/>
+        <method signature="protected void prepareForReuse() "/>
+        <method signature="public abstract boolean isTainted() "/>
+        <method signature="public abstract void setTainted(boolean) "/>
+        <method signature="public abstract long getEventTimeNano() "/>
+        <method signature="public int getSequenceNumber() "/>
+    </class>
+    <class name="android.graphics.Region">
+        <method signature="public void scale(float) "/>
+        <method signature="public native void scale(float, android.graphics.Region) "/>
+    </class>
+    <class name="android.app.AlertDialog.Builder">
+        <method signature="public android.app.AlertDialog.Builder setView(android.view.View, int, int, int, int) "/>
+        <method signature="public android.app.AlertDialog.Builder setRecycleOnMeasureEnabled(boolean) "/>
+    </class>
+    <class name="android.app.Activity">
+        <method signature="public final android.database.Cursor managedQuery(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String) "/>
+        <method signature="public void setPersistent(boolean) "/>
+        <method signature="public boolean isImmersive() "/>
+        <method signature="public void setImmersive(boolean) "/>
+        <method signature="public final android.os.IBinder getActivityToken() "/>
+        <method signature="public final boolean isResumed() "/>
+    </class>
+    <class name="android.widget.ActivityChooserView">
+        <method signature="public void setProvider(android.view.ActionProvider) "/>
+    </class>
+    <class name="android.net.LinkCapabilities">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="java.net.SocketImpl">
+        <method signature="public java.io.FileDescriptor getFD$() "/>
+    </class>
+    <class name="android.content.res.Configuration">
+        <method signature="public void makeDefault() "/>
+        <method signature="public boolean isOtherSeqNewer(android.content.res.Configuration) "/>
+    </class>
+    <class name="android.telephony.SmsManager">
+        <method signature="public boolean copyMessageToIcc(byte[], byte[], int) "/>
+        <method signature="public boolean deleteMessageFromIcc(int) "/>
+        <method signature="public boolean updateMessageOnIcc(int, int, byte[]) "/>
+        <method signature="public static ArrayList&lt;android.telephony.SmsMessage&gt; getAllMessagesFromIcc() "/>
+        <method signature="public boolean enableCellBroadcast(int) "/>
+        <method signature="public boolean disableCellBroadcast(int) "/>
+        <method signature="public boolean enableCellBroadcastRange(int, int) "/>
+        <method signature="public boolean disableCellBroadcastRange(int, int) "/>
+    </class>
+    <class name="android.view.textservice.SpellCheckerSubtype">
+        <method signature="public static java.util.Locale constructLocaleFromString(java.lang.String) "/>
+        <method signature="public static List&lt;android.view.textservice.SpellCheckerSubtype&gt; sort(android.content.Context, int, android.view.textservice.SpellCheckerInfo, List&lt;android.view.textservice.SpellCheckerSubtype&gt;) "/>
+    </class>
+    <class name="android.text.method.ArrowKeyMovementMethod">
+        <method signature="protected boolean leftWord(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean rightWord(android.widget.TextView, android.text.Spannable) "/>
+    </class>
+    <class name="android.net.ThrottleManager">
+        <method signature="public long getResetTime(java.lang.String) "/>
+        <method signature="public long getPeriodStartTime(java.lang.String) "/>
+        <method signature="public long getByteCount(java.lang.String, int, int, int) "/>
+        <method signature="public long getCliffThreshold(java.lang.String, int) "/>
+        <method signature="public int getCliffLevel(java.lang.String, int) "/>
+        <method signature="public java.lang.String getHelpUri() "/>
+    </class>
+    <class name="android.inputmethodservice.Keyboard">
+        <method signature="public int[] getShiftKeyIndices() "/>
+    </class>
+    <class name="android.hardware.SerialPort">
+        <method signature="public void open(android.os.ParcelFileDescriptor, int) throws java.io.IOException"/>
+    </class>
+    <class name="android.graphics.Color">
+        <method signature="public static float hue(int) "/>
+        <method signature="public static float saturation(int) "/>
+        <method signature="public static float brightness(int) "/>
+        <method signature="public static int HSBtoColor(float[]) "/>
+        <method signature="public static int HSBtoColor(float, float, float) "/>
+    </class>
+    <class name="android.opengl.GLUtils">
+        <method signature="public static void enableTracing() "/>
+    </class>
+    <class name="android.graphics.Matrix">
+        <method signature="public void toShortString(java.lang.StringBuilder) "/>
+        <method signature="public void printShortString(java.io.PrintWriter) "/>
+    </class>
+    <class name="android.webkit.Plugin.DefaultClickHandler">
+        <method signature="public void onClick(android.content.DialogInterface, int) "/>
+    </class>
+    <class name="com.android.layoutlib.bridge.android.BridgeContentResolver">
+        <method signature="public void unstableProviderDied(android.content.IContentProvider) "/>
+    </class>
+    <class name="android.content.pm.ActivityInfo">
+        <method signature="public static int activityInfoConfigToNative(int) "/>
+        <method signature="public int getRealConfigChanged() "/>
+    </class>
+    <class name="java.util.logging.Logger">
+        <method signature="public static java.util.logging.Logger getGlobal() "/>
+    </class>
+    <class name="android.webkit.HttpAuthHandler">
+        <method signature="public boolean suppressDialog() "/>
+    </class>
+    <class name="android.widget.ProgressBar">
+        <method signature="public int getResolvedLayoutDirection(android.graphics.drawable.Drawable) "/>
+    </class>
+    <class name="android.widget.SearchView">
+        <method signature="public void setAppSearchData(android.os.Bundle) "/>
+        <method signature="public boolean requestFocus(int, android.graphics.Rect) "/>
+        <method signature="public void clearFocus() "/>
+    </class>
+    <class name="android.media.Ringtone">
+        <method signature="public void setUri(android.net.Uri) "/>
+        <method signature="public android.net.Uri getUri() "/>
+    </class>
+    <class name="android.provider.Contacts.ContactMethods">
+        <method signature="public static java.lang.String lookupProviderNameFromId(int) "/>
+    </class>
+    <class name="com.android.vcard.VCardEntry">
+        <method signature="public final List&lt;com.android.vcard.VCardEntry&gt; getChildlen() "/>
+    </class>
+    <class name="android.net.wifi.p2p.nsd.WifiP2pServiceResponse.Status">
+        <method signature="public static java.lang.String toString(int) "/>
+    </class>
+    <class name="android.view.View">
+        <method signature="protected boolean performButtonActionOnTouchDown(android.view.MotionEvent) "/>
+        <method signature="public boolean showContextMenu(float, float, int) "/>
+        <method signature="public int getActualAndReportedWindowLeftDelta() "/>
+        <method signature="public int getActualAndReportedWindowTopDelta() "/>
+        <method signature="protected boolean isVisibleToUser() "/>
+        <method signature="protected boolean isVisibleToUser(android.graphics.Rect) "/>
+        <method signature="public int getAccessibilityViewId() "/>
+        <method signature="public int getAccessibilityWindowId() "/>
+        <method signature="protected void onFocusLost() "/>
+        <method signature="public boolean fitsSystemWindows() "/>
+        <method signature="public void makeOptionalFitsSystemWindows() "/>
+        <method signature="public int getLayoutDirection() "/>
+        <method signature="public void setLayoutDirection(int) "/>
+        <method signature="public int getResolvedLayoutDirection() "/>
+        <method signature="public boolean isLayoutRtl() "/>
+        <method signature="public boolean requestAccessibilityFocus() "/>
+        <method signature="public void clearAccessibilityFocus() "/>
+        <method signature="public boolean isImportantForAccessibility() "/>
+        <method signature="public int getAccessibilityFocusable() "/>
+        <method signature="public void setAccessibilityFocusable(int) "/>
+        <method signature="public boolean isAccessibilityFocusable() "/>
+        <method signature="public boolean includeForAccessibility() "/>
+        <method signature="public boolean isActionableForAccessibility() "/>
+        <method signature="public void notifyAccessibilityStateChanged() "/>
+        <method signature="public void resetAccessibilityStateChanged() "/>
+        <method signature="public java.lang.CharSequence getIterableTextForAccessibility() "/>
+        <method signature="public int getAccessibilityCursorPosition() "/>
+        <method signature="public void setAccessibilityCursorPosition(int) "/>
+        <method signature="public android.view.AccessibilityIterators.TextSegmentIterator getIteratorForGranularity(int) "/>
+        <method signature="public void dispatchStartTemporaryDetach() "/>
+        <method signature="public void dispatchFinishTemporaryDetach() "/>
+        <method signature="protected boolean hasHoveredChild() "/>
+        <method signature="public final boolean dispatchPointerEvent(android.view.MotionEvent) "/>
+        <method signature="public boolean isInScrollingContainer() "/>
+        <method signature="protected void invalidateParentCaches() "/>
+        <method signature="protected void invalidateParentIfNeeded() "/>
+        <method signature="protected void computeOpaqueFlags() "/>
+        <method signature="protected boolean hasOpaqueScrollbars() "/>
+        <method signature="public android.view.ViewRootImpl getViewRootImpl() "/>
+        <method signature="protected void recomputePadding() "/>
+        <method signature="protected boolean isVerticalScrollBarHidden() "/>
+        <method signature="protected void onDrawHorizontalScrollBar(android.graphics.Canvas, android.graphics.drawable.Drawable, int, int, int, int) "/>
+        <method signature="protected void onDrawVerticalScrollBar(android.graphics.Canvas, android.graphics.drawable.Drawable, int, int, int, int) "/>
+        <method signature="public void resolveLayoutDirection() "/>
+        <method signature="public void onResolvedLayoutDirectionChanged() "/>
+        <method signature="public void resolvePadding() "/>
+        <method signature="public void onPaddingChanged(int) "/>
+        <method signature="public boolean canResolveLayoutDirection() "/>
+        <method signature="public void resetResolvedLayoutDirection() "/>
+        <method signature="public void onResolvedLayoutDirectionReset() "/>
+        <method signature="protected static boolean isLayoutDirectionRtl(java.util.Locale) "/>
+        <method signature="protected void destroyHardwareResources() "/>
+        <method signature="public void outputDirtyFlags(java.lang.String, boolean, int) "/>
+        <method signature="protected void dispatchGetDisplayList() "/>
+        <method signature="public boolean canHaveDisplayList() "/>
+        <method signature="public android.view.HardwareRenderer getHardwareRenderer() "/>
+        <method signature="public android.view.DisplayList getDisplayList() "/>
+        <method signature="protected int getFadeTop(boolean) "/>
+        <method signature="protected int getFadeHeight(boolean) "/>
+        <method signature="protected boolean setFrame(int, int, int, int) "/>
+        <method signature="public int getResolvedLayoutDirection(android.graphics.drawable.Drawable) "/>
+        <method signature="public void setPaddingRelative(int, int, int, int) "/>
+        <method signature="public int getPaddingStart() "/>
+        <method signature="public int getPaddingEnd() "/>
+        <method signature="public boolean isPaddingRelative() "/>
+        <method signature="public android.graphics.Insets getOpticalInsets() "/>
+        <method signature="public void setLayoutInsets(android.graphics.Insets) "/>
+        <method signature="protected android.view.View findViewTraversal(int) "/>
+        <method signature="protected android.view.View findViewWithTagTraversal(java.lang.Object) "/>
+        <method signature="protected android.view.View findViewByPredicateTraversal(Predicate&lt;android.view.View&gt;, android.view.View) "/>
+        <method signature="public final android.view.View findViewByPredicate(Predicate&lt;android.view.View&gt;) "/>
+        <method signature="public final android.view.View findViewByPredicateInsideOut(android.view.View, Predicate&lt;android.view.View&gt;) "/>
+        <method signature="public void setIsRootNamespace(boolean) "/>
+        <method signature="public boolean isRootNamespace() "/>
+        <method signature="public void setTagInternal(int, java.lang.Object) "/>
+        <method signature="public void debug() "/>
+        <method signature="protected void debug(int) "/>
+        <method signature="protected static java.lang.String debugIndent(int) "/>
+        <method signature="public boolean gatherTransparentRegion(android.graphics.Region) "/>
+        <method signature="public void setDisabledSystemUiVisibility(int) "/>
+        <method signature="public void onCloseSystemDialogs(java.lang.String) "/>
+        <method signature="public void applyDrawableToTransparentRegion(android.graphics.drawable.Drawable, android.graphics.Region) "/>
+        <method signature="protected float getVerticalScrollFactor() "/>
+        <method signature="protected float getHorizontalScrollFactor() "/>
+        <method signature="public int getTextDirection() "/>
+        <method signature="public void setTextDirection(int) "/>
+        <method signature="public int getResolvedTextDirection() "/>
+        <method signature="public void resolveTextDirection() "/>
+        <method signature="public void onResolvedTextDirectionChanged() "/>
+        <method signature="public boolean canResolveTextDirection() "/>
+        <method signature="public void resetResolvedTextDirection() "/>
+        <method signature="public void onResolvedTextDirectionReset() "/>
+        <method signature="public int getTextAlignment() "/>
+        <method signature="public void setTextAlignment(int) "/>
+        <method signature="public int getResolvedTextAlignment() "/>
+        <method signature="public void resolveTextAlignment() "/>
+        <method signature="public boolean canResolveTextAlignment() "/>
+        <method signature="public void onResolvedTextAlignmentChanged() "/>
+        <method signature="public void resetResolvedTextAlignment() "/>
+        <method signature="public void onResolvedTextAlignmentReset() "/>
+        <method signature="public void hackTurnOffWindowResizeAnim(boolean) "/>
+    </class>
+    <class name="android.os.BatteryStats">
+        <method signature="public abstract long getScreenOnTime(long, int) "/>
+        <method signature="public abstract long getScreenBrightnessTime(int, long, int) "/>
+        <method signature="public abstract long getPhoneOnTime(long, int) "/>
+        <method signature="public abstract long getPhoneSignalStrengthTime(int, long, int) "/>
+        <method signature="public abstract long getPhoneSignalScanningTime(long, int) "/>
+        <method signature="public abstract int getPhoneSignalStrengthCount(int, int) "/>
+        <method signature="public abstract long getPhoneDataConnectionTime(int, long, int) "/>
+        <method signature="public abstract int getPhoneDataConnectionCount(int, int) "/>
+        <method signature="public abstract long getWifiOnTime(long, int) "/>
+        <method signature="public abstract long getGlobalWifiRunningTime(long, int) "/>
+        <method signature="public abstract long getBluetoothOnTime(long, int) "/>
+    </class>
+    <class name="android.view.Display">
+        <method signature="public int getMaximumSizeDimension() "/>
+        <method signature="public void getRealSize(android.graphics.Point) "/>
+        <method signature="public int getRawWidth() "/>
+        <method signature="public int getRawHeight() "/>
+        <method signature="public void getRealMetrics(android.util.DisplayMetrics) "/>
+        <method signature="public int getRawExternalWidth() "/>
+        <method signature="public int getRawExternalHeight() "/>
+        <method signature="public int getExternalRotation() "/>
+        <method signature="public void getMetricsWithSize(android.util.DisplayMetrics, int, int) "/>
+        <method signature="public static android.view.Display createCompatibleDisplay(int, android.view.CompatibilityInfoHolder) "/>
+    </class>
+    <class name="android.content.ContextWrapper">
+        <method signature="public int getThemeResId() "/>
+        <method signature="public java.io.File getSharedPrefsFile(java.lang.String) "/>
+        <method signature="public void sendBroadcast(android.content.Intent, int) "/>
+        <method signature="public boolean bindService(android.content.Intent, android.content.ServiceConnection, int, int) "/>
+    </class>
+    <class name="android.view.Gravity">
+        <method signature="public static void apply(int, int, int, android.graphics.Rect, android.graphics.Rect, int) "/>
+        <method signature="public static void apply(int, int, int, android.graphics.Rect, int, int, android.graphics.Rect, int) "/>
+        <method signature="public static void applyDisplay(int, android.graphics.Rect, android.graphics.Rect, int) "/>
+        <method signature="public static int getAbsoluteGravity(int, int) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothDevice">
+        <method signature="public java.lang.String getAlias() "/>
+        <method signature="public boolean setAlias(java.lang.String) "/>
+        <method signature="public java.lang.String getAliasName() "/>
+        <method signature="public boolean createBond() "/>
+        <method signature="public boolean createBondOutOfBand(byte[], byte[]) "/>
+        <method signature="public boolean setDeviceOutOfBandData(byte[], byte[]) "/>
+        <method signature="public boolean cancelBondProcess() "/>
+        <method signature="public boolean removeBond() "/>
+        <method signature="public boolean getTrustState() "/>
+        <method signature="public boolean setTrust(boolean) "/>
+        <method signature="public int getServiceChannel(android.os.ParcelUuid) "/>
+        <method signature="public boolean setPin(byte[]) "/>
+        <method signature="public boolean setPasskey(int) "/>
+        <method signature="public boolean setPairingConfirmation(boolean) "/>
+        <method signature="public boolean setRemoteOutOfBandData() "/>
+        <method signature="public boolean cancelPairingUserInput() "/>
+        <method signature="public boolean isBluetoothDock() "/>
+        <method signature="public android.bluetooth.BluetoothSocket createRfcommSocket(int) throws java.io.IOException"/>
+        <method signature="public android.bluetooth.BluetoothSocket createInsecureRfcommSocket(int) throws java.io.IOException"/>
+        <method signature="public android.bluetooth.BluetoothSocket createScoSocket() throws java.io.IOException"/>
+        <method signature="public static byte[] convertPinToBytes(java.lang.String) "/>
+    </class>
+    <class name="android.content.IntentSender">
+        <method signature="public IIntentSender getTarget() "/>
+    </class>
+    <class name="android.support.v4.util.TimeUtils">
+        <method signature="public static void formatDuration(long, java.lang.StringBuilder) "/>
+        <method signature="public static void formatDuration(long, java.io.PrintWriter, int) "/>
+        <method signature="public static void formatDuration(long, java.io.PrintWriter) "/>
+        <method signature="public static void formatDuration(long, long, java.io.PrintWriter) "/>
+    </class>
+    <class name="android.widget.ZoomButtonsController">
+        <method signature="public boolean onTouch(android.view.View, android.view.MotionEvent) "/>
+    </class>
+    <class name="android.view.inputmethod.InputMethodInfo">
+        <method signature="public boolean isAuxiliaryIme() "/>
+    </class>
+    <class name="android.os.Looper">
+        <method signature="public final int postSyncBarrier() "/>
+        <method signature="public final void removeSyncBarrier(int) "/>
+        <method signature="public android.os.MessageQueue getQueue() "/>
+    </class>
+    <class name="android.widget.ListView">
+        <method signature="protected boolean recycleOnMeasure() "/>
+        <method signature="protected android.view.View findViewByPredicateTraversal(Predicate&lt;android.view.View&gt;, android.view.View) "/>
+    </class>
+    <class name="android.provider.MediaStore.Files">
+        <method signature="public static android.net.Uri getMtpObjectsUri(java.lang.String) "/>
+        <method signature="public static final android.net.Uri getMtpObjectsUri(java.lang.String, long) "/>
+        <method signature="public static final android.net.Uri getMtpReferencesUri(java.lang.String, long) "/>
+    </class>
+    <class name="android.support.v4.content.AsyncTaskLoader">
+        <method signature="public void waitForLoader() "/>
+    </class>
+    <class name="android.text.GraphicsOperations">
+        <method signature="public abstract void drawTextRun(android.graphics.Canvas, int, int, int, int, float, float, int, android.graphics.Paint) "/>
+        <method signature="public abstract float getTextRunAdvances(int, int, int, int, int, float[], int, android.graphics.Paint) "/>
+        <method signature="public abstract float getTextRunAdvances(int, int, int, int, int, float[], int, android.graphics.Paint, int) "/>
+        <method signature="public abstract int getTextRunCursor(int, int, int, int, int, android.graphics.Paint) "/>
+    </class>
+    <class name="android.os.AsyncTask">
+        <method signature="public static void init() "/>
+        <method signature="public static void setDefaultExecutor(java.util.concurrent.Executor) "/>
+    </class>
+    <class name="android.gesture.GestureOverlayView">
+        <method signature="public android.graphics.Paint getGesturePaint() "/>
+    </class>
+    <class name="android.text.Layout">
+        <method signature="public void drawText(android.graphics.Canvas, int, int) "/>
+        <method signature="public void drawBackground(android.graphics.Canvas, android.graphics.Path, android.graphics.Paint, int, int, int) "/>
+        <method signature="public long getLineRangeForDraw(android.graphics.Canvas) "/>
+        <method signature="public final android.text.TextDirectionHeuristic getTextDirectionHeuristic() "/>
+        <method signature="public boolean isLevelBoundary(int) "/>
+    </class>
+    <class name="android.content.pm.ComponentInfo">
+        <method signature="protected android.graphics.drawable.Drawable loadDefaultIcon(android.content.pm.PackageManager) "/>
+        <method signature="protected android.graphics.drawable.Drawable loadDefaultLogo(android.content.pm.PackageManager) "/>
+        <method signature="protected android.content.pm.ApplicationInfo getApplicationInfo() "/>
+    </class>
+    <class name="android.telephony.CellInfo">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.text.TextUtils">
+        <method signature="public static java.lang.CharSequence join(Iterable&lt;java.lang.CharSequence&gt;) "/>
+        <method signature="public static java.lang.CharSequence ellipsize(java.lang.CharSequence, android.text.TextPaint, float, android.text.TextUtils.TruncateAt, boolean, android.text.TextUtils.EllipsizeCallback, android.text.TextDirectionHeuristic, java.lang.String) "/>
+        <method signature="public static java.lang.CharSequence commaEllipsize(java.lang.CharSequence, android.text.TextPaint, float, java.lang.String, java.lang.String, android.text.TextDirectionHeuristic) "/>
+        <method signature="public static boolean isPrintableAscii(char) "/>
+        <method signature="public static boolean isPrintableAsciiOnly(java.lang.CharSequence) "/>
+        <method signature="public static boolean delimitedStringContains(java.lang.String, char, java.lang.String) "/>
+        <method signature="public static T[] removeEmptySpans(T[], android.text.Spanned, Class&lt;T&gt;) "/>
+        <method signature="public static long packRangeInLong(int, int) "/>
+        <method signature="public static int unpackRangeStartFromLong(long) "/>
+        <method signature="public static int unpackRangeEndFromLong(long) "/>
+    </class>
+    <class name="android.webkit.JsResult">
+        <method signature="public final boolean getResult() "/>
+    </class>
+    <class name="java.lang.Byte">
+        <method signature="public static int compare(byte, byte) "/>
+        <method signature="public static java.lang.String toHexString(byte, boolean) "/>
+    </class>
+    <class name="android.graphics.Typeface">
+        <method signature="public static native void setGammaForText(float, float) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothHeadset">
+        <method signature="public boolean connect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean disconnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean setPriority(android.bluetooth.BluetoothDevice, int) "/>
+        <method signature="public int getPriority(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public int getBatteryUsageHint(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public static boolean isBluetoothVoiceDialingEnabled(android.content.Context) "/>
+        <method signature="public boolean cancelConnectThread() "/>
+        <method signature="public boolean acceptIncomingConnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean createIncomingConnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean rejectIncomingConnect(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean connectHeadsetInternal(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean disconnectHeadsetInternal(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean setAudioState(android.bluetooth.BluetoothDevice, int) "/>
+        <method signature="public int getAudioState(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean startScoUsingVirtualVoiceCall(android.bluetooth.BluetoothDevice) "/>
+        <method signature="public boolean stopScoUsingVirtualVoiceCall(android.bluetooth.BluetoothDevice) "/>
+    </class>
+    <class name="com.android.internal.telephony.PhoneBase">
+        <method signature="public int getVoiceMessageCount() "/>
+    </class>
+    <class name="android.webkit.UrlInterceptHandler">
+        <method signature="public abstract android.webkit.CacheManager.CacheResult service(java.lang.String, Map&lt;java.lang.String,java.lang.String&gt;) "/>
+        <method signature="public abstract android.webkit.PluginData getPluginData(java.lang.String, Map&lt;java.lang.String,java.lang.String&gt;) "/>
+    </class>
+    <class name="com.android.internal.telephony.PhoneSubInfo">
+        <method signature="public java.lang.String getCompleteVoiceMailNumber() "/>
+    </class>
+    <class name="java.lang.ref.Reference">
+        <method signature="public final synchronized boolean enqueueInternal() "/>
+    </class>
+    <class name="android.view.WindowManager">
+        <method signature="public abstract boolean isHardwareAccelerated() "/>
+    </class>
+    <class name="android.accounts.AccountManager">
+        <method signature="public static android.os.Bundle sanitizeResult(android.os.Bundle) "/>
+        <method signature="public void updateAppPermission(android.accounts.Account, java.lang.String, int, boolean) "/>
+        <method signature="public AccountManagerFuture&lt;java.lang.String&gt; getAuthTokenLabel(java.lang.String, java.lang.String, AccountManagerCallback&lt;java.lang.String&gt;, android.os.Handler) "/>
+    </class>
+    <class name="com.android.systemui.media.NotificationPlayer">
+        <method signature="public void setUsesWakeLock(android.content.Context) "/>
+    </class>
+    <class name="android.graphics.RectF">
+        <method signature="public java.lang.String toShortString(java.lang.StringBuilder) "/>
+        <method signature="public void printShortString(java.io.PrintWriter) "/>
+    </class>
+    <class name="android.app.admin.DeviceAdminInfo">
+        <method signature="public ArrayList&lt;android.app.admin.DeviceAdminInfo.PolicyInfo&gt; getUsedPolicies() "/>
+        <method signature="public void writePoliciesToXml(org.xmlpull.v1.XmlSerializer) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.io.IOException"/>
+        <method signature="public void readPoliciesFromXml(org.xmlpull.v1.XmlPullParser) throws org.xmlpull.v1.XmlPullParserException, java.io.IOException"/>
+    </class>
+    <class name="android.text.TextPaint">
+        <method signature="public void setUnderlineText(int, float) "/>
+    </class>
+    <class name="android.opengl.ManagedEGLContext">
+        <method signature="public static boolean doTerminate() "/>
+    </class>
+    <class name="android.bluetooth.BluetoothClass">
+        <method signature="public boolean doesClassMatch(int) "/>
+    </class>
+    <class name="android.app.SearchManager">
+        <method signature="public void startSearch(java.lang.String, boolean, android.content.ComponentName, android.os.Bundle, boolean, android.graphics.Rect) "/>
+        <method signature="public List&lt;android.content.pm.ResolveInfo&gt; getGlobalSearchActivities() "/>
+        <method signature="public android.content.ComponentName getWebSearchActivity() "/>
+        <method signature="public boolean isVisible() "/>
+        <method signature="public android.database.Cursor getSuggestions(android.app.SearchableInfo, java.lang.String) "/>
+        <method signature="public android.database.Cursor getSuggestions(android.app.SearchableInfo, java.lang.String, int) "/>
+        <method signature="public static final android.content.Intent getAssistIntent(android.content.Context) "/>
+    </class>
+    <class name="android.graphics.Canvas">
+        <method signature="protected javax.microedition.khronos.opengles.GL getGL() "/>
+        <method signature="public void setViewport(int, int) "/>
+        <method signature="public void setScreenDensity(int) "/>
+        <method signature="public void drawPatch(android.graphics.Bitmap, byte[], android.graphics.RectF, android.graphics.Paint) "/>
+        <method signature="protected static void checkRange(int, int, int) "/>
+        <method signature="public void drawTextRun(char[], int, int, int, int, float, float, int, android.graphics.Paint) "/>
+        <method signature="public void drawTextRun(java.lang.CharSequence, int, int, int, int, float, float, int, android.graphics.Paint) "/>
+        <method signature="public static native void freeCaches() "/>
+        <method signature="public static native void freeTextLayoutCaches() "/>
+    </class>
+    <class name="android.app.LauncherActivity">
+        <method signature="protected boolean onEvaluateShowIcons() "/>
+    </class>
+    <class name="android.view.LayoutInflater">
+        <method signature="public void setPrivateFactory(android.view.LayoutInflater.Factory2) "/>
+    </class>
+    <class name="android.gesture.GestureLibrary">
+        <method signature="public android.gesture.Learner getLearner() "/>
+    </class>
+    <class name="android.widget.TextView">
+        <method signature="public int getCompoundPaddingStart() "/>
+        <method signature="public int getCompoundPaddingEnd() "/>
+        <method signature="public int getTotalPaddingStart() "/>
+        <method signature="public int getTotalPaddingEnd() "/>
+        <method signature="public void setCompoundDrawablesRelative(android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable) "/>
+        <method signature="public void setCompoundDrawablesRelativeWithIntrinsicBounds(int, int, int, int) "/>
+        <method signature="public void setCompoundDrawablesRelativeWithIntrinsicBounds(android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable, android.graphics.drawable.Drawable) "/>
+        <method signature="public android.graphics.drawable.Drawable[] getCompoundDrawablesRelative() "/>
+        <method signature="public final void setShowSoftInputOnFocus(boolean) "/>
+        <method signature="public final boolean getShowSoftInputOnFocus() "/>
+        <method signature="public boolean getHorizontallyScrolling() "/>
+        <method signature="public int getResolvedLayoutDirection(android.graphics.drawable.Drawable) "/>
+        <method signature="protected int getFadeTop(boolean) "/>
+        <method signature="protected int getFadeHeight(boolean) "/>
+        <method signature="public void resetErrorChangedFlag() "/>
+        <method signature="public void hideErrorIfUnchanged() "/>
+        <method signature="public void setExtracting(android.view.inputmethod.ExtractedTextRequest) "/>
+        <method signature="public void onResolvedLayoutDirectionReset() "/>
+        <method signature="protected void makeNewLayout(int, int, android.text.BoringLayout.Metrics, android.text.BoringLayout.Metrics, int, boolean) "/>
+        <method signature="public void dispatchFinishTemporaryDetach() "/>
+        <method signature="public java.util.Locale getTextServicesLocale() "/>
+        <method signature="public android.text.method.WordIterator getWordIterator() "/>
+        <method signature="public java.lang.CharSequence getTextForAccessibility() "/>
+        <method signature="protected void stopSelectionActionMode() "/>
+        <method signature="public void onResolvedTextDirectionChanged() "/>
+        <method signature="protected void viewClicked(android.view.inputmethod.InputMethodManager) "/>
+        <method signature="protected void deleteText_internal(int, int) "/>
+        <method signature="protected void replaceText_internal(int, int, java.lang.CharSequence) "/>
+        <method signature="protected void setSpan_internal(java.lang.Object, int, int, int) "/>
+        <method signature="protected void setCursorPosition_internal(int, int) "/>
+        <method signature="public java.lang.CharSequence getIterableTextForAccessibility() "/>
+        <method signature="public android.view.AccessibilityIterators.TextSegmentIterator getIteratorForGranularity(int) "/>
+        <method signature="public int getAccessibilityCursorPosition() "/>
+        <method signature="public void setAccessibilityCursorPosition(int) "/>
+    </class>
+    <class name="android.support.v4.app.FragmentManager">
+        <method signature="public android.support.v4.app.FragmentTransaction openTransaction() "/>
+    </class>
+    <class name="android.support.v7.widget.GridLayout">
+        <method signature="protected void onSetLayoutParams(android.view.View, android.view.ViewGroup.LayoutParams) "/>
+        <method signature="protected void onViewAdded(android.view.View) "/>
+        <method signature="protected void onViewRemoved(android.view.View) "/>
+        <method signature="protected void onChildVisibilityChanged(android.view.View, int, int) "/>
+    </class>
+    <class name="android.test.LaunchPerformanceBase">
+        <method signature="protected void LaunchApp() "/>
+    </class>
+    <class name="android.webkit.URLUtil">
+        <method signature="public static boolean isResourceUrl(java.lang.String) "/>
+    </class>
+    <class name="java.util.zip.Deflater">
+        <method signature="public synchronized int deflate(byte[], int, int, int) "/>
+    </class>
+    <class name="android.view.ActionMode">
+        <method signature="public boolean isUiFocusable() "/>
+    </class>
+    <class name="android.drm.DrmManagerClient">
+        <method signature="public static void notify(java.lang.Object, int, int, java.lang.String) "/>
+        <method signature="public void installDrmEngine(java.lang.String) "/>
+    </class>
+    <class name="javax.microedition.khronos.egl.EGL10">
+        <method signature="public abstract boolean eglReleaseThread() "/>
+    </class>
+    <class name="java.lang.Boolean">
+        <method signature="public static int compare(boolean, boolean) "/>
+    </class>
+    <class name="android.net.LinkAddress">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.app.DialogFragment">
+        <method signature="public android.view.LayoutInflater getLayoutInflater(android.os.Bundle) "/>
+    </class>
+    <class name="android.telephony.CellIdentity">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.server.BluetoothService">
+        <method signature="public Pair&lt;java.lang.Integer,java.lang.String&gt; getIncomingState(java.lang.String) "/>
+        <method signature="public void writeIncomingConnectionState(java.lang.String, Pair&lt;java.lang.Integer,java.lang.String&gt;) "/>
+    </class>
+    <class name="android.view.ViewRootImpl">
+        <method signature="public void requestTransitionStart(android.animation.LayoutTransition) "/>
+        <method signature="public android.view.View getAccessibilityFocusedHost() "/>
+        <method signature="public android.view.accessibility.AccessibilityNodeInfo getAccessibilityFocusedVirtualView() "/>
+    </class>
+    <class name="android.bluetooth.BluetoothSocket">
+        <method signature="protected void finalize() throws java.lang.Throwable"/>
+    </class>
+    <class name="android.app.backup.BackupAgent">
+        <method signature="protected final void fullBackupFileTree(java.lang.String, java.lang.String, java.lang.String, HashSet&lt;java.lang.String&gt;, android.app.backup.FullBackupDataOutput) "/>
+        <method signature="protected void onRestoreFile(android.os.ParcelFileDescriptor, long, int, java.lang.String, java.lang.String, long, long) throws java.io.IOException"/>
+        <method signature="public final android.os.IBinder onBind() "/>
+        <method signature="public void attach(android.content.Context) "/>
+    </class>
+    <class name="android.widget.RemoteViews">
+        <method signature="public int estimateMemoryUsage() "/>
+        <method signature="public void setDrawableParameters(int, boolean, int, int, android.graphics.PorterDuff.Mode, int) "/>
+        <method signature="public android.view.View apply(android.content.Context, android.view.ViewGroup, android.widget.RemoteViews.OnClickHandler) "/>
+        <method signature="public void reapply(android.content.Context, android.view.View, android.widget.RemoteViews.OnClickHandler) "/>
+    </class>
+    <class name="android.service.wallpaper.WallpaperService.Engine">
+        <method signature="public void setFixedSizeAllowed(boolean) "/>
+    </class>
+    <class name="android.webkit.PluginData">
+        <method signature="public java.io.InputStream getInputStream() "/>
+        <method signature="public long getContentLength() "/>
+        <method signature="public Map&lt;java.lang.String,java.lang.String[]&gt; getHeaders() "/>
+        <method signature="public int getStatusCode() "/>
+    </class>
+    <class name="android.text.method.BaseMovementMethod">
+        <method signature="protected boolean leftWord(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean rightWord(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollLeft(android.widget.TextView, android.text.Spannable, int) "/>
+        <method signature="protected boolean scrollRight(android.widget.TextView, android.text.Spannable, int) "/>
+        <method signature="protected boolean scrollUp(android.widget.TextView, android.text.Spannable, int) "/>
+        <method signature="protected boolean scrollDown(android.widget.TextView, android.text.Spannable, int) "/>
+        <method signature="protected boolean scrollPageUp(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollPageDown(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollTop(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollBottom(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollLineStart(android.widget.TextView, android.text.Spannable) "/>
+        <method signature="protected boolean scrollLineEnd(android.widget.TextView, android.text.Spannable) "/>
+    </class>
+    <class name="android.view.Surface">
+        <method signature="public native void copyFrom(android.view.Surface) "/>
+        <method signature="public int getGenerationId() "/>
+        <method signature="public native boolean isConsumerRunningBehind() "/>
+        <method signature="public native void destroy() "/>
+        <method signature="public static native void freezeDisplay(int) "/>
+        <method signature="public static native void unfreezeDisplay(int) "/>
+        <method signature="public static native void setOrientation(int, int, int) "/>
+        <method signature="public static void setOrientation(int, int) "/>
+        <method signature="public static native android.graphics.Bitmap screenshot(int, int) "/>
+        <method signature="public static native android.graphics.Bitmap screenshot(int, int, int, int) "/>
+        <method signature="public static native void openTransaction() "/>
+        <method signature="public static native void closeTransaction() "/>
+        <method signature="public native void setLayer(int) "/>
+        <method signature="public void setPosition(int, int) "/>
+        <method signature="public native void setPosition(float, float) "/>
+        <method signature="public native void setSize(int, int) "/>
+        <method signature="public native void hide() "/>
+        <method signature="public native void show() "/>
+        <method signature="public native void setTransparentRegionHint(android.graphics.Region) "/>
+        <method signature="public native void setAlpha(float) "/>
+        <method signature="public native void setMatrix(float, float, float, float) "/>
+        <method signature="public native void freeze() "/>
+        <method signature="public native void unfreeze() "/>
+        <method signature="public native void setFreezeTint(int) "/>
+        <method signature="public native void setFlags(int, int) "/>
+        <method signature="public native void setWindowCrop(android.graphics.Rect) "/>
+    </class>
+    <class name="android.test.AndroidTestCase">
+        <method signature="public void setTestContext(android.content.Context) "/>
+        <method signature="public android.content.Context getTestContext() "/>
+    </class>
+    <class name="android.view.inputmethod.BaseInputConnection">
+        <method signature="public static void setComposingSpans(android.text.Spannable, int, int) "/>
+        <method signature="protected void reportFinish() "/>
+    </class>
+    <class name="android.content.res.TypedArray">
+        <method signature="public java.lang.String getNonConfigurationString(int, int) "/>
+    </class>
+    <class name="android.provider.ContactsContract">
+        <method signature="public static java.lang.String snippetize(java.lang.String, java.lang.String, java.lang.String, char, char, java.lang.String, int) "/>
+    </class>
+    <class name="android.view.HardwareRenderer">
+        <method signature="public static void disable(boolean) "/>
+    </class>
+    <class name="com.android.server.ConnectivityService">
+        <method signature="public boolean protectVpn(android.os.ParcelFileDescriptor) "/>
+        <method signature="public boolean prepareVpn(java.lang.String, java.lang.String) "/>
+        <method signature="public android.os.ParcelFileDescriptor establishVpn(com.android.internal.net.VpnConfig) "/>
+        <method signature="public void startLegacyVpn(com.android.internal.net.VpnConfig, java.lang.String[], java.lang.String[]) "/>
+        <method signature="public com.android.internal.net.LegacyVpnInfo getLegacyVpnInfo() "/>
+    </class>
+    <class name="android.telephony.SignalStrength">
+        <method signature="public static android.telephony.SignalStrength newFromBundle(android.os.Bundle) "/>
+        <method signature="protected void copyFrom(android.telephony.SignalStrength) "/>
+        <method signature="public int getLevel() "/>
+        <method signature="public int getAsuLevel() "/>
+        <method signature="public int getDbm() "/>
+        <method signature="public int getGsmDbm() "/>
+        <method signature="public int getGsmLevel() "/>
+        <method signature="public int getGsmAsuLevel() "/>
+        <method signature="public int getCdmaLevel() "/>
+        <method signature="public int getCdmaAsuLevel() "/>
+        <method signature="public int getEvdoLevel() "/>
+        <method signature="public int getEvdoAsuLevel() "/>
+        <method signature="public int getLteDbm() "/>
+        <method signature="public int getLteLevel() "/>
+        <method signature="public int getLteAsuLevel() "/>
+        <method signature="public void fillInNotifierBundle(android.os.Bundle) "/>
+    </class>
+    <class name="com.android.internal.telephony.gsm.SmsMessage">
+        <method signature="public static com.android.internal.telephony.gsm.SmsMessage newFromCMT(java.lang.String[]) "/>
+        <method signature="public static com.android.internal.telephony.gsm.SmsMessage newFromCDS(java.lang.String) "/>
+        <method signature="public static com.android.internal.telephony.gsm.SmsMessage createFromEfRecord(int, byte[]) "/>
+        <method signature="public static com.android.internal.telephony.gsm.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String, java.lang.String, java.lang.String, boolean, byte[]) "/>
+        <method signature="public static com.android.internal.telephony.gsm.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String, java.lang.String, java.lang.String, boolean, byte[], int, int, int) "/>
+    </class>
+    <class name="android.media.MediaPlayer">
+        <method signature="public android.os.Parcel newRequest() "/>
+        <method signature="public void invoke(android.os.Parcel, android.os.Parcel) "/>
+        <method signature="public void setDataSource(java.lang.String, Map&lt;java.lang.String,java.lang.String&gt;) throws java.io.IOException, java.lang.IllegalArgumentException, java.lang.SecurityException, java.lang.IllegalStateException"/>
+        <method signature="public android.media.Metadata getMetadata(boolean, boolean) "/>
+        <method signature="public int setMetadataFilter(Set&lt;java.lang.Integer&gt;, Set&lt;java.lang.Integer&gt;) "/>
+        <method signature="public native android.graphics.Bitmap getFrameAt(int) throws java.lang.IllegalStateException"/>
+        <method signature="public native boolean setParameter(int, android.os.Parcel) "/>
+        <method signature="public boolean setParameter(int, java.lang.String) "/>
+        <method signature="public boolean setParameter(int, int) "/>
+        <method signature="public android.os.Parcel getParcelParameter(int) "/>
+        <method signature="public java.lang.String getStringParameter(int) "/>
+        <method signature="public int getIntParameter(int) "/>
+        <method signature="public static native int native_pullBatteryData(android.os.Parcel) "/>
+        <method signature="public void setRetransmitEndpoint(java.net.InetSocketAddress) throws java.lang.IllegalStateException, java.lang.IllegalArgumentException"/>
+    </class>
+    <class name="android.util.LruCache">
+        <method signature="public void resize(int) "/>
+    </class>
+    <class name="java.util.LinkedHashMap">
+        <method signature="public Entry&lt;K,V&gt; eldest() "/>
+    </class>
+    <class name="android.widget.Gallery">
+        <method signature="public void setCallbackOnUnselectedItemClick(boolean) "/>
+    </class>
+    <class name="java.net.InetSocketAddress">
+        <method signature="public final java.lang.String getHostString() "/>
+    </class>
+    <class name="android.net.nsd.NsdManager">
+        <method signature="public void setEnabled(boolean) "/>
+    </class>
+    <class name="android.view.MotionEvent.PointerCoords">
+        <method signature="public static android.view.MotionEvent.PointerCoords[] createArray(int) "/>
+    </class>
+    <class name="android.widget.Editor">
+        <method signature="public android.text.method.WordIterator getWordIterator() "/>
+    </class>
+    <class name="java.net.NetworkInterface">
+        <method signature="public int getIndex() "/>
+        <method signature="public static java.net.NetworkInterface getByIndex(int) throws java.net.SocketException"/>
+    </class>
+    <class name="android.net.wifi.ScanResult">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.webkit.WebHistoryItem">
+        <method signature="public java.lang.String getTouchIconUrl() "/>
+        <method signature="public java.lang.Object getCustomData() "/>
+        <method signature="public void setCustomData(java.lang.Object) "/>
+    </class>
+    <class name="java.util.Currency">
+        <method signature="public static Set&lt;java.util.Currency&gt; getAvailableCurrencies() "/>
+        <method signature="public java.lang.String getDisplayName() "/>
+        <method signature="public java.lang.String getDisplayName(java.util.Locale) "/>
+    </class>
+    <class name="android.os.WorkSource">
+        <method signature="public int size() "/>
+        <method signature="public int get(int) "/>
+        <method signature="public void set(int) "/>
+        <method signature="public android.os.WorkSource[] setReturningDiffs(android.os.WorkSource) "/>
+        <method signature="public android.os.WorkSource addReturningNewbs(android.os.WorkSource) "/>
+        <method signature="public boolean add(int) "/>
+        <method signature="public android.os.WorkSource addReturningNewbs(int) "/>
+    </class>
+    <class name="android.graphics.Paint">
+        <method signature="public void setCompatibilityScaling(float) "/>
+        <method signature="public int getBidiFlags() "/>
+        <method signature="public void setBidiFlags(int) "/>
+        <method signature="public java.util.Locale getTextLocale() "/>
+        <method signature="public void setTextLocale(java.util.Locale) "/>
+        <method signature="public int getTextGlyphs(java.lang.String, int, int, int, int, int, char[]) "/>
+        <method signature="public float getTextRunAdvances(char[], int, int, int, int, int, float[], int) "/>
+        <method signature="public float getTextRunAdvances(char[], int, int, int, int, int, float[], int, int) "/>
+        <method signature="public float getTextRunAdvances(java.lang.CharSequence, int, int, int, int, int, float[], int) "/>
+        <method signature="public float getTextRunAdvances(java.lang.CharSequence, int, int, int, int, int, float[], int, int) "/>
+        <method signature="public float getTextRunAdvances(java.lang.String, int, int, int, int, int, float[], int) "/>
+        <method signature="public float getTextRunAdvances(java.lang.String, int, int, int, int, int, float[], int, int) "/>
+        <method signature="public int getTextRunCursor(char[], int, int, int, int, int) "/>
+        <method signature="public int getTextRunCursor(java.lang.CharSequence, int, int, int, int, int) "/>
+        <method signature="public int getTextRunCursor(java.lang.String, int, int, int, int, int) "/>
+    </class>
+    <class name="android.app.backup.RestoreSession">
+        <method signature="public int restoreSome(long, android.app.backup.RestoreObserver, java.lang.String[]) "/>
+    </class>
+    <class name="android.view.DragEvent">
+        <method signature="public static android.view.DragEvent obtain(int, float, float, java.lang.Object, android.content.ClipDescription, android.content.ClipData, boolean) "/>
+        <method signature="public static android.view.DragEvent obtain(android.view.DragEvent) "/>
+        <method signature="public final void recycle() "/>
+    </class>
+    <class name="android.os.StrictMode.Span">
+        <method signature="public void finish() "/>
+    </class>
+    <class name="android.widget.GridLayout">
+        <method signature="protected void onSetLayoutParams(android.view.View, android.view.ViewGroup.LayoutParams) "/>
+        <method signature="protected void onDebugDrawMargins(android.graphics.Canvas) "/>
+        <method signature="protected void onDebugDraw(android.graphics.Canvas) "/>
+        <method signature="protected void onViewAdded(android.view.View) "/>
+        <method signature="protected void onViewRemoved(android.view.View) "/>
+        <method signature="protected void onChildVisibilityChanged(android.view.View, int, int) "/>
+    </class>
+    <class name="java.lang.Character">
+        <method signature="public static int compare(char, char) "/>
+        <method signature="public static boolean isSurrogate(char) "/>
+        <method signature="public static java.lang.String getName(int) "/>
+        <method signature="public static char highSurrogate(int) "/>
+        <method signature="public static char lowSurrogate(int) "/>
+        <method signature="public static boolean isBmpCodePoint(int) "/>
+    </class>
+    <class name="android.telephony.gsm.GsmCellLocation">
+        <method signature="public void setPsc(int) "/>
+        <method signature="public boolean isEmpty() "/>
+    </class>
+    <class name="android.content.ContentResolver">
+        <method signature="protected abstract android.content.IContentProvider acquireProvider(android.content.Context, java.lang.String) "/>
+        <method signature="protected android.content.IContentProvider acquireExistingProvider(android.content.Context, java.lang.String) "/>
+        <method signature="public abstract boolean releaseProvider(android.content.IContentProvider) "/>
+        <method signature="protected abstract android.content.IContentProvider acquireUnstableProvider(android.content.Context, java.lang.String) "/>
+        <method signature="public abstract boolean releaseUnstableProvider(android.content.IContentProvider) "/>
+        <method signature="public abstract void unstableProviderDied(android.content.IContentProvider) "/>
+        <method signature="public android.content.ContentResolver.OpenResourceIdResult getResourceId(android.net.Uri) throws java.io.FileNotFoundException"/>
+        <method signature="public static int modeToMode(android.net.Uri, java.lang.String) throws java.io.FileNotFoundException"/>
+        <method signature="public final android.content.IContentProvider acquireProvider(android.net.Uri) "/>
+        <method signature="public final android.content.IContentProvider acquireExistingProvider(android.net.Uri) "/>
+        <method signature="public final android.content.IContentProvider acquireProvider(java.lang.String) "/>
+        <method signature="public final android.content.IContentProvider acquireUnstableProvider(android.net.Uri) "/>
+        <method signature="public final android.content.IContentProvider acquireUnstableProvider(java.lang.String) "/>
+        <method signature="public static android.content.SyncStatusInfo getSyncStatus(android.accounts.Account, java.lang.String) "/>
+        <method signature="public static IContentService getContentService() "/>
+    </class>
+    <class name="android.renderscript.RenderScript">
+        <method signature="public static void setupDiskCache(java.io.File) "/>
+        <method signature="public static android.renderscript.RenderScript create(android.content.Context, int) "/>
+    </class>
+    <class name="android.webkit.CookieManager">
+        <method signature="public java.lang.String getCookie(java.lang.String, boolean) "/>
+        <method signature="public synchronized java.lang.String getCookie(android.net.WebAddress) "/>
+        <method signature="public synchronized boolean hasCookies(boolean) "/>
+        <method signature="protected void flushCookieStore() "/>
+        <method signature="protected boolean allowFileSchemeCookiesImpl() "/>
+        <method signature="protected void setAcceptFileSchemeCookiesImpl(boolean) "/>
+    </class>
+    <class name="android.content.res.Resources">
+        <method signature="public static int selectDefaultTheme(int, int) "/>
+        <method signature="public static int selectSystemTheme(int, int, int, int, int) "/>
+        <method signature="public void updateConfiguration(android.content.res.Configuration, android.util.DisplayMetrics, android.content.res.CompatibilityInfo) "/>
+        <method signature="public static void updateSystemConfiguration(android.content.res.Configuration, android.util.DisplayMetrics, android.content.res.CompatibilityInfo) "/>
+        <method signature="public static void updateSystemConfiguration(android.content.res.Configuration, android.util.DisplayMetrics) "/>
+        <method signature="public android.content.res.CompatibilityInfo getCompatibilityInfo() "/>
+        <method signature="public void setCompatibilityInfo(android.content.res.CompatibilityInfo) "/>
+        <method signature="public final void startPreloading() "/>
+    </class>
+    <class name="android.util.DebugUtils">
+        <method signature="public static void buildShortClassTag(java.lang.Object, java.lang.StringBuilder) "/>
+    </class>
+    <class name="android.media.AsyncPlayer">
+        <method signature="public void setUsesWakeLock(android.content.Context) "/>
+    </class>
+    <class name="android.provider.CalendarContract.CalendarAlerts">
+        <method signature="public static final android.net.Uri insert(android.content.ContentResolver, long, long, long, long, int) "/>
+        <method signature="public static final long findNextAlarmTime(android.content.ContentResolver, long) "/>
+        <method signature="public static final void rescheduleMissedAlarms(android.content.ContentResolver, android.content.Context, android.app.AlarmManager) "/>
+        <method signature="public static void scheduleAlarm(android.content.Context, android.app.AlarmManager, long) "/>
+        <method signature="public static final boolean alarmExists(android.content.ContentResolver, long, long, long) "/>
+    </class>
+    <class name="android.os.Process">
+        <method signature="public static final android.os.Process.ProcessStartResult start(java.lang.String, java.lang.String, int, int, int[], int, int, java.lang.String[]) "/>
+        <method signature="public static final boolean isIsolated() "/>
+        <method signature="public static final int getUidForPid(int) "/>
+        <method signature="public static final int getParentPid(int) "/>
+        <method signature="public static final int getThreadGroupLeader(int) "/>
+        <method signature="public static final native void setCanSelfBackground(boolean) "/>
+        <method signature="public static final native void setThreadGroup(int, int) throws java.lang.IllegalArgumentException, java.lang.SecurityException"/>
+        <method signature="public static final native void setProcessGroup(int, int) throws java.lang.IllegalArgumentException, java.lang.SecurityException"/>
+        <method signature="public static final native void setThreadScheduler(int, int, int) throws java.lang.IllegalArgumentException"/>
+        <method signature="public static final native boolean setOomAdj(int, int) "/>
+        <method signature="public static final native void setArgV0(java.lang.String) "/>
+        <method signature="public static final native int setUid(int) "/>
+        <method signature="public static final native int setGid(int) "/>
+        <method signature="public static final void killProcessQuiet(int) "/>
+        <method signature="public static final native void sendSignalQuiet(int, int) "/>
+        <method signature="public static final native long getFreeMemory() "/>
+        <method signature="public static final native long getTotalMemory() "/>
+        <method signature="public static final native void readProcLines(java.lang.String, java.lang.String[], long[]) "/>
+        <method signature="public static final native int[] getPids(java.lang.String, int[]) "/>
+        <method signature="public static final native boolean readProcFile(java.lang.String, int[], java.lang.String[], long[], float[]) "/>
+        <method signature="public static final native boolean parseProcLine(byte[], int, int, int[], java.lang.String[], long[], float[]) "/>
+        <method signature="public static final native int[] getPidsForCommands(java.lang.String[]) "/>
+        <method signature="public static final native long getPss(int) "/>
+    </class>
+    <class name="android.net.sip.SipProfile">
+        <method signature="public SipURI getUri() "/>
+        <method signature="public Address getSipAddress() "/>
+        <method signature="public void setCallingUid(int) "/>
+        <method signature="public int getCallingUid() "/>
+    </class>
+    <class name="android.content.IntentFilter">
+        <method signature="public boolean debugCheck() "/>
+    </class>
+    <class name="android.media.audiofx.Visualizer.OnServerDiedListener">
+        <method signature="public abstract void onServerDied() "/>
+    </class>
+    <class name="android.content.pm.ApplicationInfo">
+        <method signature="public boolean hasRtlSupport() "/>
+        <method signature="public void disableCompatibilityMode() "/>
+        <method signature="protected android.graphics.drawable.Drawable loadDefaultIcon(android.content.pm.PackageManager) "/>
+        <method signature="protected android.content.pm.ApplicationInfo getApplicationInfo() "/>
+    </class>
+    <class name="com.android.vcard.VCardEntry.NameData">
+        <method signature="public void setFamily(java.lang.String) "/>
+        <method signature="public void setMiddle(java.lang.String) "/>
+        <method signature="public void setGiven(java.lang.String) "/>
+        <method signature="public void setPrefix(java.lang.String) "/>
+        <method signature="public void setSuffix(java.lang.String) "/>
+    </class>
+    <class name="android.net.wifi.p2p.nsd.WifiP2pServiceInfo">
+        <method signature="public List&lt;java.lang.String&gt; getSupplicantQueryList() "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.content.pm.PackageManager">
+        <method signature="public abstract void grantPermission(java.lang.String, java.lang.String) "/>
+        <method signature="public abstract void revokePermission(java.lang.String, java.lang.String) "/>
+        <method signature="public abstract int getUidForSharedUser(java.lang.String) throws android.content.pm.PackageManager.NameNotFoundException"/>
+        <method signature="public abstract void installPackage(android.net.Uri, IPackageInstallObserver, int, java.lang.String) "/>
+        <method signature="public abstract void installPackageWithVerification(android.net.Uri, IPackageInstallObserver, int, java.lang.String, android.net.Uri, android.content.pm.ManifestDigest, android.content.pm.ContainerEncryptionParams) "/>
+        <method signature="public abstract void deletePackage(java.lang.String, IPackageDeleteObserver, int) "/>
+        <method signature="public abstract void clearApplicationUserData(java.lang.String, IPackageDataObserver) "/>
+        <method signature="public abstract void deleteApplicationCacheFiles(java.lang.String, IPackageDataObserver) "/>
+        <method signature="public abstract void freeStorageAndNotify(long, IPackageDataObserver) "/>
+        <method signature="public abstract void freeStorage(long, android.content.IntentSender) "/>
+        <method signature="public abstract void getPackageSizeInfo(java.lang.String, IPackageStatsObserver) "/>
+        <method signature="public abstract void replacePreferredActivity(android.content.IntentFilter, int, android.content.ComponentName[], android.content.ComponentName) "/>
+        <method signature="public abstract void movePackage(java.lang.String, IPackageMoveObserver, int) "/>
+        <method signature="public abstract android.content.pm.UserInfo createUser(java.lang.String, int) "/>
+        <method signature="public abstract List&lt;android.content.pm.UserInfo&gt; getUsers() "/>
+        <method signature="public abstract boolean removeUser(int) "/>
+        <method signature="public abstract void updateUserName(int, java.lang.String) "/>
+        <method signature="public abstract void updateUserFlags(int, int) "/>
+        <method signature="public abstract android.content.pm.UserInfo getUser(int) "/>
+        <method signature="public abstract android.content.pm.VerifierDeviceIdentity getVerifierDeviceIdentity() "/>
+        <method signature="public static java.lang.String getDataDirForUser(int, java.lang.String) "/>
+    </class>
+    <class name="java.lang.reflect.Modifier">
+        <method signature="public static int classModifiers() "/>
+        <method signature="public static int constructorModifiers() "/>
+        <method signature="public static int fieldModifiers() "/>
+        <method signature="public static int interfaceModifiers() "/>
+        <method signature="public static int methodModifiers() "/>
+    </class>
+    <class name="android.app.backup.BackupAgentHelper">
+        <method signature="public android.app.backup.BackupHelperDispatcher getDispatcher() "/>
+    </class>
+    <class name="android.media.ExifInterface">
+        <method signature="public long getDateTime() "/>
+        <method signature="public long getGpsDateTime() "/>
+    </class>
+    <class name="android.view.ContextThemeWrapper">
+        <method signature="public int getThemeResId() "/>
+    </class>
+    <class name="android.app.PendingIntent">
+        <method signature="public boolean isTargetedToPackage() "/>
+        <method signature="public boolean isActivity() "/>
+        <method signature="public IIntentSender getTarget() "/>
+    </class>
+    <class name="android.webkit.JsPromptResult">
+        <method signature="public java.lang.String getStringResult() "/>
+    </class>
+    <class name="android.net.wifi.p2p.WifiP2pManager">
+        <method signature="public void setDeviceName(android.net.wifi.p2p.WifiP2pManager.Channel, java.lang.String, android.net.wifi.p2p.WifiP2pManager.ActionListener) "/>
+        <method signature="public void setDialogListener(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.DialogListener) "/>
+        <method signature="public android.os.Messenger getMessenger() "/>
+    </class>
+    <class name="android.app.Fragment">
+        <method signature="public android.view.LayoutInflater getLayoutInflater(android.os.Bundle) "/>
+    </class>
+    <class name="android.os.ServiceManager">
+        <method signature="public static void initServiceCache(Map&lt;java.lang.String,android.os.IBinder&gt;) "/>
+    </class>
+    <class name="android.view.textservice.SpellCheckerSession">
+        <method signature="public ITextServicesSessionListener getTextServicesSessionListener() "/>
+        <method signature="public ISpellCheckerSessionListener getSpellCheckerSessionListener() "/>
+    </class>
+    <class name="android.preference.PreferenceFragment">
+        <method signature="public android.widget.ListView getListView() "/>
+    </class>
+    <class name="android.view.KeyEvent">
+        <method signature="public static android.view.KeyEvent obtain(long, long, int, int, int, int, int, int, int, int, java.lang.String) "/>
+        <method signature="public static android.view.KeyEvent obtain(android.view.KeyEvent) "/>
+        <method signature="public android.view.KeyEvent copy() "/>
+        <method signature="public final void recycle() "/>
+        <method signature="public final void recycleIfNeededAfterDispatch() "/>
+        <method signature="public final boolean isTainted() "/>
+        <method signature="public final void setTainted(boolean) "/>
+        <method signature="public final boolean isDown() "/>
+        <method signature="public final boolean hasDefaultAction() "/>
+        <method signature="public final long getEventTimeNano() "/>
+        <method signature="public final int getKeyboardDevice() "/>
+        <method signature="public static java.lang.String actionToString(int) "/>
+        <method signature="public static java.lang.String metaStateToString(int) "/>
+        <method signature="public static android.view.KeyEvent createFromParcelBody(android.os.Parcel) "/>
+    </class>
+    <class name="android.net.http.SslError">
+        <method signature="public static android.net.http.SslError SslErrorFromChromiumErrorCode(int, android.net.http.SslCertificate, java.lang.String) "/>
+    </class>
+    <class name="android.content.ClipData.Item">
+        <method signature="public void toShortString(java.lang.StringBuilder) "/>
+    </class>
+    <class name="android.widget.AutoCompleteTextView">
+        <method signature="public void setDropDownAnimationStyle(int) "/>
+        <method signature="public int getDropDownAnimationStyle() "/>
+        <method signature="public boolean isDropDownAlwaysVisible() "/>
+        <method signature="public void setDropDownAlwaysVisible(boolean) "/>
+        <method signature="public boolean isDropDownDismissedOnCompletion() "/>
+        <method signature="public void setDropDownDismissedOnCompletion(boolean) "/>
+        <method signature="public void setText(java.lang.CharSequence, boolean) "/>
+        <method signature="public void showDropDownAfterLayout() "/>
+        <method signature="public void ensureImeVisible(boolean) "/>
+        <method signature="public boolean isInputMethodNotNeeded() "/>
+        <method signature="public void setForceIgnoreOutsideTouch(boolean) "/>
+    </class>
+    <class name="android.media.audiofx.Visualizer">
+        <method signature="public int setServerDiedListener(android.media.audiofx.Visualizer.OnServerDiedListener) "/>
+    </class>
+    <class name="java.net.DatagramSocket">
+        <method signature="public void setNetworkInterface(java.net.NetworkInterface) throws java.net.SocketException"/>
+        <method signature="public final java.io.FileDescriptor getFileDescriptor$() "/>
+    </class>
+    <class name="java.lang.Integer">
+        <method signature="public static int compare(int, int) "/>
+    </class>
+    <class name="android.graphics.drawable.Drawable">
+        <method signature="public int getResolvedLayoutDirectionSelf() "/>
+        <method signature="public android.graphics.Insets getLayoutInsets() "/>
+    </class>
+    <class name="java.lang.Short">
+        <method signature="public static int compare(long, long) "/>
+    </class>
+    <class name="android.app.DownloadManager.Query">
+        <method signature="public android.app.DownloadManager.Query setOnlyIncludeVisibleInDownloadsUi(boolean) "/>
+        <method signature="public android.app.DownloadManager.Query orderBy(java.lang.String, int) "/>
+    </class>
+    <class name="android.telephony.SmsMessage">
+        <method signature="public static android.telephony.SmsMessage createFromPdu(byte[], java.lang.String) "/>
+        <method signature="public static android.telephony.SmsMessage newFromCMT(java.lang.String[]) "/>
+        <method signature="public static android.telephony.SmsMessage newFromParcel(android.os.Parcel) "/>
+        <method signature="public static android.telephony.SmsMessage createFromEfRecord(int, byte[]) "/>
+        <method signature="public static ArrayList&lt;java.lang.String&gt; fragmentText(java.lang.String) "/>
+    </class>
+    <class name="android.nfc.NfcAdapter">
+        <method signature="public static synchronized android.nfc.NfcAdapter getNfcAdapter(android.content.Context) "/>
+        <method signature="public static android.nfc.NfcAdapter getDefaultAdapter() "/>
+        <method signature="public android.content.Context getContext() "/>
+        <method signature="public INfcAdapter getService() "/>
+        <method signature="public INfcTag getTagService() "/>
+        <method signature="public void attemptDeadServiceRecovery(java.lang.Exception) "/>
+        <method signature="public int getAdapterState() "/>
+        <method signature="public boolean enable() "/>
+        <method signature="public boolean disable() "/>
+        <method signature="public boolean enableNdefPush() "/>
+        <method signature="public boolean disableNdefPush() "/>
+        <method signature="public void dispatch(android.nfc.Tag) "/>
+        <method signature="public void setP2pModes(int, int) "/>
+        <method signature="public INfcAdapterExtras getNfcAdapterExtrasInterface() "/>
+    </class>
+    <class name="com.android.internal.telephony.cdma.SmsMessage">
+        <method signature="public static com.android.internal.telephony.cdma.SmsMessage createFromEfRecord(int, byte[]) "/>
+        <method signature="public static com.android.internal.telephony.cdma.SmsMessage.SubmitPdu getSubmitPdu(java.lang.String, java.lang.String, java.lang.String, boolean, com.android.internal.telephony.SmsHeader) "/>
+    </class>
+    <class name="android.widget.OverScroller">
+        <method signature="public final int getDuration() "/>
+        <method signature="public void extendDuration(int) "/>
+        <method signature="public void setFinalX(int) "/>
+        <method signature="public void setFinalY(int) "/>
+        <method signature="public int timePassed() "/>
+        <method signature="public boolean isScrollingInDirection(float, float) "/>
+    </class>
+    <class name="android.view.ViewGroup">
+        <method signature="public void childHasTransientStateChanged(android.view.View, boolean) "/>
+        <method signature="public boolean hasTransientState() "/>
+        <method signature="public void makeOptionalFitsSystemWindows() "/>
+        <method signature="protected void onChildVisibilityChanged(android.view.View, int, int) "/>
+        <method signature="protected boolean hasHoveredChild() "/>
+        <method signature="public void childAccessibilityStateChanged(android.view.View) "/>
+        <method signature="public android.view.View findViewToTakeAccessibilityFocusFromHover(android.view.View, android.view.View) "/>
+        <method signature="protected boolean isTransformedTouchPointInView(float, float, android.view.View, android.graphics.PointF) "/>
+        <method signature="public void dispatchStartTemporaryDetach() "/>
+        <method signature="public void dispatchFinishTemporaryDetach() "/>
+        <method signature="public void resetAccessibilityStateChanged() "/>
+        <method signature="protected void onDebugDrawMargins(android.graphics.Canvas) "/>
+        <method signature="protected void onDebugDraw(android.graphics.Canvas) "/>
+        <method signature="protected void dispatchGetDisplayList() "/>
+        <method signature="public void setChildrenLayersEnabled(boolean) "/>
+        <method signature="protected android.view.View findViewTraversal(int) "/>
+        <method signature="protected android.view.View findViewWithTagTraversal(java.lang.Object) "/>
+        <method signature="protected android.view.View findViewByPredicateTraversal(Predicate&lt;android.view.View&gt;, android.view.View) "/>
+        <method signature="protected void onViewAdded(android.view.View) "/>
+        <method signature="protected void onViewRemoved(android.view.View) "/>
+        <method signature="public void invalidateChildFast(android.view.View, android.graphics.Rect) "/>
+        <method signature="public void offsetChildrenTopAndBottom(int) "/>
+        <method signature="public int getLayoutMode() "/>
+        <method signature="public void setLayoutMode(int) "/>
+        <method signature="public void requestTransitionStart(android.animation.LayoutTransition) "/>
+        <method signature="public void onResolvedLayoutDirectionReset() "/>
+        <method signature="public void onResolvedTextDirectionReset() "/>
+        <method signature="public void onResolvedTextAlignmentReset() "/>
+        <method signature="protected void onSetLayoutParams(android.view.View, android.view.ViewGroup.LayoutParams) "/>
+    </class>
+    <class name="android.widget.PopupMenu">
+        <method signature="public boolean onMenuItemSelected(com.android.internal.view.menu.MenuBuilder, android.view.MenuItem) "/>
+        <method signature="public void onCloseMenu(com.android.internal.view.menu.MenuBuilder, boolean) "/>
+        <method signature="public boolean onOpenSubMenu(com.android.internal.view.menu.MenuBuilder) "/>
+        <method signature="public void onCloseSubMenu(com.android.internal.view.menu.SubMenuBuilder) "/>
+        <method signature="public void onMenuModeChange(com.android.internal.view.menu.MenuBuilder) "/>
+    </class>
+    <class name="android.telephony.LteCellIdentity">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.webkit.Plugin">
+        <method signature="public java.lang.String toString() "/>
+        <method signature="public java.lang.String getName() "/>
+        <method signature="public java.lang.String getPath() "/>
+        <method signature="public java.lang.String getFileName() "/>
+        <method signature="public java.lang.String getDescription() "/>
+        <method signature="public void setName(java.lang.String) "/>
+        <method signature="public void setPath(java.lang.String) "/>
+        <method signature="public void setFileName(java.lang.String) "/>
+        <method signature="public void setDescription(java.lang.String) "/>
+        <method signature="public void setClickHandler(android.webkit.Plugin.PreferencesClickHandler) "/>
+        <method signature="public void dispatchClickEvent(android.content.Context) "/>
+    </class>
+    <class name="android.view.inputmethod.InputMethodManager">
+        <method signature="public static android.view.inputmethod.InputMethodManager getInstance(android.content.Context) "/>
+        <method signature="public static android.view.inputmethod.InputMethodManager getInstance(android.os.Looper) "/>
+        <method signature="public static android.view.inputmethod.InputMethodManager peekInstance() "/>
+        <method signature="public IInputMethodClient getClient() "/>
+        <method signature="public IInputContext getInputContext() "/>
+        <method signature="public void setImeWindowStatus(android.os.IBinder, int, int) "/>
+        <method signature="public void setFullscreenMode(boolean) "/>
+        <method signature="public void registerSuggestionSpansForNotification(android.text.style.SuggestionSpan[]) "/>
+        <method signature="public void notifySuggestionPicked(android.text.style.SuggestionSpan, java.lang.String, int) "/>
+        <method signature="public void reportFinishInputConnection(android.view.inputmethod.InputConnection) "/>
+        <method signature="public void showSoftInputUnchecked(int, android.os.ResultReceiver) "/>
+        <method signature="public void windowDismissed(android.os.IBinder) "/>
+        <method signature="public void focusIn(android.view.View) "/>
+        <method signature="public void focusOut(android.view.View) "/>
+        <method signature="public void checkFocus() "/>
+        <method signature="public void onWindowFocus(android.view.View, android.view.View, int, boolean, int) "/>
+        <method signature="public void startGettingWindowFocus(android.view.View) "/>
+        <method signature="public void dispatchKeyEvent(android.content.Context, int, android.view.KeyEvent, IInputMethodCallback) "/>
+    </class>
+    <class name="android.media.AudioManager">
+        <method signature="public void preDispatchKeyEvent(android.view.KeyEvent, int) "/>
+        <method signature="public void handleKeyDown(android.view.KeyEvent, int) "/>
+        <method signature="public void handleKeyUp(android.view.KeyEvent, int) "/>
+        <method signature="public void adjustMasterVolume(int, int) "/>
+        <method signature="public static boolean isValidRingerMode(int) "/>
+        <method signature="public int getLastAudibleStreamVolume(int) "/>
+        <method signature="public int getMasterStreamType() "/>
+        <method signature="public int getMasterMaxVolume() "/>
+        <method signature="public int getMasterVolume() "/>
+        <method signature="public int getLastAudibleMasterVolume() "/>
+        <method signature="public void setMasterVolume(int, int) "/>
+        <method signature="public boolean isStreamMute(int) "/>
+        <method signature="public void setMasterMute(boolean) "/>
+        <method signature="public void setMasterMute(boolean, int) "/>
+        <method signature="public boolean isMasterMute() "/>
+        <method signature="public void forceVolumeControlStream(int) "/>
+        <method signature="public void adjustLocalOrRemoteStreamVolume(int, int) "/>
+        <method signature="public void setParameter(java.lang.String, java.lang.String) "/>
+        <method signature="public void registerAudioFocusListener(android.media.AudioManager.OnAudioFocusChangeListener) "/>
+        <method signature="public void unregisterAudioFocusListener(android.media.AudioManager.OnAudioFocusChangeListener) "/>
+        <method signature="public void requestAudioFocusForCall(int, int) "/>
+        <method signature="public void abandonAudioFocusForCall() "/>
+        <method signature="public void registerMediaButtonIntent(android.app.PendingIntent, android.content.ComponentName) "/>
+        <method signature="public void registerMediaButtonEventReceiverForCalls(android.content.ComponentName) "/>
+        <method signature="public void unregisterMediaButtonEventReceiverForCalls() "/>
+        <method signature="public void unregisterMediaButtonIntent(android.app.PendingIntent, android.content.ComponentName) "/>
+        <method signature="public void registerRemoteControlDisplay(IRemoteControlDisplay) "/>
+        <method signature="public void unregisterRemoteControlDisplay(IRemoteControlDisplay) "/>
+        <method signature="public void remoteControlDisplayUsesBitmapSize(IRemoteControlDisplay, int, int) "/>
+        <method signature="public void reloadAudioSettings() "/>
+        <method signature="public boolean isSilentMode() "/>
+        <method signature="public int getDevicesForStream(int) "/>
+        <method signature="public void setWiredDeviceConnectionState(int, int, java.lang.String) "/>
+        <method signature="public int setBluetoothA2dpDeviceConnectionState(android.bluetooth.BluetoothDevice, int) "/>
+        <method signature="public IRingtonePlayer getRingtonePlayer() "/>
+    </class>
+    <class name="android.net.NetworkInfo">
+        <method signature="public void setIsAvailable(boolean) "/>
+        <method signature="public void setFailover(boolean) "/>
+        <method signature="public void setDetailedState(android.net.NetworkInfo.DetailedState, java.lang.String, java.lang.String) "/>
+        <method signature="public void setExtraInfo(java.lang.String) "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.telephony.PhoneNumberUtils">
+        <method signature="public static java.lang.String extractNetworkPortionAlt(java.lang.String) "/>
+        <method signature="public static java.lang.String convertAndStrip(java.lang.String) "/>
+        <method signature="public static java.lang.String convertPreDial(java.lang.String) "/>
+        <method signature="public static boolean compare(java.lang.String, java.lang.String, boolean) "/>
+        <method signature="public static boolean compareLoosely(java.lang.String, java.lang.String) "/>
+        <method signature="public static boolean compareStrictly(java.lang.String, java.lang.String) "/>
+        <method signature="public static boolean compareStrictly(java.lang.String, java.lang.String, boolean) "/>
+        <method signature="public static java.lang.String formatNumber(java.lang.String, int) "/>
+        <method signature="public static java.lang.String formatNumberToE164(java.lang.String, java.lang.String) "/>
+        <method signature="public static java.lang.String formatNumber(java.lang.String, java.lang.String) "/>
+        <method signature="public static java.lang.String formatNumber(java.lang.String, java.lang.String, java.lang.String) "/>
+        <method signature="public static java.lang.String normalizeNumber(java.lang.String) "/>
+        <method signature="public static java.lang.String replaceUnicodeDigits(java.lang.String) "/>
+        <method signature="public static boolean isPotentialEmergencyNumber(java.lang.String) "/>
+        <method signature="public static boolean isEmergencyNumber(java.lang.String, java.lang.String) "/>
+        <method signature="public static boolean isPotentialEmergencyNumber(java.lang.String, java.lang.String) "/>
+        <method signature="public static boolean isLocalEmergencyNumber(java.lang.String, android.content.Context) "/>
+        <method signature="public static boolean isPotentialLocalEmergencyNumber(java.lang.String, android.content.Context) "/>
+        <method signature="public static boolean isVoiceMailNumber(java.lang.String) "/>
+        <method signature="public static java.lang.String cdmaCheckAndProcessPlusCode(java.lang.String) "/>
+        <method signature="public static java.lang.String cdmaCheckAndProcessPlusCodeByNumberFormat(java.lang.String, int, int) "/>
+        <method signature="public static boolean isUriNumber(java.lang.String) "/>
+        <method signature="public static java.lang.String getUsernameFromUriNumber(java.lang.String) "/>
+    </class>
+    <class name="android.telephony.TelephonyManager">
+        <method signature="public static android.telephony.TelephonyManager getDefault() "/>
+        <method signature="public static android.telephony.TelephonyManager from(android.content.Context) "/>
+        <method signature="public void enableLocationUpdates() "/>
+        <method signature="public void disableLocationUpdates() "/>
+        <method signature="public int getCurrentPhoneType() "/>
+        <method signature="public static int getNetworkClass(int) "/>
+        <method signature="public java.lang.String getNetworkTypeName() "/>
+        <method signature="public static java.lang.String getNetworkTypeName(int) "/>
+        <method signature="public int getLteOnCdmaMode() "/>
+        <method signature="public java.lang.String getLine1AlphaTag() "/>
+        <method signature="public java.lang.String getMsisdn() "/>
+        <method signature="public java.lang.String getCompleteVoiceMailNumber() "/>
+        <method signature="public int getVoiceMessageCount() "/>
+        <method signature="public java.lang.String getIsimImpi() "/>
+        <method signature="public java.lang.String getIsimDomain() "/>
+        <method signature="public java.lang.String[] getIsimImpu() "/>
+        <method signature="public int getCdmaEriIconIndex() "/>
+        <method signature="public int getCdmaEriIconMode() "/>
+        <method signature="public java.lang.String getCdmaEriText() "/>
+        <method signature="public boolean isVoiceCapable() "/>
+        <method signature="public boolean isSmsCapable() "/>
+        <method signature="public List&lt;android.telephony.CellInfo&gt; getAllCellInfo() "/>
+    </class>
+    <class name="android.widget.ImageView">
+        <method signature="public int getResolvedLayoutDirection(android.graphics.drawable.Drawable) "/>
+    </class>
+    <class name="android.telephony.cdma.CdmaCellLocation">
+        <method signature="public boolean isEmpty() "/>
+    </class>
+    <class name="android.location.LocationManager">
+        <method signature="public boolean sendNiResponse(int, int) "/>
+    </class>
+    <class name="android.net.wifi.WifiInfo">
+        <method signature="public void setMeteredHint(boolean) "/>
+        <method signature="public boolean getMeteredHint() "/>
+        <method signature="public void setHiddenSSID(boolean) "/>
+        <method signature="public static java.lang.String removeDoubleQuotes(java.lang.String) "/>
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.bluetooth.BluetoothHealth">
+        <method signature="public boolean registerAppConfiguration(java.lang.String, int, int, int, android.bluetooth.BluetoothHealthCallback) "/>
+        <method signature="public boolean connectChannelToSink(android.bluetooth.BluetoothDevice, android.bluetooth.BluetoothHealthAppConfiguration, int) "/>
+    </class>
+    <class name="android.view.inputmethod.InputMethodSubtype">
+        <method signature="public static List&lt;android.view.inputmethod.InputMethodSubtype&gt; sort(android.content.Context, int, android.view.inputmethod.InputMethodInfo, List&lt;android.view.inputmethod.InputMethodSubtype&gt;) "/>
+    </class>
+    <class name="java.net.URI">
+        <method signature="public int getEffectivePort() "/>
+        <method signature="public static int getEffectivePort(java.lang.String, int) "/>
+    </class>
+    <class name="android.telephony.CdmaCellIdentity">
+        <method signature="public int describeContents() "/>
+        <method signature="public void writeToParcel(android.os.Parcel, int) "/>
+    </class>
+    <class name="android.test.mock.MockContentProvider">
+        <method signature="public android.os.Bundle call(java.lang.String, java.lang.String, android.os.Bundle) "/>
+        <method signature="public final android.content.IContentProvider getIContentProvider() "/>
+    </class>
+    <class name="android.graphics.drawable.NinePatchDrawable">
+        <method signature="public android.graphics.Insets getLayoutInsets() "/>
+    </class>
+    <class name="android.net.ConnectivityManager">
+        <method signature="public static java.lang.String getNetworkTypeName(int) "/>
+        <method signature="public static boolean isNetworkTypeMobile(int) "/>
+        <method signature="public android.net.NetworkInfo getActiveNetworkInfoForUid(int) "/>
+        <method signature="public android.net.LinkProperties getActiveLinkProperties() "/>
+        <method signature="public android.net.LinkProperties getLinkProperties(int) "/>
+        <method signature="public boolean setRadios(boolean) "/>
+        <method signature="public boolean setRadio(int, boolean) "/>
+        <method signature="public boolean requestRouteToHostAddress(int, java.net.InetAddress) "/>
+        <method signature="public void setBackgroundDataSetting(boolean) "/>
+        <method signature="public android.net.NetworkQuotaInfo getActiveNetworkQuotaInfo() "/>
+        <method signature="public boolean getMobileDataEnabled() "/>
+        <method signature="public void setMobileDataEnabled(boolean) "/>
+        <method signature="public static android.net.ConnectivityManager from(android.content.Context) "/>
+        <method signature="public java.lang.String[] getTetherableIfaces() "/>
+        <method signature="public java.lang.String[] getTetheredIfaces() "/>
+        <method signature="public java.lang.String[] getTetheringErroredIfaces() "/>
+        <method signature="public int tether(java.lang.String) "/>
+        <method signature="public int untether(java.lang.String) "/>
+        <method signature="public boolean isTetheringSupported() "/>
+        <method signature="public java.lang.String[] getTetherableUsbRegexs() "/>
+        <method signature="public java.lang.String[] getTetherableWifiRegexs() "/>
+        <method signature="public java.lang.String[] getTetherableBluetoothRegexs() "/>
+        <method signature="public int setUsbTethering(boolean) "/>
+        <method signature="public int getLastTetherError(java.lang.String) "/>
+        <method signature="public boolean requestNetworkTransitionWakelock(java.lang.String) "/>
+        <method signature="public void reportInetCondition(int, int) "/>
+        <method signature="public void setGlobalProxy(android.net.ProxyProperties) "/>
+        <method signature="public android.net.ProxyProperties getGlobalProxy() "/>
+        <method signature="public android.net.ProxyProperties getProxy() "/>
+        <method signature="public void setDataDependency(int, boolean) "/>
+        <method signature="public boolean isNetworkSupported(int) "/>
+    </class>
+    <class name="android.content.ClipData">
+        <method signature="public android.graphics.Bitmap getIcon() "/>
+        <method signature="public void toShortString(java.lang.StringBuilder) "/>
+    </class>
+    <class name="android.content.pm.PermissionInfo">
+        <method signature="public static int fixProtectionLevel(int) "/>
+        <method signature="public static java.lang.String protectionToString(int) "/>
+    </class>
+    <class name="java.net.URL">
+        <method signature="public java.net.URI toURILenient() throws java.net.URISyntaxException"/>
+        <method signature="public int getEffectivePort() "/>
+    </class>
+    <class name="android.media.MediaRecorder">
+        <method signature="public void setAuxiliaryOutputFile(java.io.FileDescriptor) "/>
+        <method signature="public void setAuxiliaryOutputFile(java.lang.String) "/>
+    </class>
+    <class name="java.io.FileDescriptor">
+        <method signature="public final int getInt$() "/>
+        <method signature="public final void setInt$(int) "/>
+    </class>
+    <class name="android.appwidget.AppWidgetManager">
+        <method signature="public void bindAppWidgetId(int, android.content.ComponentName) "/>
+        <method signature="public boolean hasBindAppWidgetPermission(java.lang.String) "/>
+        <method signature="public void setBindAppWidgetPermission(java.lang.String, boolean) "/>
+        <method signature="public void bindRemoteViewsService(int, android.content.Intent, android.os.IBinder) "/>
+        <method signature="public void unbindRemoteViewsService(int, android.content.Intent) "/>
+    </class>
+    <class name="android.inputmethodservice.KeyboardView">
+        <method signature="public void onClick(android.view.View) "/>
+    </class>
+    <class name="android.database.sqlite.SQLiteProgram">
+        <method signature="protected final android.database.sqlite.SQLiteSession getSession() "/>
+        <method signature="protected final int getConnectionFlags() "/>
+        <method signature="protected final void onCorruption() "/>
+    </class>
+</hide-methods>
