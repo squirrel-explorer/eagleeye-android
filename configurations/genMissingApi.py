@@ -6,6 +6,7 @@ import os
 # Defines
 methodsFileDir = './missing_api_database'
 cfgFileName = 'missing-api.cfg'
+urlPrefix = 'https://raw.githubusercontent.com/squirrel-explorer/eagleeye-android/master/configurations/missing_api_database/'
 
 for (dirpath, dirnames, filenames) in os.walk(methodsFileDir) :
     break
@@ -14,7 +15,7 @@ methodsFileList = filter(lambda str:str.endswith('.xml'), filenames)
 cfgContent = ''
 
 for methodsFile in methodsFileList :
-    cfgContent += methodsFile + '\n'
+    cfgContent += urlPrefix + methodsFile + '\n'
 
     md5 = hashlib.md5()
     methodsFileHandler = open(methodsFileDir + '/' + methodsFile, 'rb')
