@@ -9,7 +9,7 @@ import lombok.ast.ForwardingAstVisitor;
  *
  * Base AST visitor, to be customized for more complex parsing
  */
-public class BaseAstVisitor extends ForwardingAstVisitor {
+public abstract class BaseAstVisitor extends ForwardingAstVisitor {
     protected JavaContext mContext;
 
     public BaseAstVisitor(JavaContext context) {

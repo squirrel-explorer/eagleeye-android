@@ -18,7 +18,7 @@ package com.squirrel_explorer.eagleeye.lint;
 
 import com.android.tools.lint.client.api.IssueRegistry;
 import com.android.tools.lint.detector.api.Issue;
-import com.squirrel_explorer.eagleeye.lint.api_checker.ApiMissingChecker;
+import com.squirrel_explorer.eagleeye.lint.api_checker.MissingApiChecker;
 import com.squirrel_explorer.eagleeye.lint.rules.defect.lang.*;
 import com.squirrel_explorer.eagleeye.lint.rules.performance.layout.BothWrapContentDetector;
 import com.squirrel_explorer.eagleeye.lint.rules.performance.system.EnumDetector;
@@ -46,7 +46,7 @@ public class LintIssueRegistry extends IssueRegistry {
                 ThreadPriorityDetector.ISSUE,
                 WrongAllocationDetector.ISSUE,
                 // Api Missing Checker
-                ApiMissingChecker.ISSUE
+                MissingApiChecker.ISSUE
         );
     }
 }
