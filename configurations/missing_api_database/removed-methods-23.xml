@@ -34,6 +34,16 @@
         <method signature="public static float exp(float) "/>
         <method signature="public static float pow(float, float) "/>
         <method signature="public static float hypot(float, float) "/>
+        <!-- Intervened manually BEGIN -->
+        <method signature="public static native float floor(float) "/>
+        <method signature="public static native float ceil(float) "/>
+        <method signature="public static native float sin(float) "/>
+        <method signature="public static native float cos(float) "/>
+        <method signature="public static native float sqrt(float) "/>
+        <method signature="public static native float exp(float) "/>
+        <method signature="public static native float pow(float, float) "/>
+        <method signature="public static native float hypot(float, float) "/>
+        <!-- Intervened manually END -->
     </class>
     <class name="android.os.UserManager">
         <method signature="public android.graphics.drawable.Drawable getBadgedIconForUser(android.graphics.drawable.Drawable, android.os.UserHandle) "/>
