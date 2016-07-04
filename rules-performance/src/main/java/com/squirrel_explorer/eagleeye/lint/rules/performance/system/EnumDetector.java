@@ -1,15 +1,11 @@
 package com.squirrel_explorer.eagleeye.lint.rules.performance.system;
 
-import com.android.annotations.NonNull;
 import com.android.tools.lint.detector.api.Category;
-import com.android.tools.lint.detector.api.Detector;
 import com.android.tools.lint.detector.api.Implementation;
 import com.android.tools.lint.detector.api.Issue;
-import com.android.tools.lint.detector.api.JavaContext;
 import com.android.tools.lint.detector.api.Scope;
 import com.android.tools.lint.detector.api.Severity;
-
-import lombok.ast.AstVisitor;
+import com.squirrel_explorer.eagleeye.types.base.BaseJavaDetector;
 
 /**
  * Created by squirrel-explorer on 16/02/22.
@@ -18,7 +14,7 @@ import lombok.ast.AstVisitor;
  *
  * 本规则功能：提示尽量避免使用枚举
  */
-public class EnumDetector extends Detector implements Detector.JavaScanner {
+public class EnumDetector extends BaseJavaDetector {
     public static final Issue ISSUE = Issue.create(
             "EnumDetector",
             "Use constants instead of enums",
@@ -30,8 +26,7 @@ public class EnumDetector extends Detector implements Detector.JavaScanner {
                     EnumDetector.class,
                     Scope.JAVA_FILE_SCOPE));
 
-    @Override
-    public AstVisitor createJavaVisitor(@NonNull JavaContext context) {
-        return new EnumAstVisitor(context);
+    public EnumDetector() {
+        super(EnumAstVisitor.class);
     }
 }

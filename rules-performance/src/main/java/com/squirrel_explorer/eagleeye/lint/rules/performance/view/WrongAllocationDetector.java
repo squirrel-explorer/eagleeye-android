@@ -1,15 +1,11 @@
 package com.squirrel_explorer.eagleeye.lint.rules.performance.view;
 
-import com.android.annotations.NonNull;
 import com.android.tools.lint.detector.api.Category;
-import com.android.tools.lint.detector.api.Detector;
 import com.android.tools.lint.detector.api.Implementation;
 import com.android.tools.lint.detector.api.Issue;
-import com.android.tools.lint.detector.api.JavaContext;
 import com.android.tools.lint.detector.api.Scope;
 import com.android.tools.lint.detector.api.Severity;
-
-import lombok.ast.AstVisitor;
+import com.squirrel_explorer.eagleeye.types.base.BaseJavaDetector;
 
 /**
  * Created by squirrel-explorer on 16/02/22.
@@ -19,7 +15,7 @@ import lombok.ast.AstVisitor;
  *
  * 本规则功能：在View的onMeasure()、onLayout()、onDraw()等可能被频繁调用的函数中，避免new对象
  */
-public class WrongAllocationDetector extends Detector implements Detector.JavaScanner {
+public class WrongAllocationDetector extends BaseJavaDetector {
     public static final Issue ISSUE = Issue.create(
             "WrongAllocationDetector",
             "Avoid construct new objects in frequently called methods",
@@ -31,8 +27,7 @@ public class WrongAllocationDetector extends Detector implements Detector.JavaSc
                     WrongAllocationDetector.class,
                     Scope.JAVA_FILE_SCOPE));
 
-    @Override
-    public AstVisitor createJavaVisitor(@NonNull JavaContext context) {
-        return new WrongAllocationAstVisitor(context);
+    public WrongAllocationDetector() {
+        super(WrongAllocationAstVisitor.class);
     }
 }
