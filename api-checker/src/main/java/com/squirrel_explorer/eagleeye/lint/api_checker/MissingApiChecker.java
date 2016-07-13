@@ -3,12 +3,12 @@ package com.squirrel_explorer.eagleeye.lint.api_checker;
 import com.android.annotations.NonNull;
 import com.android.tools.lint.detector.api.Category;
 import com.android.tools.lint.detector.api.Context;
+import com.android.tools.lint.detector.api.Detector;
 import com.android.tools.lint.detector.api.Implementation;
 import com.android.tools.lint.detector.api.Issue;
 import com.android.tools.lint.detector.api.JavaContext;
 import com.android.tools.lint.detector.api.Scope;
 import com.android.tools.lint.detector.api.Severity;
-import com.squirrel_explorer.eagleeye.types.base.BaseJavaDetector;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -33,7 +33,7 @@ import lombok.ast.AstVisitor;
 /**
  * Created by squirrel-explorer on 2016-06-03.
  */
-public class MissingApiChecker extends BaseJavaDetector {
+public class MissingApiChecker extends Detector implements Detector.JavaScanner {
     // 0，解析Android SDK中@removed和@hide的方法
     // 1，校验MethodInvocation是否属于Android SDK中@removed和@hide的方法
     public static final int MODE = 1;
@@ -51,10 +51,6 @@ public class MissingApiChecker extends BaseJavaDetector {
                     MissingApiChecker.class,
                     Scope.JAVA_FILE_SCOPE));
 
-    public MissingApiChecker() {
-        super(MissingApiCheckAstVisitor.class);
-    }
-
     @Override
     public void beforeCheckProject(@NonNull Context context) {
         if (1 == MissingApiChecker.MODE) {
@@ -67,15 +63,13 @@ public class MissingApiChecker extends BaseJavaDetector {
 
     @Override
     public AstVisitor createJavaVisitor(@NonNull JavaContext context) {
-        super.createJavaVisitor(context);
+        MissingApiCheckAstVisitor astVisitor = new MissingApiCheckAstVisitor(context);
 
         if (1 == MissingApiChecker.MODE) {
-            if (mAstVisitor instanceof MissingApiCheckAstVisitor) {
-                ((MissingApiCheckAstVisitor)mAstVisitor).setMissingApiDb(mMissingApiDb);
-            }
+            astVisitor.setMissingApiDb(mMissingApiDb);
         }
 
-        return mAstVisitor;
+        return astVisitor;
     }
 
     @Override
