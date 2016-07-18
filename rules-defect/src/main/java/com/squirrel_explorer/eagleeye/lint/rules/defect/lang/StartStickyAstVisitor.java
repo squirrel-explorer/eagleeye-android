@@ -3,23 +3,16 @@ package com.squirrel_explorer.eagleeye.lint.rules.defect.lang;
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
 import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
-
-import java.util.Iterator;
+import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import lombok.ast.Expression;
 import lombok.ast.MethodDeclaration;
 import lombok.ast.Return;
 import lombok.ast.Statement;
-import lombok.ast.StrictListAccessor;
-import lombok.ast.VariableDefinition;
 
 public class StartStickyAstVisitor extends BaseAstVisitor {
-    // Parameter types of onStartCommand()
-    private static final String[] ONSTARTCOMMAND_PARAM_TYPES = {
-            "android.content.Intent",
-            "int",
-            "int"
-    };
+    // Signature of onStartCommand()
+    private static final String ONSTARTCOMMAND_SIGNATURE = "public int onStartCommand(android.content.Intent, int, int) ";
 
     public StartStickyAstVisitor(JavaContext context) {
         super(context);
@@ -27,40 +20,20 @@ public class StartStickyAstVisitor extends BaseAstVisitor {
 
     @Override
     public boolean visitMethodDeclaration(MethodDeclaration node) {
-        // Only handle Service.onStartCommand()
-        if (!"onStartCommand".equals(node.astMethodName().astValue())) {
+        JavaParser.ResolvedMethod resolvedMethod = NodeUtils.parseResolvedMethod(mContext, node);
+        if (null == resolvedMethod) {
             return super.visitMethodDeclaration(node);
         }
 
-        JavaParser.ResolvedNode resolvedNode = mContext.resolve(node);
-        if (!(resolvedNode instanceof JavaParser.ResolvedMethod)) {
-            return super.visitMethodDeclaration(node);
-        }
-        JavaParser.ResolvedMethod resolvedMethod = (JavaParser.ResolvedMethod)resolvedNode;
-        JavaParser.ResolvedClass resolvedClass = resolvedMethod.getContainingClass();
         // The containing class must be subclass of android.app.Service
+        JavaParser.ResolvedClass resolvedClass = resolvedMethod.getContainingClass();
         if (!resolvedClass.isSubclassOf("android.app.Service", false)) {
             return super.visitMethodDeclaration(node);
         }
 
-        // The return type must be "int"
-        if (!node.astReturnTypeReference().isInt()) {
+        // Only handle Service.onStartCommand()
+        if (!ONSTARTCOMMAND_SIGNATURE.equals(resolvedMethod.getSignature())) {
             return super.visitMethodDeclaration(node);
-        }
-
-        // The parameter types must match
-        StrictListAccessor<VariableDefinition, MethodDeclaration> params = node.astParameters();
-        if (null == params || 3 != params.size()) {
-            return super.visitMethodDeclaration(node);
-        }
-        Iterator<VariableDefinition> iterable = params.iterator();
-        VariableDefinition variable;
-        int i = 0;
-        while (iterable.hasNext()) {
-            variable = iterable.next();
-            if (!ONSTARTCOMMAND_PARAM_TYPES[i++].equals(mContext.getType(variable).getName())) {
-                return super.visitMethodDeclaration(node);
-            }
         }
 
         // Get the RETURN statement of onStartCommand()

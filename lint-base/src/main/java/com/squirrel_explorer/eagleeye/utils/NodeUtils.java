@@ -1,88 +1,60 @@
 package com.squirrel_explorer.eagleeye.utils;
 
+import com.android.annotations.NonNull;
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
 
-import java.util.ArrayList;
-
+import lombok.ast.ClassDeclaration;
 import lombok.ast.Node;
 
 /**
  * Created by squirrel-explorer on 16/02/22.
  */
 public class NodeUtils {
-    /**
-     * Find the Class node of some node
-     *
-     * @param context
-     * @param node
-     * @return
-     */
-    public static JavaParser.ResolvedClass findEnclosingClass(JavaContext context, Node node) {
+    public static JavaParser.ResolvedMethod parseResolvedMethod(
+            @NonNull JavaContext context, @NonNull Node node) {
         if (null == context || null == node) {
             return null;
         }
 
-        Node parentNode = node;
-        JavaParser.ResolvedNode parentResolved;
-        do {
-            try {
-                parentNode = parentNode.getParent();
-                parentResolved = context.resolve(parentNode);
-            } catch (Exception e) {
-                parentResolved = null;
-                break;
-            }
-        } while (!(parentResolved instanceof JavaParser.ResolvedMethod) &&
-                !(parentResolved instanceof JavaParser.ResolvedField) &&
-                !(parentResolved instanceof JavaParser.ResolvedClass));
-
-        JavaParser.ResolvedClass containingClazz;
-        if (parentResolved instanceof JavaParser.ResolvedMethod) {
-            containingClazz = ((JavaParser.ResolvedMethod)parentResolved).getContainingClass();
-        } else if (parentResolved instanceof JavaParser.ResolvedField) {
-            containingClazz = ((JavaParser.ResolvedField)parentResolved).getContainingClass();
-        } else if (parentResolved instanceof JavaParser.ResolvedClass) {
-            containingClazz = (JavaParser.ResolvedClass)parentResolved;
-        } else {
-            containingClazz = null;
+        JavaParser.ResolvedNode resolvedNode = null;
+        try {
+            resolvedNode = context.resolve(node);
+        } catch (Exception e) {
+            // TODO
         }
 
-        return containingClazz;
+        return (resolvedNode instanceof JavaParser.ResolvedMethod) ?
+                (JavaParser.ResolvedMethod)resolvedNode : null;
     }
 
-    /**
-     * Find the Method node of some node
-     *
-     * @param context
-     * @param node
-     * @return
-     */
-    public static JavaParser.ResolvedMethod findEnclosingMethod(JavaContext context, Node node) {
+    public static JavaParser.ResolvedClass parseContainingClass(
+            @NonNull JavaContext context, @NonNull Node node) {
         if (null == context || null == node) {
             return null;
         }
 
-        JavaParser.ResolvedClass containingClazz = findEnclosingClass(context, node);
-
-        Node parentNode = node;
-        JavaParser.ResolvedNode parentResolved;
-        ArrayList<JavaParser.ResolvedNode> methods = new ArrayList<JavaParser.ResolvedNode>();
-        do {
-            try {
-                parentNode = parentNode.getParent();
-                parentResolved = context.resolve(parentNode);
-                methods.add(parentResolved);
-            } catch (Exception e) {
-                break;
-            }
-        } while (containingClazz != parentResolved);
-
-        for (int i = methods.size() - 1; i >= 0; i--) {
-            if (methods.get(i) instanceof JavaParser.ResolvedMethod) {
-                return (JavaParser.ResolvedMethod)methods.get(i);
-            }
+        JavaParser.ResolvedNode resolvedNode = null;
+        try {
+            resolvedNode = context.resolve(node);
+        } catch (Exception e) {
+            // TODO
         }
-        return null;
+
+        if (resolvedNode instanceof JavaParser.ResolvedMethod) {
+            return ((JavaParser.ResolvedMethod)resolvedNode).getContainingClass();
+        } else if (resolvedNode instanceof JavaParser.ResolvedField) {
+            return ((JavaParser.ResolvedField)resolvedNode).getContainingClass();
+        } else if (resolvedNode instanceof JavaParser.ResolvedClass) {
+            return ((JavaParser.ResolvedClass)resolvedNode).getContainingClass();
+        } else {
+            ClassDeclaration classDeclaration = JavaContext.findSurroundingClass(node);
+            if (null == classDeclaration) {
+                return null;
+            }
+            resolvedNode = context.resolve(classDeclaration);
+            return (resolvedNode instanceof JavaParser.ResolvedClass) ?
+                    (JavaParser.ResolvedClass)resolvedNode : null;
+        }
     }
 }

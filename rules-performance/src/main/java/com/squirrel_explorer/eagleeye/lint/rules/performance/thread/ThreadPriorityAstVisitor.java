@@ -6,9 +6,13 @@ import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
 import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import lombok.ast.ConstructorInvocation;
+import lombok.ast.Expression;
+import lombok.ast.MethodInvocation;
 import lombok.ast.Node;
+import lombok.ast.StrictListAccessor;
 
 /**
  * Created by squirrel-explorer on 16/02/22.
@@ -20,143 +24,118 @@ public class ThreadPriorityAstVisitor extends BaseAstVisitor {
 
     @Override
     public boolean visitConstructorInvocation(ConstructorInvocation node) {
-        JavaParser.ResolvedNode resolved = mContext.resolve(node);
-        if (null != resolved && resolved instanceof JavaParser.ResolvedMethod) {
-            JavaParser.ResolvedMethod method = (JavaParser.ResolvedMethod)resolved;
-            JavaParser.ResolvedClass clazz = method.getContainingClass();
-            // Catch the thread created by new Thread()
-            if (clazz.isSubclassOf("java.lang.Thread", false)) {
-                // Get the enclosing method, since Thread.setPriority() may not be in the same level with new Thread()
-                Node enclosingMethod = findEnclosingMethod(node);
-                if (null != enclosingMethod) {
-                    // Get thread variable name
-                    Node enclosingVariable = findEnclosingVariable(node);
-                    // Search all possible Thread.setPriority() in the method
-                    ArrayList<Node> resultNodes = new ArrayList<Node>();
-                    findSetPriorityNodes(enclosingMethod, resultNodes);
-                    // Find the last Thread.setPriority() in the above list.
-                    // If an upper priority is set, prompt warning. However, if no priority
-                    // is set, it means that the thread priority is the same as the current
-                    // thread (maybe UI thread), so prompt warning, too.
-                    Node setPriorityNode = determineSetPriorityNode(enclosingVariable, resultNodes);
-                    if (null == setPriorityNode) {
-                        mContext.report(
-                                ThreadPriorityDetector.ISSUE,
-                                mContext.getLocation(node),
-                                "Please set lower priority for new thread");
-                    } else {
-                        String threadPriority = null;
-                        for (Node child : setPriorityNode.getChildren()) {
-                            String childValue = child.toString();
-                            if (childValue.contains("THREAD_PRIORITY_")) {
-                                threadPriority = childValue;
-                                break;
-                            }
-                        }
-                        if (threadPriority.contains("THREAD_PRIORITY_FOREGROUND") ||
-                                threadPriority.contains("THREAD_PRIORITY_DISPLAY") ||
-                                threadPriority.contains("THREAD_PRIORITY_URGENT_DISPLAY") ||
-                                threadPriority.contains("THREAD_PRIORITY_AUDIO") ||
-                                threadPriority.contains("THREAD_PRIORITY_URGENT_AUDIO")) {
-                            mContext.report(
-                                    ThreadPriorityDetector.ISSUE,
-                                    mContext.getLocation(setPriorityNode),
-                                    "Please set lower priority for new thread");
-                        }
-                    }
-                    resultNodes.clear();
-                }
+        // 寻找new Thread()的节点
+        JavaParser.ResolvedClass typeClass = NodeUtils.parseContainingClass(mContext, node);
+        if (null == typeClass || !typeClass.isSubclassOf("java.lang.Thread", false)) {
+            return super.visitConstructorInvocation(node);
+        }
+
+        // 获取new Thread()的赋值对象
+        Node operand = findAssignOperand(node);
+        // 获取new Thread()所在方法
+        Node containingMethod = JavaContext.findSurroundingMethod(node);
+        if (null == containingMethod) {
+            return super.visitConstructorInvocation(node);
+        }
+
+        // 获取containingMethod中所有的operand.setPriority()节点的列表
+        ArrayList<MethodInvocation> setPriorityNodes = new ArrayList<>();
+        searchSetPriorityNodes(operand, containingMethod, setPriorityNodes);
+        // 找出最后一个operand.setPriority()节点
+        MethodInvocation lastSetPriorityNode = setPriorityNodes.isEmpty() ? null : setPriorityNodes.get(setPriorityNodes.size() - 1);
+        if (null == lastSetPriorityNode) {
+            // 在Android里，new Thread()创建的线程，缺省与当前线程具有相同优先级，所以
+            // 如果没有显式降低优先级，我们认为是有问题的情形
+            mContext.report(
+                    ThreadPriorityDetector.ISSUE,
+                    mContext.getLocation(node),
+                    "Please set lower priority for new thread");
+        } else {
+            // 如果最后一次调用operand.setPriority()没有设置较低优先级，则报警
+            if (!validateSetLowerPriority(lastSetPriorityNode)) {
+                mContext.report(
+                        ThreadPriorityDetector.ISSUE,
+                        mContext.getLocation(lastSetPriorityNode),
+                        "Please set lower priority for new thread");
             }
         }
+        setPriorityNodes.clear();
 
         return super.visitConstructorInvocation(node);
     }
 
     /**
-     * Get the variable node which is assigned by new Thread()
+     * 获取new Thread()的赋值对象节点
      *
-     * @param node  new Thread() node
-     * @return
+     * @param node  new Thread()构造函数节点
+     * @return  Thread t = new Thread()的赋值对象节点t，对于new Thread().xxx()形式，
+     *          赋值对象节点为new Thread()本身
      */
-    private Node findEnclosingVariable(Node node) {
-        for (Node child : node.getParent().getChildren()) {
-            if (!child.equals(node)) {
-                return child;
-            }
+    private Node findAssignOperand(Node node) {
+        Node parentNode = node.getParent();
+        if (null == parentNode) {
+            return node;
         }
-        return null;
+        return parentNode.getChildren().get(0);
     }
 
     /**
-     * Get the enclosing method node of new Thread() node
+     * 给定thread变量名，获取其所有的setPriority()节点列表
      *
-     * @param node  new Thread() node
-     * @return
-     */
-    private Node findEnclosingMethod(Node node) {
-        JavaParser.ResolvedMethod method = NodeUtils.findEnclosingMethod(mContext, node);
-        if (null == method) {
-            return null;
-        }
-
-        Node parentNode = node;
-        JavaParser.ResolvedNode parentResolved;
-        do {
-            parentNode = parentNode.getParent();
-            parentResolved = mContext.resolve(parentNode);
-        } while (!(method.equals(parentResolved)));
-
-        return parentNode;
-    }
-
-    /**
-     * Search all possible Thread.setPriority() nodes
-     *
+     * @param operand
      * @param node
-     * @param resultNodes
+     * @param setPriorityNodes
      */
-    private void findSetPriorityNodes(Node node, ArrayList<Node> resultNodes) {
-        if ("setPriority".equals(node.toString())) {
-            resultNodes.add(node);
+    private void searchSetPriorityNodes(Node operand, Node node, ArrayList<MethodInvocation> setPriorityNodes) {
+        JavaParser.ResolvedMethod resolvedMethod = NodeUtils.parseResolvedMethod(mContext, node);
+        if (null != resolvedMethod &&
+                "setPriority".equals(resolvedMethod.getName()) &&
+                resolvedMethod.getContainingClass().isSubclassOf("java.lang.Thread", false) &&
+                node instanceof MethodInvocation) {
+            MethodInvocation methodInvocation = (MethodInvocation)node;
+            // 这里比较的是Node.toString()而非Node本身，原因在于，赋值节点的operand是Identifier，
+            // 而此处Thread.setPriority()节点的operand确实VariableReference。虽然它们的字符串值
+            // 相同，但是在AST里却是不同类型的节点。
+            if (methodInvocation.rawOperand().toString().equals(operand.toString())) {
+                setPriorityNodes.add(methodInvocation);
+            }
         }
 
-        for (Node child : node.getChildren()) {
-            findSetPriorityNodes(child, resultNodes);
+        List<Node> children = node.getChildren();
+        if (null != children && !children.isEmpty()) {
+            for (Node child : node.getChildren()) {
+                searchSetPriorityNodes(operand, child, setPriorityNodes);
+            }
         }
     }
 
     /**
-     * Check if there exists Thread.setPriority() node. If there are multiple nodes,
-     * find the last one.
+     * 检查Thread.setPriority()节点是否设置了较低优先级
      *
-     * @param var           thread node assigned by new Thread()
-     * @param resultNodes   the list of possible Thread.setPriority() nodes
-     * @return
+     * @param node  Thread.setPriority()节点
+     * @return  true: 较低优先级
+     *          false: 不低于当前线程优先级
      */
-    private Node determineSetPriorityNode(Node var, ArrayList<Node> resultNodes) {
-        if (null == resultNodes || resultNodes.isEmpty()) {
-            return null;
+    private boolean validateSetLowerPriority(MethodInvocation node) {
+        StrictListAccessor<Expression, MethodInvocation> args = node.astArguments();
+        if (null == args || 1 != args.size()) {
+            throw new IllegalArgumentException("The number of arguments is mismatched for Thread.setPriority().");
         }
 
-        String varName = var.toString();
-        Node setPriorityNode = null;
-        for (Node result : resultNodes) {
-            boolean found = false;
-            Node parent = result.getParent();
-            for (Node child : parent.getChildren()) {
-                String childValue = child.toString();
-                if (varName.equals(childValue)) {
-                    found = true;
-                }
-                if (found && childValue.contains("THREAD_PRIORITY_")) {
-                    break;
-                }
-            }
-            if (found) {
-                setPriorityNode = parent;
-            }
+        // 因为setPriority()的参数未必是常量，所以在纯语法分析中直接比较是很困难的，这里为
+        // 简化问题，只对设置较高优先级的情形返回false
+        String priority = args.first().toString();
+        if (priority.contains("NORM_PRIORITY") ||                       // Thread.NORM_PRIORITY
+                priority.contains("MAX_PRIORITY") ||                    // Thread.MAX_PRIORITY
+                priority.contains("THREAD_PRIORITY_DEFAULT") ||         // Process.THREAD_PRIORITY_DEFAULT
+                priority.contains("THREAD_PRIORITY_MORE_FAVORABLE") ||  // Process.THREAD_PRIORITY_MORE_FAVORABLE
+                priority.contains("THREAD_PRIORITY_FOREGROUND") ||      // Process.THREAD_PRIORITY_FOREGROUND
+                priority.contains("THREAD_PRIORITY_DISPLAY") ||         // Process.THREAD_PRIORITY_DISPLAY
+                priority.contains("THREAD_PRIORITY_URGENT_DISPLAY") ||  // Process.THREAD_PRIORITY_URGENT_DISPLAY
+                priority.contains("THREAD_PRIORITY_AUDIO") ||           // Process.THREAD_PRIORITY_AUDIO
+                priority.contains("THREAD_PRIORITY_URGENT_AUDIO")) {    // Process.THREAD_PRIORITY_URGENT_AUDIO
+            return false;
         }
-
-        return setPriorityNode;
+        return true;
     }
 }

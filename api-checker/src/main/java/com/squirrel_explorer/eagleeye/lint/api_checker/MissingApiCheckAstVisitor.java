@@ -3,6 +3,7 @@ package com.squirrel_explorer.eagleeye.lint.api_checker;
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
 import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
+import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,12 +39,11 @@ public class MissingApiCheckAstVisitor extends BaseAstVisitor {
     @Override
     public boolean visitMethodInvocation(MethodInvocation node) {
         if (1 == MissingApiChecker.MODE) {
-            JavaParser.ResolvedNode resolvedNode = mContext.resolve(node);
-            if (!(resolvedNode instanceof JavaParser.ResolvedMethod)) {
+            JavaParser.ResolvedMethod resolvedMethod = NodeUtils.parseResolvedMethod(mContext, node);
+            if (null == resolvedMethod) {
                 return super.visitMethodInvocation(node);
             }
 
-            JavaParser.ResolvedMethod resolvedMethod = (JavaParser.ResolvedMethod)resolvedNode;
             String clazzName = resolvedMethod.getContainingClass().getName();
             String methodSignature = resolvedMethod.getSignature();
             boolean isMissing = validateRemoved(node, clazzName, methodSignature);
@@ -112,11 +112,11 @@ public class MissingApiCheckAstVisitor extends BaseAstVisitor {
             return;
         }
 
-        JavaParser.ResolvedNode resolvedNode = mContext.resolve(node);
-        if (!(resolvedNode instanceof JavaParser.ResolvedMethod)) {
+        JavaParser.ResolvedMethod resolvedMethod = NodeUtils.parseResolvedMethod(mContext, node);
+        if (null == resolvedMethod) {
             return;
         }
-        JavaParser.ResolvedMethod resolvedMethod = (JavaParser.ResolvedMethod)resolvedNode;
+
         JavaParser.ResolvedClass resolvedClass = resolvedMethod.getContainingClass();
         if (null == resolvedClass || !isInAndroidSdk(resolvedClass)) {
             return;

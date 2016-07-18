@@ -3,6 +3,7 @@ package com.squirrel_explorer.eagleeye.lint.rules.performance.view;
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
 import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
+import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -39,12 +40,10 @@ public class WrongAllocationAstVisitor extends BaseAstVisitor {
             return super.visitConstructorInvocation(node);
         }
 
-        JavaParser.ResolvedNode resolvedNode = mContext.resolve(containingMethod);
-        if (!(resolvedNode instanceof JavaParser.ResolvedMethod)) {
+        JavaParser.ResolvedMethod resolvedMethod = NodeUtils.parseResolvedMethod(mContext, containingMethod);
+        if (null == resolvedMethod) {
             return super.visitConstructorInvocation(node);
         }
-        JavaParser.ResolvedMethod resolvedMethod = (JavaParser.ResolvedMethod)resolvedNode;
-
         JavaParser.ResolvedClass resolvedClass = resolvedMethod.getContainingClass();
         if (null == resolvedClass) {
             return super.visitConstructorInvocation(node);
