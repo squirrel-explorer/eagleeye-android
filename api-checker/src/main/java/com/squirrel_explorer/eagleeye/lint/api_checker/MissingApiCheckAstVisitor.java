@@ -3,6 +3,7 @@ package com.squirrel_explorer.eagleeye.lint.api_checker;
 import com.android.tools.lint.client.api.JavaParser;
 import com.android.tools.lint.detector.api.JavaContext;
 import com.squirrel_explorer.eagleeye.types.base.BaseAstVisitor;
+import com.squirrel_explorer.eagleeye.utils.CompatibilityUtils;
 import com.squirrel_explorer.eagleeye.utils.NodeUtils;
 
 import java.util.ArrayList;
@@ -150,7 +151,7 @@ public class MissingApiCheckAstVisitor extends BaseAstVisitor {
 
     private boolean isInAndroidSdk(JavaParser.ResolvedClass clazz) {
         for (String androidPackage : ANDROID_PACKAGES) {
-            if (clazz.isInPackage(androidPackage, true)) {
+            if (CompatibilityUtils.classInPackage(clazz, androidPackage, true)) {
                 return true;
             }
         }
