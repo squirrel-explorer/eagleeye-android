@@ -39,6 +39,7 @@ public class LintIssueRegistry extends IssueRegistry {
                 // Rules of defect
                 ConcurrentModificationDetector.ISSUE,
                 StartStickyDetector.ISSUE,
+                GetRunningAppProcessesDetector.ISSUE,
                 // Rules of performance
                 EnumDetector.ISSUE,
                 NewMessageDetector.ISSUE,
