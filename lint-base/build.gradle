@@ -24,7 +24,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile ('com.android.tools.lint:lint-api:24.3.0') {
+    compile ('com.android.tools.lint:lint-api:24.5.0') {
         exclude group: 'org.apache.httpcomponents'
     }
 }

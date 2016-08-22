@@ -57,4 +57,24 @@ public class NodeUtils {
                     (JavaParser.ResolvedClass)resolvedNode : null;
         }
     }
+
+    public static Node findNodeByLiterals(Node root, Class<?> targetNodeClass, String literals) {
+        if (null == root || null == targetNodeClass) {
+            return null;
+        }
+
+        if (root.getClass().equals(targetNodeClass) &&
+                root.toString().equals(literals)) {
+            return root;
+        }
+
+        Node ret = null;
+        for (Node child : root.getChildren()) {
+            ret = findNodeByLiterals(child, targetNodeClass, literals);
+            if (null != ret) {
+                break;
+            }
+        }
+        return ret;
+    }
 }

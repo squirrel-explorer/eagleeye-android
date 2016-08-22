@@ -13,6 +13,10 @@ import lombok.ast.AstVisitor;
 
 /**
  * Created by squirrel-explorer on 16/3/27.
+ *
+ * Function: Scan risks which may cause ConcurrentModificationException
+ *
+ * 本规则功能:检查代码中可能引起ConcurrentModificationException的写法
  */
 public class ConcurrentModificationDetector extends Detector implements Detector.JavaScanner {
     public static final Issue ISSUE = Issue.create(
