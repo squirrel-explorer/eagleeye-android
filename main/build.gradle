@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-
-def allinone_versionCode = 1
-def allinone_versionName = '1.0.0-SNAPSHOT'
+apply from: 'bintray.gradle'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -10,8 +8,6 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode allinone_versionCode
-        versionName allinone_versionName
     }
 
     buildTypes {
@@ -27,44 +23,11 @@ android {
 }
 
 dependencies {
-    compile project(':lint-base')
-    compile project(':rules-defect')
-    compile project(':rules-performance')
-    compile project(':rules-security')
-    compile project(':api-checker')
+    for (String module : rootProject.ext.modules) {
+        if (!':main'.equals(module)) {
+            compile project(module)
+        }
+    }
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
-}
-
-task buildJar(dependsOn: ['compileReleaseSources'], type: Jar) {
-    baseName rootProject.ext.appName + '-allinone'
-    version allinone_versionName
-    extension 'jar'
-
-    // Source classes
-    String sourceClassDir = '/intermediates/classes/release'
-    from project(':lint-base').buildDir.absolutePath + sourceClassDir
-    from project(':rules-defect').buildDir.absolutePath + sourceClassDir
-    from project(':rules-performance').buildDir.absolutePath + sourceClassDir
-    from project(':rules-security').buildDir.absolutePath + sourceClassDir
-    from project(':api-checker').buildDir.absolutePath + sourceClassDir
-    from project.buildDir.absolutePath + sourceClassDir
-
-    // Remove useless files
-    exclude '**/BuildConfig.class'
-    exclude '**/BuildConfig\$*.class'
-    exclude '**/R.class'
-    exclude '**/R\$*.class'
-
-    // Add manifest attribute for lint recognition
-    manifest {
-        attributes ('Lint-Registry':'com.squirrel_explorer.eagleeye.lint.LintIssueRegistry')
-    }
-
-    // Specify output directory
-    File outputDir = new File(project.buildDir.absolutePath + '/outputs/jar');
-    if (!outputDir.exists()) {
-        outputDir.mkdirs();
-    }
-    destinationDir outputDir
 }

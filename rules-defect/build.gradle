@@ -28,6 +28,6 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
     testCompile 'com.android.tools:testutils:24.5.0'
-    testCompile 'com.android.tools.lint:lint:24.3.0'
+    testCompile 'com.android.tools.lint:lint:24.5.0'
     testCompile 'com.android.tools.lint:lint-tests:24.5.0'
 }
