@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/lint-base" />
             <option value="$PROJECT_DIR$/main" />
             <option value="$PROJECT_DIR$/rules-defect" />
+            <option value="$PROJECT_DIR$/rules-effective-java-v2" />
             <option value="$PROJECT_DIR$/rules-performance" />
             <option value="$PROJECT_DIR$/rules-security" />
           </set>
@@ -24,6 +25,7 @@
             <option value="$PROJECT_DIR$/lint-base" />
             <option value="$PROJECT_DIR$/main" />
             <option value="$PROJECT_DIR$/rules-defect" />
+            <option value="$PROJECT_DIR$/rules-effective-java-v2" />
             <option value="$PROJECT_DIR$/rules-performance" />
             <option value="$PROJECT_DIR$/rules-security" />
           </set>
