@@ -1,1 +1,1 @@
-include ':main', ':lint-base', ':rules-defect', ':rules-performance', ':rules-security', ':api-checker', ':rules-effective-java-v2'
+include ':rules'

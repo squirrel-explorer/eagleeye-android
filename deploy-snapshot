@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "build and deploy plugin artifacts to remote SNAPSHOT repository ......"
-./gradlew clean :main:artifactoryPublish -PpubType=snapshot --stacktrace
+./gradlew clean :rules:artifactoryPublish -PpubType=snapshot --stacktrace

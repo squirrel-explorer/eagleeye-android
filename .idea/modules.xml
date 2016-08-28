@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-checker/api-checker.iml" filepath="$PROJECT_DIR$/api-checker/api-checker.iml" />
       <module fileurl="file://$PROJECT_DIR$/eagleeye-android.iml" filepath="$PROJECT_DIR$/eagleeye-android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lint-base/lint-base.iml" filepath="$PROJECT_DIR$/lint-base/lint-base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rules-defect/rules-defect.iml" filepath="$PROJECT_DIR$/rules-defect/rules-defect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rules-effective-java-v2/rules-effective-java-v2.iml" filepath="$PROJECT_DIR$/rules-effective-java-v2/rules-effective-java-v2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rules-performance/rules-performance.iml" filepath="$PROJECT_DIR$/rules-performance/rules-performance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rules-security/rules-security.iml" filepath="$PROJECT_DIR$/rules-security/rules-security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rules-security/rules_security.iml" filepath="$PROJECT_DIR$/rules-security/rules_security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rules/rules.iml" filepath="$PROJECT_DIR$/rules/rules.iml" />
     </modules>
   </component>
 </project>

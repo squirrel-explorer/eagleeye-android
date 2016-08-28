@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply from: 'bintray.gradle'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile ('com.android.tools.lint:lint-api:24.5.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+}
+
+compileJava {
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
