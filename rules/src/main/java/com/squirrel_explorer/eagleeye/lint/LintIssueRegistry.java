@@ -25,6 +25,7 @@ import com.squirrel_explorer.eagleeye.lint.rules.performance.system.EnumDetector
 import com.squirrel_explorer.eagleeye.lint.rules.performance.system.NewMessageDetector;
 import com.squirrel_explorer.eagleeye.lint.rules.performance.thread.ThreadPriorityDetector;
 import com.squirrel_explorer.eagleeye.lint.rules.performance.view.WrongAllocationDetector;
+import com.squirrel_explorer.eagleeye.lint.rules.security.ZipEntryDetector;
 
 import java.util.Arrays;
 import java.util.List;
@@ -47,7 +48,9 @@ public class LintIssueRegistry extends IssueRegistry {
                 ThreadPriorityDetector.ISSUE,
                 WrongAllocationDetector.ISSUE,
                 // Api Missing Checker
-                MissingApiChecker.ISSUE
+                MissingApiChecker.ISSUE,
+                // Rules of security
+                ZipEntryDetector.ISSUE
         );
     }
 }
