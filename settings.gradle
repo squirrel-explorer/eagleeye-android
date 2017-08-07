@@ -1,1 +1,1 @@
-include ':rules'
+include ':app', ':eagleeye-android-exception', ':eagleeye-android-exception-aar'
