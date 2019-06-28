@@ -1,12 +1,12 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 
 import hashlib
 import os
 
 # Defines
-methodsFileDir = './missing_api_database'
-cfgFileName = 'missing-api.cfg'
-urlPrefix = 'https://raw.githubusercontent.com/squirrel-explorer/eagleeye-android/master/configurations/missing_api_database/'
+methodsFileDir = './hidden_api_database'
+cfgFileName = 'hidden-api.cfg'
+urlPrefix = 'https://raw.githubusercontent.com/squirrel-explorer/eagleeye-android/master/configurations/hidden_api_database/'
 
 for (dirpath, dirnames, filenames) in os.walk(methodsFileDir) :
     break
