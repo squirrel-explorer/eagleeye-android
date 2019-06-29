@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <removed version="25">
     <class name="android.os.UserManager">
-        <method signature="java.lang.Deprecated public isUserRunningAndLocked()Z"/>
-        <method signature="java.lang.Deprecated public isUserRunningAndLocked(Landroid.os.UserHandle;)Z"/>
-        <method signature="java.lang.Deprecated public isUserRunningAndUnlocked()Z"/>
-        <method signature="java.lang.Deprecated public isUserRunningAndUnlocked(Landroid.os.UserHandle;)Z"/>
+        <method signature="isUserRunningAndLocked()Z"/>
+        <method signature="isUserRunningAndLocked(Landroid.os.UserHandle;)Z"/>
+        <method signature="isUserRunningAndUnlocked()Z"/>
+        <method signature="isUserRunningAndUnlocked(Landroid.os.UserHandle;)Z"/>
     </class>
     <class name="android.content.Context">
-        <method signature="java.lang.Deprecated public migrateSharedPreferencesFrom(Landroid.content.Context;Ljava.lang.String;)Z"/>
-        <method signature="java.lang.Deprecated public migrateDatabaseFrom(Landroid.content.Context;Ljava.lang.String;)Z"/>
-        <method signature="java.lang.Deprecated public createDeviceEncryptedStorageContext()Landroid.content.Context;"/>
-        <method signature="java.lang.Deprecated public createCredentialEncryptedStorageContext()Landroid.content.Context;"/>
-        <method signature="java.lang.Deprecated public isDeviceEncryptedStorage()Z"/>
-        <method signature="java.lang.Deprecated public isCredentialEncryptedStorage()Z"/>
+        <method signature="migrateSharedPreferencesFrom(Landroid.content.Context;Ljava.lang.String;)Z"/>
+        <method signature="migrateDatabaseFrom(Landroid.content.Context;Ljava.lang.String;)Z"/>
+        <method signature="createDeviceEncryptedStorageContext()Landroid.content.Context;"/>
+        <method signature="createCredentialEncryptedStorageContext()Landroid.content.Context;"/>
+        <method signature="isDeviceEncryptedStorage()Z"/>
+        <method signature="isCredentialEncryptedStorage()Z"/>
     </class>
     <class name="android.os.storage.StorageManager">
-        <method signature="android.annotation.NonNull public getVolumeList()[Landroid.os.storage.StorageVolume;"/>
-        <method signature="android.annotation.NonNull public getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
+        <method signature="getVolumeList()[Landroid.os.storage.StorageVolume;"/>
+        <method signature="getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
     </class>
     <class name="android.test.mock.MockPackageManager">
-        <method signature="java.lang.Deprecated public getDefaultBrowserPackageName(I)Ljava.lang.String;"/>
-        <method signature="java.lang.Deprecated public setDefaultBrowserPackageName(Ljava.lang.String;I)Z"/>
+        <method signature="getDefaultBrowserPackageName(I)Ljava.lang.String;"/>
+        <method signature="setDefaultBrowserPackageName(Ljava.lang.String;I)Z"/>
     </class>
     <class name="android.media.AudioFormat">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.content.ContextWrapper">
-        <method signature="java.lang.Override public getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
-        <method signature="java.lang.Override public getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
+        <method signature="getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
     </class>
     <class name="android.preference.PreferenceManager">
-        <method signature="java.lang.Deprecated public setStorageDeviceEncrypted()V"/>
-        <method signature="java.lang.Deprecated public setStorageCredentialEncrypted()V"/>
+        <method signature="setStorageDeviceEncrypted()V"/>
+        <method signature="setStorageCredentialEncrypted()V"/>
     </class>
     <class name="android.location.GnssStatus">
-        <method signature="public getNumSatellites()I"/>
-        <method signature="public hasEphemeris(I)Z"/>
-        <method signature="public hasAlmanac(I)Z"/>
+        <method signature="getNumSatellites()I"/>
+        <method signature="hasEphemeris(I)Z"/>
+        <method signature="hasAlmanac(I)Z"/>
     </class>
     <class name="android.test.mock.MockContext">
-        <method signature="java.lang.Override public getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
-        <method signature="java.lang.Override public getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
+        <method signature="getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
     </class>
 </removed>

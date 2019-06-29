@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <removed version="23">
     <class name="android.media.AudioFormat">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
 </removed>

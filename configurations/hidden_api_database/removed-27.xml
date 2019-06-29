@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <removed version="27">
     <class name="android.app.KeyguardManager">
-        <method signature="java.lang.Deprecated public dismissKeyguard(Landroid.app.Activity;Landroid.app.KeyguardManager.KeyguardDismissCallback;Landroid.os.Handler;)V"/>
+        <method signature="dismissKeyguard(Landroid.app.Activity;Landroid.app.KeyguardManager.KeyguardDismissCallback;Landroid.os.Handler;)V"/>
     </class>
     <class name="android.app.ActivityManager">
-        <method signature="java.lang.Deprecated public static getMaxNumPictureInPictureActions()I"/>
+        <method signature="getMaxNumPictureInPictureActions()I"/>
     </class>
     <class name="android.hardware.SensorManager">
-        <method signature="java.lang.Deprecated public configureDirectChannel(Landroid.hardware.SensorDirectChannel;Landroid.hardware.Sensor;I)I"/>
+        <method signature="configureDirectChannel(Landroid.hardware.SensorDirectChannel;Landroid.hardware.Sensor;I)I"/>
     </class>
     <class name="android.os.storage.StorageManager">
-        <method signature="android.annotation.NonNull public getVolumeList()[Landroid.os.storage.StorageVolume;"/>
-        <method signature="android.annotation.NonNull public getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
+        <method signature="getVolumeList()[Landroid.os.storage.StorageVolume;"/>
+        <method signature="getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
     </class>
     <class name="android.app.PictureInPictureArgs"/>
     <class name="android.test.mock.MockPackageManager">
-        <method signature="java.lang.Deprecated public getDefaultBrowserPackageName(I)Ljava.lang.String;"/>
-        <method signature="java.lang.Deprecated public setDefaultBrowserPackageName(Ljava.lang.String;I)Z"/>
+        <method signature="getDefaultBrowserPackageName(I)Ljava.lang.String;"/>
+        <method signature="setDefaultBrowserPackageName(Ljava.lang.String;I)Z"/>
     </class>
     <class name="android.app.Notification.Builder">
-        <method signature="java.lang.Deprecated public setChannel(Ljava.lang.String;)Landroid.app.Notification.Builder;"/>
-        <method signature="java.lang.Deprecated public setTimeout(J)Landroid.app.Notification.Builder;"/>
+        <method signature="setChannel(Ljava.lang.String;)Landroid.app.Notification.Builder;"/>
+        <method signature="setTimeout(J)Landroid.app.Notification.Builder;"/>
     </class>
     <class name="android.speech.tts.UtteranceProgressListener">
-        <method signature="java.lang.Deprecated public onUtteranceRangeStart(Ljava.lang.String;II)V"/>
+        <method signature="onUtteranceRangeStart(Ljava.lang.String;II)V"/>
     </class>
     <class name="android.media.AudioFormat">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.hardware.HardwareBuffer">
-        <method signature="java.lang.Deprecated public destroy()V"/>
-        <method signature="java.lang.Deprecated public isDestroyed()Z"/>
+        <method signature="destroy()V"/>
+        <method signature="isDestroyed()Z"/>
     </class>
     <class name="android.os.TestLooperManager">
-        <method signature="java.lang.Deprecated public getQueue()Landroid.os.MessageQueue;"/>
+        <method signature="getQueue()Landroid.os.MessageQueue;"/>
     </class>
     <class name="android.test.mock.MockContext">
-        <method signature="java.lang.Override public getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
-        <method signature="java.lang.Override public getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
+        <method signature="getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
     </class>
     <class name="android.content.ClipData">
-        <method signature="java.lang.Deprecated public addItem(Landroid.content.ClipData.Item;Landroid.content.ContentResolver;)V"/>
+        <method signature="addItem(Landroid.content.ClipData.Item;Landroid.content.ContentResolver;)V"/>
     </class>
     <class name="android.app.Notification.TvExtender">
-        <method signature="java.lang.Deprecated public getChannel()Ljava.lang.String;"/>
+        <method signature="getChannel()Ljava.lang.String;"/>
     </class>
     <class name="android.app.usage.StorageStatsManager">
-        <method signature="java.lang.Deprecated public isQuotaSupported(Ljava.lang.String;)Z"/>
-        <method signature="java.lang.Deprecated public getTotalBytes(Ljava.lang.String;)J"/>
-        <method signature="java.lang.Deprecated public getFreeBytes(Ljava.lang.String;)J"/>
-        <method signature="java.lang.Deprecated public queryStatsForPackage(Ljava.lang.String;Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.StorageStats;"/>
-        <method signature="java.lang.Deprecated public queryStatsForUid(Ljava.lang.String;I)Landroid.app.usage.StorageStats;"/>
-        <method signature="java.lang.Deprecated public queryStatsForUser(Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.StorageStats;"/>
-        <method signature="java.lang.Deprecated public queryExternalStatsForUser(Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.ExternalStorageStats;"/>
+        <method signature="isQuotaSupported(Ljava.lang.String;)Z"/>
+        <method signature="getTotalBytes(Ljava.lang.String;)J"/>
+        <method signature="getFreeBytes(Ljava.lang.String;)J"/>
+        <method signature="queryStatsForPackage(Ljava.lang.String;Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.StorageStats;"/>
+        <method signature="queryStatsForUid(Ljava.lang.String;I)Landroid.app.usage.StorageStats;"/>
+        <method signature="queryStatsForUser(Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.StorageStats;"/>
+        <method signature="queryExternalStatsForUser(Ljava.lang.String;Landroid.os.UserHandle;)Landroid.app.usage.ExternalStorageStats;"/>
     </class>
     <class name="android.hardware.SensorDirectChannel">
-        <method signature="java.lang.Deprecated public isValid()Z"/>
+        <method signature="isValid()Z"/>
     </class>
     <class name="android.app.Notification">
-        <method signature="java.lang.Deprecated public getChannel()Ljava.lang.String;"/>
-        <method signature="java.lang.Deprecated public getTimeout()J"/>
+        <method signature="getChannel()Ljava.lang.String;"/>
+        <method signature="getTimeout()J"/>
     </class>
     <class name="android.app.usage.StorageStats">
-        <method signature="java.lang.Deprecated public getCodeBytes()J"/>
+        <method signature="getCodeBytes()J"/>
     </class>
     <class name="android.app.RecoverableSecurityException">
-        <method signature="java.lang.Deprecated public showAsNotification(Landroid.content.Context;)V"/>
+        <method signature="showAsNotification(Landroid.content.Context;)V"/>
     </class>
     <class name="android.content.ContextWrapper">
-        <method signature="java.lang.Override public getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
-        <method signature="java.lang.Override public getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="getSharedPreferences(Ljava.io.File;I)Landroid.content.SharedPreferences;"/>
+        <method signature="getSharedPreferencesPath(Ljava.lang.String;)Ljava.io.File;"/>
     </class>
     <class name="android.app.Activity">
-        <method signature="java.lang.Deprecated public enterPictureInPictureMode(Landroid.app.PictureInPictureArgs;)Z"/>
-        <method signature="java.lang.Deprecated public setPictureInPictureArgs(Landroid.app.PictureInPictureArgs;)V"/>
+        <method signature="enterPictureInPictureMode(Landroid.app.PictureInPictureArgs;)Z"/>
+        <method signature="setPictureInPictureArgs(Landroid.app.PictureInPictureArgs;)V"/>
     </class>
 </removed>

@@ -2,1373 +2,1369 @@
 <hide version="20">
     <class name="android.content.pm.XmlSerializerAndParser"/>
     <class name="">
-        <method signature="java.lang.Override public onEnabledChanged(Z)V"/>
-        <method signature="java.lang.Override public onLocaleChanged(Ljava.util.Locale;)V"/>
+        <method signature="onEnabledChanged(Z)V"/>
+        <method signature="onLocaleChanged(Ljava.util.Locale;)V"/>
     </class>
     <class name="android.hardware.SensorManager">
-        <method signature="protected abstract unregisterListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;)V"/>
-        <method signature="protected abstract registerListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;ILandroid.os.Handler;II)Z"/>
-        <method signature="protected abstract flushImpl(Landroid.hardware.SensorEventListener;)Z"/>
+        <method signature="unregisterListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;)V"/>
+        <method signature="registerListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;ILandroid.os.Handler;II)Z"/>
+        <method signature="flushImpl(Landroid.hardware.SensorEventListener;)Z"/>
     </class>
     <class name="android.print.PrintManager.PrintJobStateChangeListener"/>
     <class name="android.os.Bundle">
-        <method signature="public setAllowFds(Z)Z"/>
-        <method signature="public putParcelableList(Ljava.lang.String;Ljava.util.List;)V"/>
+        <method signature="setAllowFds(Z)Z"/>
+        <method signature="putParcelableList(Ljava.lang.String;Ljava.util.List;)V"/>
     </class>
     <class name="android.media.MediaRouter.RouteInfo">
-        <method signature="public matchesTypes(I)Z"/>
-        <method signature="public getDeviceAddress()Ljava.lang.String;"/>
-        <method signature="public isSelected()Z"/>
-        <method signature="public isDefault()Z"/>
-        <method signature="public select()V"/>
+        <method signature="matchesTypes(I)Z"/>
+        <method signature="getDeviceAddress()Ljava.lang.String;"/>
+        <method signature="isSelected()Z"/>
+        <method signature="isDefault()Z"/>
+        <method signature="select()V"/>
     </class>
     <class name="android.net.wifi.BatchedScanResult">
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pDeviceList">
-        <method signature="public &lt;init&gt;(Ljava.util.ArrayList;)V"/>
-        <method signature="public clear()Z"/>
+        <method signature="&lt;init&gt;(Ljava.util.ArrayList;)V"/>
+        <method signature="clear()Z"/>
         <method signature="updateSupplicantDetails(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
         <method signature="updateGroupCapability(Ljava.lang.String;I)V"/>
         <method signature="updateStatus(Ljava.lang.String;I)V"/>
-        <method signature="public remove(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
-        <method signature="public remove(Landroid.net.wifi.p2p.WifiP2pDeviceList;)Z"/>
-        <method signature="public isGroupOwner(Ljava.lang.String;)Z"/>
+        <method signature="remove(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
+        <method signature="remove(Landroid.net.wifi.p2p.WifiP2pDeviceList;)Z"/>
+        <method signature="isGroupOwner(Ljava.lang.String;)Z"/>
     </class>
     <class name="android.database.AbstractCursor">
-        <method signature="protected onDeactivateOrClose()V"/>
-        <method signature="public setNotificationUri(Landroid.content.ContentResolver;Landroid.net.Uri;I)V"/>
+        <method signature="onDeactivateOrClose()V"/>
+        <method signature="setNotificationUri(Landroid.content.ContentResolver;Landroid.net.Uri;I)V"/>
     </class>
     <class name="android.preference.PreferenceActivity">
-        <method signature="protected hasNextButton()Z"/>
-        <method signature="protected getNextButton()Landroid.widget.Button;"/>
+        <method signature="hasNextButton()Z"/>
+        <method signature="getNextButton()Landroid.widget.Button;"/>
     </class>
     <class name="android.print.PrintAttributes">
-        <method signature="public clear()V"/>
+        <method signature="clear()V"/>
     </class>
     <class name="android.telephony.CellInfo">
-        <method signature="protected &lt;init&gt;()V"/>
-        <method signature="protected &lt;init&gt;(Landroid.telephony.CellInfo;)V"/>
-        <method signature="public setRegisterd(Z)V"/>
-        <method signature="public setTimeStamp(J)V"/>
-        <method signature="public setTimeStampType(I)V"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.telephony.CellInfo;)V"/>
+        <method signature="setRegisterd(Z)V"/>
+        <method signature="setTimeStamp(J)V"/>
+        <method signature="setTimeStampType(I)V"/>
     </class>
     <class name="android.net.wifi.WifiManager.ActionListener"/>
     <class name="android.nfc.TechListParcel"/>
     <class name="android.view.MotionEvent.PointerCoords">
-        <method signature="public static createArray(I)[Landroid.view.MotionEvent.PointerCoords;"/>
+        <method signature="createArray(I)[Landroid.view.MotionEvent.PointerCoords;"/>
     </class>
     <class name="android.test.mock.MockContentResolver">
-        <method signature="java.lang.Override protected acquireProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
-        <method signature="java.lang.Override protected acquireExistingProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
-        <method signature="java.lang.Override public releaseProvider(Landroid.content.IContentProvider;)Z"/>
-        <method signature="java.lang.Override protected acquireUnstableProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
-        <method signature="java.lang.Override public releaseUnstableProvider(Landroid.content.IContentProvider;)Z"/>
-        <method signature="java.lang.Override public unstableProviderDied(Landroid.content.IContentProvider;)V"/>
+        <method signature="acquireProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
+        <method signature="acquireExistingProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
+        <method signature="releaseProvider(Landroid.content.IContentProvider;)Z"/>
+        <method signature="acquireUnstableProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
+        <method signature="releaseUnstableProvider(Landroid.content.IContentProvider;)Z"/>
+        <method signature="unstableProviderDied(Landroid.content.IContentProvider;)V"/>
     </class>
     <class name="android.content.ClipboardManager">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;Landroid.os.Handler;)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;Landroid.os.Handler;)V"/>
     </class>
     <class name="android.view.Display">
-        <method signature="public static hasAccess(III)Z"/>
+        <method signature="hasAccess(III)Z"/>
     </class>
     <class name="android.app.backup.BackupAgent">
-        <method signature="public final onBind()Landroid.os.IBinder;"/>
-        <method signature="public attach(Landroid.content.Context;)V"/>
+        <method signature="onBind()Landroid.os.IBinder;"/>
+        <method signature="attach(Landroid.content.Context;)V"/>
     </class>
     <class name="android.util.Log">
-        <method signature="public static native println_native(IILjava.lang.String;Ljava.lang.String;)I"/>
+        <method signature="println_native(IILjava.lang.String;Ljava.lang.String;)I"/>
     </class>
     <class name="android.content.pm.PackageParser.NewPermissionInfo"/>
     <class name="android.net.ConnectivityManager">
-        <method signature="public static from(Landroid.content.Context;)Landroid.net.ConnectivityManager;"/>
+        <method signature="from(Landroid.content.Context;)Landroid.net.ConnectivityManager;"/>
     </class>
     <class name="android.media.WebVttTrack"/>
     <class name="android.content.pm.KeySet"/>
     <class name="android.media.WebVttParser"/>
     <class name="android.net.TrafficStats">
-        <method signature="public static clearThreadStatsUid()V"/>
-        <method signature="public static closeQuietly(LINetworkStatsSession;)V"/>
-        <method signature="public static getMobileTcpRxPackets()J"/>
-        <method signature="public static getMobileTcpTxPackets()J"/>
-        <method signature="public static getTxPackets(Ljava.lang.String;)J"/>
-        <method signature="public static getRxPackets(Ljava.lang.String;)J"/>
-        <method signature="public static getTxBytes(Ljava.lang.String;)J"/>
-        <method signature="public static getRxBytes(Ljava.lang.String;)J"/>
+        <method signature="clearThreadStatsUid()V"/>
+        <method signature="closeQuietly(LINetworkStatsSession;)V"/>
+        <method signature="getMobileTcpRxPackets()J"/>
+        <method signature="getMobileTcpTxPackets()J"/>
+        <method signature="getTxPackets(Ljava.lang.String;)J"/>
+        <method signature="getRxPackets(Ljava.lang.String;)J"/>
+        <method signature="getTxBytes(Ljava.lang.String;)J"/>
+        <method signature="getRxBytes(Ljava.lang.String;)J"/>
     </class>
     <class name="android.view.DragEvent">
-        <method signature="public static obtain(IFFLjava.lang.Object;Landroid.content.ClipDescription;Landroid.content.ClipData;Z)Landroid.view.DragEvent;"/>
-        <method signature="public static obtain(Landroid.view.DragEvent;)Landroid.view.DragEvent;"/>
+        <method signature="obtain(IFFLjava.lang.Object;Landroid.content.ClipDescription;Landroid.content.ClipData;Z)Landroid.view.DragEvent;"/>
+        <method signature="obtain(Landroid.view.DragEvent;)Landroid.view.DragEvent;"/>
     </class>
     <class name="android.app.ActivityManagerNative"/>
     <class name="com.android.server.accounts.AccountManagerService">
-        <method signature="public getAllAccounts()[Landroid.accounts.AccountAndUser;"/>
+        <method signature="getAllAccounts()[Landroid.accounts.AccountAndUser;"/>
     </class>
     <class name="android.net.NetworkPolicyManager">
-        <method signature="public static computeNextCycleBoundary(JLandroid.net.NetworkPolicy;)J"/>
-        <method signature="public static dumpPolicy(Ljava.io.PrintWriter;I)V"/>
-        <method signature="public static dumpRules(Ljava.io.PrintWriter;I)V"/>
+        <method signature="computeNextCycleBoundary(JLandroid.net.NetworkPolicy;)J"/>
+        <method signature="dumpPolicy(Ljava.io.PrintWriter;I)V"/>
+        <method signature="dumpRules(Ljava.io.PrintWriter;I)V"/>
     </class>
     <class name="android.content.IntentFilter">
-        <method signature="public final addDataSchemeSpecificPart(Landroid.os.PatternMatcher;)V"/>
-        <method signature="public final addDataAuthority(Landroid.content.IntentFilter.AuthorityEntry;)V"/>
-        <method signature="public final addDataPath(Landroid.os.PatternMatcher;)V"/>
+        <method signature="addDataSchemeSpecificPart(Landroid.os.PatternMatcher;)V"/>
+        <method signature="addDataAuthority(Landroid.content.IntentFilter.AuthorityEntry;)V"/>
+        <method signature="addDataPath(Landroid.os.PatternMatcher;)V"/>
     </class>
     <class name="android.support.v4.app.Fragment">
-        <method signature="final public hasOptionsMenu()Z"/>
-        <method signature="final public isMenuVisible()Z"/>
+        <method signature="hasOptionsMenu()Z"/>
+        <method signature="isMenuVisible()Z"/>
     </class>
     <class name="android.support.v4.content.ModernAsyncTask">
-        <method signature="public static init()V"/>
-        <method signature="public static setDefaultExecutor(Ljava.util.concurrent.Executor;)V"/>
+        <method signature="init()V"/>
+        <method signature="setDefaultExecutor(Ljava.util.concurrent.Executor;)V"/>
     </class>
     <class name="android.support.v4.text.BidiFormatterTest"/>
     <class name="android.net.wifi.p2p.nsd.WifiP2pServiceInfo">
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pDevice">
-        <method signature="public isInvitationCapable()Z"/>
-        <method signature="public isDeviceLimit()Z"/>
-        <method signature="public isGroupLimit()Z"/>
+        <method signature="isInvitationCapable()Z"/>
+        <method signature="isDeviceLimit()Z"/>
+        <method signature="isGroupLimit()Z"/>
         <method signature="updateSupplicantDetails(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
     </class>
     <class name="android.telephony.CallStateListener"/>
     <class name="android.graphics.Paint">
-        <method signature="public setCompatibilityScaling(F)V"/>
+        <method signature="setCompatibilityScaling(F)V"/>
     </class>
     <class name="android.accounts.AccountManagerResponse">
-        <method signature="public &lt;init&gt;(LIAccountManagerResponse;)V"/>
-        <method signature="public &lt;init&gt;(Landroid.os.Parcel;)V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="&lt;init&gt;(LIAccountManagerResponse;)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.app.FragmentManager">
-        <method signature="java.lang.Deprecated public openTransaction()Landroid.app.FragmentTransaction;"/>
+        <method signature="openTransaction()Landroid.app.FragmentTransaction;"/>
     </class>
     <class name="android.os.Debug.MemoryInfo">
-        <method signature="public getOtherPss(I)I"/>
-        <method signature="public getOtherSwappablePss(I)I"/>
-        <method signature="public getOtherPrivateDirty(I)I"/>
-        <method signature="public getOtherSharedDirty(I)I"/>
-        <method signature="public getOtherPrivateClean(I)I"/>
-        <method signature="public getOtherSharedClean(I)I"/>
-        <method signature="public getOtherSwappedOut(I)I"/>
-        <method signature="public static getOtherLabel(I)Ljava.lang.String;"/>
+        <method signature="getOtherPss(I)I"/>
+        <method signature="getOtherSwappablePss(I)I"/>
+        <method signature="getOtherPrivateDirty(I)I"/>
+        <method signature="getOtherSharedDirty(I)I"/>
+        <method signature="getOtherPrivateClean(I)I"/>
+        <method signature="getOtherSharedClean(I)I"/>
+        <method signature="getOtherSwappedOut(I)I"/>
+        <method signature="getOtherLabel(I)Ljava.lang.String;"/>
     </class>
     <class name="android.media.TextTrackCueSpan"/>
     <class name="android.net.wifi.p2p.nsd.WifiP2pServiceResponse">
-        <method signature="public setSrcDevice(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="setSrcDevice(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.os.AsyncResult"/>
     <class name="com.android.server.notification.NotificationManagerService"/>
     <class name="android.provider.DocumentsProvider">
-        <method signature="java.lang.SuppressWarnings public queryChildDocumentsForManage(Ljava.lang.String;[Ljava.lang.String;Ljava.lang.String;)Landroid.database.Cursor;"/>
+        <method signature="queryChildDocumentsForManage(Ljava.lang.String;[Ljava.lang.String;Ljava.lang.String;)Landroid.database.Cursor;"/>
     </class>
     <class name="android.test.suitebuilder.TestSuiteBuilder">
-        <method signature="public addTestClassByName(Ljava.lang.String;Ljava.lang.String;Landroid.content.Context;)Landroid.test.suitebuilder.TestSuiteBuilder;"/>
-        <method signature="public addTestSuite(LTestSuite;)LTestSuiteBuilder;"/>
+        <method signature="addTestClassByName(Ljava.lang.String;Ljava.lang.String;Landroid.content.Context;)Landroid.test.suitebuilder.TestSuiteBuilder;"/>
+        <method signature="addTestSuite(LTestSuite;)LTestSuiteBuilder;"/>
     </class>
     <class name="java.lang.reflect.Constructor">
-        <method signature="public getDexMethodIndex()I"/>
+        <method signature="getDexMethodIndex()I"/>
     </class>
     <class name="android.provider.Downloads.Impl">
-        <method signature="public static statusToString(I)Ljava.lang.String;"/>
+        <method signature="statusToString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.net.LinkSocket"/>
     <class name="java.nio.Buffer">
-        <method signature="public final getElementSizeShift()I"/>
+        <method signature="getElementSizeShift()I"/>
     </class>
     <class name="android.app.admin.DeviceAdminInfo">
-        <method signature="public getUsedPolicies()Ljava.util.ArrayList;"/>
-        <method signature="public writePoliciesToXml(Lorg.xmlpull.v1.XmlSerializer;)V"/>
-        <method signature="public readPoliciesFromXml(Lorg.xmlpull.v1.XmlPullParser;)V"/>
+        <method signature="getUsedPolicies()Ljava.util.ArrayList;"/>
+        <method signature="writePoliciesToXml(Lorg.xmlpull.v1.XmlSerializer;)V"/>
+        <method signature="readPoliciesFromXml(Lorg.xmlpull.v1.XmlPullParser;)V"/>
     </class>
     <class name="android.graphics.drawable.ClipDrawable">
-        <method signature="java.lang.Override public setLayoutDirection(I)V"/>
+        <method signature="setLayoutDirection(I)V"/>
     </class>
     <class name="android.renderscript.Byte3">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Byte3;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Byte3;)V"/>
     </class>
     <class name="android.service.wallpaper.WallpaperService.Engine">
-        <method signature="public setFixedSizeAllowed(Z)V"/>
+        <method signature="setFixedSizeAllowed(Z)V"/>
     </class>
     <class name="android.renderscript.Byte2">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Byte2;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Byte2;)V"/>
     </class>
     <class name="android.os.RemoteMailException"/>
     <class name="android.renderscript.Byte4">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Byte4;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Byte4;)V"/>
     </class>
     <class name="android.content.ContextWrapper">
-        <method signature="java.lang.Override public getThemeResId()I"/>
-        <method signature="java.lang.Override public getBasePackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public getOpPackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public getSharedPrefsFile(Ljava.lang.String;)Ljava.io.File;"/>
-        <method signature="java.lang.Override public startActivityAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public startActivityAsUser(Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public startActivitiesAsUser([Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public sendBroadcast(Landroid.content.Intent;Ljava.lang.String;I)V"/>
-        <method signature="java.lang.Override public sendOrderedBroadcast(Landroid.content.Intent;Ljava.lang.String;ILandroid.content.BroadcastReceiver;Landroid.os.Handler;ILjava.lang.String;Landroid.os.Bundle;)V"/>
-        <method signature="java.lang.Override public registerReceiverAsUser(Landroid.content.BroadcastReceiver;Landroid.os.UserHandle;Landroid.content.IntentFilter;Ljava.lang.String;Landroid.os.Handler;)Landroid.content.Intent;"/>
-        <method signature="java.lang.Override public startServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Landroid.content.ComponentName;"/>
-        <method signature="java.lang.Override public stopServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Z"/>
-        <method signature="java.lang.Override public bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
-        <method signature="java.lang.Override public createPackageContextAsUser(Ljava.lang.String;ILandroid.os.UserHandle;)Landroid.content.Context;"/>
-        <method signature="java.lang.Override public getUserId()I"/>
-        <method signature="java.lang.Override public getDisplayAdjustments(I)Landroid.view.DisplayAdjustments;"/>
+        <method signature="getThemeResId()I"/>
+        <method signature="getBasePackageName()Ljava.lang.String;"/>
+        <method signature="getOpPackageName()Ljava.lang.String;"/>
+        <method signature="getSharedPrefsFile(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="startActivityAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)V"/>
+        <method signature="startActivityAsUser(Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
+        <method signature="startActivitiesAsUser([Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
+        <method signature="sendBroadcast(Landroid.content.Intent;Ljava.lang.String;I)V"/>
+        <method signature="sendOrderedBroadcast(Landroid.content.Intent;Ljava.lang.String;ILandroid.content.BroadcastReceiver;Landroid.os.Handler;ILjava.lang.String;Landroid.os.Bundle;)V"/>
+        <method signature="registerReceiverAsUser(Landroid.content.BroadcastReceiver;Landroid.os.UserHandle;Landroid.content.IntentFilter;Ljava.lang.String;Landroid.os.Handler;)Landroid.content.Intent;"/>
+        <method signature="startServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Landroid.content.ComponentName;"/>
+        <method signature="stopServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Z"/>
+        <method signature="bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
+        <method signature="createPackageContextAsUser(Ljava.lang.String;ILandroid.os.UserHandle;)Landroid.content.Context;"/>
+        <method signature="getUserId()I"/>
+        <method signature="getDisplayAdjustments(I)Landroid.view.DisplayAdjustments;"/>
     </class>
     <class name="android.print.PrintJobInfo">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.print.PrintJobInfo;)V"/>
-        <method signature="public static stateToString(I)Ljava.lang.String;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.print.PrintJobInfo;)V"/>
+        <method signature="stateToString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.net.wifi.ScanResult">
-        <method signature="public &lt;init&gt;(Landroid.net.wifi.WifiSsid;Ljava.lang.String;Ljava.lang.String;IIJ)V"/>
-        <method signature="public &lt;init&gt;(Landroid.net.wifi.WifiSsid;Ljava.lang.String;Ljava.lang.String;IIJII)V"/>
-        <method signature="public &lt;init&gt;(Landroid.net.wifi.ScanResult;)V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.wifi.WifiSsid;Ljava.lang.String;Ljava.lang.String;IIJ)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.wifi.WifiSsid;Ljava.lang.String;Ljava.lang.String;IIJII)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.wifi.ScanResult;)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.os.UserManager">
-        <method signature="public synchronized static get(Landroid.content.Context;)Landroid.os.UserManager;"/>
-        <method signature="public &lt;init&gt;(LContext;LIUserManager;)V"/>
-        <method signature="public removeRestrictions()V"/>
+        <method signature="get(Landroid.content.Context;)Landroid.os.UserManager;"/>
+        <method signature="&lt;init&gt;(LContext;LIUserManager;)V"/>
+        <method signature="removeRestrictions()V"/>
     </class>
     <class name="android.text.method.ArrowKeyMovementMethod">
-        <method signature="java.lang.Override protected leftWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
-        <method signature="java.lang.Override protected rightWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
+        <method signature="leftWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
+        <method signature="rightWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
     </class>
     <class name="android.support.v4.view.ViewCompat.OverScroll"/>
     <class name="android.os.ServiceManager"/>
     <class name="com.android.layoutlib.bridge.android.BridgeContentResolver">
-        <method signature="java.lang.Override public unstableProviderDied(Landroid.content.IContentProvider;)V"/>
+        <method signature="unstableProviderDied(Landroid.content.IContentProvider;)V"/>
     </class>
     <class name="android.content.ComponentName">
-        <method signature="public appendShortString(Ljava.lang.StringBuilder;)V"/>
-        <method signature="public static appendShortString(Ljava.lang.StringBuilder;Ljava.lang.String;Ljava.lang.String;)V"/>
-        <method signature="public static printShortString(Ljava.io.PrintWriter;Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="appendShortString(Ljava.lang.StringBuilder;)V"/>
+        <method signature="appendShortString(Ljava.lang.StringBuilder;Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="printShortString(Ljava.io.PrintWriter;Ljava.lang.String;Ljava.lang.String;)V"/>
     </class>
     <class name="android.content.SyncInfo">
-        <method signature="public &lt;init&gt;(ILandroid.accounts.Account;Ljava.lang.String;J)V"/>
-        <method signature="public &lt;init&gt;(Landroid.content.SyncInfo;)V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="&lt;init&gt;(ILandroid.accounts.Account;Ljava.lang.String;J)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.SyncInfo;)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
         <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
     </class>
     <class name="android.view.ViewDebug">
-        <method signature="public static findView(Landroid.view.View;Ljava.lang.String;)Landroid.view.View;"/>
-        <method signature="public static profileViewAndChildren(Landroid.view.View;Ljava.io.BufferedWriter;)V"/>
-        <method signature="public static captureLayers(Landroid.view.View;Ljava.io.DataOutputStream;)V"/>
-        <method signature="public static outputDisplayList(Landroid.view.View;Landroid.view.View;)V"/>
-        <method signature="public static capture(Landroid.view.View;Ljava.io.OutputStream;Landroid.view.View;)V"/>
+        <method signature="findView(Landroid.view.View;Ljava.lang.String;)Landroid.view.View;"/>
+        <method signature="profileViewAndChildren(Landroid.view.View;Ljava.io.BufferedWriter;)V"/>
+        <method signature="captureLayers(Landroid.view.View;Ljava.io.DataOutputStream;)V"/>
+        <method signature="outputDisplayList(Landroid.view.View;Landroid.view.View;)V"/>
+        <method signature="capture(Landroid.view.View;Ljava.io.OutputStream;Landroid.view.View;)V"/>
     </class>
     <class name="android.media.MediaPlayer.TrackInfo">
         <method signature="&lt;init&gt;(ILandroid.media.MediaFormat;)V"/>
     </class>
     <class name="android.util.Config">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.view.WindowId">
-        <method signature="public getTarget()LIWindowId;"/>
-        <method signature="public &lt;init&gt;(LIWindowId;)V"/>
-        <method signature="public &lt;init&gt;(Landroid.os.IBinder;)V"/>
+        <method signature="getTarget()LIWindowId;"/>
+        <method signature="&lt;init&gt;(LIWindowId;)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.IBinder;)V"/>
     </class>
     <class name="android.test.mock.MockContext">
-        <method signature="java.lang.Override public getBasePackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public getOpPackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public getSharedPrefsFile(Ljava.lang.String;)Ljava.io.File;"/>
-        <method signature="java.lang.Override public sendBroadcast(Landroid.content.Intent;Ljava.lang.String;I)V"/>
-        <method signature="java.lang.Override public sendOrderedBroadcast(Landroid.content.Intent;Ljava.lang.String;ILandroid.content.BroadcastReceiver;Landroid.os.Handler;ILjava.lang.String;Landroid.os.Bundle;)V"/>
-        <method signature="java.lang.Override public registerReceiverAsUser(Landroid.content.BroadcastReceiver;Landroid.os.UserHandle;Landroid.content.IntentFilter;Ljava.lang.String;Landroid.os.Handler;)Landroid.content.Intent;"/>
-        <method signature="java.lang.Override public startServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Landroid.content.ComponentName;"/>
-        <method signature="java.lang.Override public stopServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Z"/>
-        <method signature="java.lang.Override public bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
-        <method signature="java.lang.Override public createPackageContextAsUser(Ljava.lang.String;ILandroid.os.UserHandle;)Landroid.content.Context;"/>
-        <method signature="java.lang.Override public getUserId()I"/>
-        <method signature="java.lang.Override public getDisplayAdjustments(I)Landroid.view.DisplayAdjustments;"/>
+        <method signature="getBasePackageName()Ljava.lang.String;"/>
+        <method signature="getOpPackageName()Ljava.lang.String;"/>
+        <method signature="getSharedPrefsFile(Ljava.lang.String;)Ljava.io.File;"/>
+        <method signature="sendBroadcast(Landroid.content.Intent;Ljava.lang.String;I)V"/>
+        <method signature="sendOrderedBroadcast(Landroid.content.Intent;Ljava.lang.String;ILandroid.content.BroadcastReceiver;Landroid.os.Handler;ILjava.lang.String;Landroid.os.Bundle;)V"/>
+        <method signature="registerReceiverAsUser(Landroid.content.BroadcastReceiver;Landroid.os.UserHandle;Landroid.content.IntentFilter;Ljava.lang.String;Landroid.os.Handler;)Landroid.content.Intent;"/>
+        <method signature="startServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Landroid.content.ComponentName;"/>
+        <method signature="stopServiceAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)Z"/>
+        <method signature="bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
+        <method signature="createPackageContextAsUser(Ljava.lang.String;ILandroid.os.UserHandle;)Landroid.content.Context;"/>
+        <method signature="getUserId()I"/>
+        <method signature="getDisplayAdjustments(I)Landroid.view.DisplayAdjustments;"/>
     </class>
     <class name="android.media.TextTrackCue"/>
     <class name="android.support.v4.app.FragmentManager">
-        <method signature="java.lang.Deprecated public openTransaction()Landroid.support.v4.app.FragmentTransaction;"/>
+        <method signature="openTransaction()Landroid.support.v4.app.FragmentTransaction;"/>
     </class>
     <class name="com.android.server.ConnectivityService">
-        <method signature="java.lang.Override public captivePortalCheckComplete(Landroid.net.NetworkInfo;)V"/>
-        <method signature="java.lang.Override public captivePortalCheckCompleted(Landroid.net.NetworkInfo;Z)V"/>
+        <method signature="captivePortalCheckComplete(Landroid.net.NetworkInfo;)V"/>
+        <method signature="captivePortalCheckCompleted(Landroid.net.NetworkInfo;Z)V"/>
     </class>
     <class name="android.net.wifi.SupplicantState">
-        <method signature="public static isHandshakeState(Landroid.net.wifi.SupplicantState;)Z"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="isHandshakeState(Landroid.net.wifi.SupplicantState;)Z"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pConfig">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;)V"/>
-    </class>
-    <class name="android.content.SyncRequest.Builder">
-        <method signature="private setupInterval(JJ)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;)V"/>
     </class>
     <class name="android.hardware.SystemSensorManager">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;Landroid.os.Looper;)V"/>
-        <method signature="java.lang.Override protected getFullSensorList()Ljava.util.List;"/>
-        <method signature="java.lang.Override protected registerListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;ILandroid.os.Handler;II)Z"/>
-        <method signature="java.lang.Override protected unregisterListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;)V"/>
-        <method signature="java.lang.Override protected requestTriggerSensorImpl(Landroid.hardware.TriggerEventListener;Landroid.hardware.Sensor;)Z"/>
-        <method signature="java.lang.Override protected cancelTriggerSensorImpl(Landroid.hardware.TriggerEventListener;Landroid.hardware.Sensor;Z)Z"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;Landroid.os.Looper;)V"/>
+        <method signature="getFullSensorList()Ljava.util.List;"/>
+        <method signature="registerListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;ILandroid.os.Handler;II)Z"/>
+        <method signature="unregisterListenerImpl(Landroid.hardware.SensorEventListener;Landroid.hardware.Sensor;)V"/>
+        <method signature="requestTriggerSensorImpl(Landroid.hardware.TriggerEventListener;Landroid.hardware.Sensor;)Z"/>
+        <method signature="cancelTriggerSensorImpl(Landroid.hardware.TriggerEventListener;Landroid.hardware.Sensor;Z)Z"/>
     </class>
     <class name="android.app.backup.FullBackupDataOutput">
-        <method signature="public &lt;init&gt;(Landroid.os.ParcelFileDescriptor;)V"/>
-        <method signature="public getData()Landroid.app.backup.BackupDataOutput;"/>
+        <method signature="&lt;init&gt;(Landroid.os.ParcelFileDescriptor;)V"/>
+        <method signature="getData()Landroid.app.backup.BackupDataOutput;"/>
     </class>
     <class name="android.provider.DocumentsContract">
-        <method signature="public static setManageMode(Landroid.net.Uri;)Landroid.net.Uri;"/>
-        <method signature="public static isManageMode(Landroid.net.Uri;)Z"/>
-        <method signature="public static getDocumentThumbnail(Landroid.content.ContentProviderClient;Landroid.net.Uri;Landroid.graphics.Point;Landroid.os.CancellationSignal;)Landroid.graphics.Bitmap;"/>
-        <method signature="public static createDocument(Landroid.content.ContentProviderClient;Landroid.net.Uri;Ljava.lang.String;Ljava.lang.String;)Landroid.net.Uri;"/>
-        <method signature="public static deleteDocument(Landroid.content.ContentProviderClient;Landroid.net.Uri;)V"/>
+        <method signature="setManageMode(Landroid.net.Uri;)Landroid.net.Uri;"/>
+        <method signature="isManageMode(Landroid.net.Uri;)Z"/>
+        <method signature="getDocumentThumbnail(Landroid.content.ContentProviderClient;Landroid.net.Uri;Landroid.graphics.Point;Landroid.os.CancellationSignal;)Landroid.graphics.Bitmap;"/>
+        <method signature="createDocument(Landroid.content.ContentProviderClient;Landroid.net.Uri;Ljava.lang.String;Ljava.lang.String;)Landroid.net.Uri;"/>
+        <method signature="deleteDocument(Landroid.content.ContentProviderClient;Landroid.net.Uri;)V"/>
     </class>
     <class name="android.net.wifi.BatchedScanSettings">
-        <method signature="public isInvalid()Z"/>
-        <method signature="public constrain()V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="isInvalid()Z"/>
+        <method signature="constrain()V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.opengl.ManagedEGLContext">
-        <method signature="public static doTerminate()Z"/>
+        <method signature="doTerminate()Z"/>
     </class>
     <class name="android.nfc.Tag">
-        <method signature="public hasTech(I)Z"/>
-        <method signature="public getTechExtras(I)Landroid.os.Bundle;"/>
-        <method signature="public getTagService()LINfcTag;"/>
+        <method signature="hasTech(I)Z"/>
+        <method signature="getTechExtras(I)Landroid.os.Bundle;"/>
+        <method signature="getTagService()LINfcTag;"/>
     </class>
     <class name="android.media.MediaTimeProvider"/>
     <class name="android.app.ResourcesManager"/>
     <class name="android.app.backup.BackupHelperDispatcher"/>
     <class name="android.media.Ringtone">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;Z)V"/>
-        <method signature="public getUri()Landroid.net.Uri;"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;Z)V"/>
+        <method signature="getUri()Landroid.net.Uri;"/>
     </class>
     <class name="com.android.server.am.BackupRecord"/>
     <class name="android.view.MotionEvent.PointerProperties">
-        <method signature="public static createArray(I)[Landroid.view.MotionEvent.PointerProperties;"/>
+        <method signature="createArray(I)[Landroid.view.MotionEvent.PointerProperties;"/>
     </class>
     <class name="android.content.pm.PackageManager">
-        <method signature="public abstract queryIntentContentProvidersAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="public abstract getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
+        <method signature="queryIntentContentProvidersAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
     </class>
     <class name="android.net.wifi.WifiInfo">
-        <method signature="public getWifiSsid()Landroid.net.wifi.WifiSsid;"/>
-        <method signature="public setMeteredHint(Z)V"/>
-        <method signature="public getMeteredHint()Z"/>
-        <method signature="public setHiddenSSID(Z)V"/>
-        <method signature="public static removeDoubleQuotes(Ljava.lang.String;)Ljava.lang.String;"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="getWifiSsid()Landroid.net.wifi.WifiSsid;"/>
+        <method signature="setMeteredHint(Z)V"/>
+        <method signature="getMeteredHint()Z"/>
+        <method signature="setHiddenSSID(Z)V"/>
+        <method signature="removeDoubleQuotes(Ljava.lang.String;)Ljava.lang.String;"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.support.v7.widget.SearchView">
-        <method signature="java.lang.Override public requestFocus(ILandroid.graphics.Rect;)Z"/>
-        <method signature="java.lang.Override public clearFocus()V"/>
+        <method signature="requestFocus(ILandroid.graphics.Rect;)Z"/>
+        <method signature="clearFocus()V"/>
     </class>
     <class name="android.support.v4.view.ViewCompat.LayoutDirectionMode"/>
     <class name="android.app.backup.BackupAgentHelper">
-        <method signature="public getDispatcher()Landroid.app.backup.BackupHelperDispatcher;"/>
+        <method signature="getDispatcher()Landroid.app.backup.BackupHelperDispatcher;"/>
     </class>
     <class name="android.content.ContentResolver">
-        <method signature="public static syncErrorToString(I)Ljava.lang.String;"/>
-        <method signature="public static syncErrorStringToInt(Ljava.lang.String;)I"/>
-        <method signature="protected abstract acquireProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
-        <method signature="public abstract releaseProvider(Landroid.content.IContentProvider;)Z"/>
-        <method signature="protected abstract acquireUnstableProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
-        <method signature="public abstract releaseUnstableProvider(Landroid.content.IContentProvider;)Z"/>
-        <method signature="public abstract unstableProviderDied(Landroid.content.IContentProvider;)V"/>
-        <method signature="public appNotRespondingViaProvider(Landroid.content.IContentProvider;)V"/>
-        <method signature="public final registerContentObserver(Landroid.net.Uri;ZLandroid.database.ContentObserver;I)V"/>
-        <method signature="public static getContentService()LIContentService;"/>
-        <method signature="public getPackageName()Ljava.lang.String;"/>
+        <method signature="syncErrorToString(I)Ljava.lang.String;"/>
+        <method signature="syncErrorStringToInt(Ljava.lang.String;)I"/>
+        <method signature="acquireProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
+        <method signature="releaseProvider(Landroid.content.IContentProvider;)Z"/>
+        <method signature="acquireUnstableProvider(Landroid.content.Context;Ljava.lang.String;)Landroid.content.IContentProvider;"/>
+        <method signature="releaseUnstableProvider(Landroid.content.IContentProvider;)Z"/>
+        <method signature="unstableProviderDied(Landroid.content.IContentProvider;)V"/>
+        <method signature="appNotRespondingViaProvider(Landroid.content.IContentProvider;)V"/>
+        <method signature="registerContentObserver(Landroid.net.Uri;ZLandroid.database.ContentObserver;I)V"/>
+        <method signature="getContentService()LIContentService;"/>
+        <method signature="getPackageName()Ljava.lang.String;"/>
     </class>
     <class name="android.view.WindowManagerGlobal">
-        <method signature="public changeCanvasOpacity(Landroid.os.IBinder;Z)V"/>
+        <method signature="changeCanvasOpacity(Landroid.os.IBinder;Z)V"/>
     </class>
     <class name="android.print.PrintAttributes.MediaSize">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;III)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;III)V"/>
     </class>
     <class name="android.content.pm.LabeledIntent">
-        <method signature="protected &lt;init&gt;(Landroid.os.Parcel;)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
     </class>
     <class name="android.net.Proxy">
-        <method signature="public static final getAndroidProxySelectorRoutePlanner(LContext;)LHttpRoutePlanner;"/>
-        <method signature="public static final setHttpProxySystemProperty(Landroid.net.ProxyProperties;)V"/>
-        <method signature="public static final setHttpProxySystemProperty(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="getAndroidProxySelectorRoutePlanner(LContext;)LHttpRoutePlanner;"/>
+        <method signature="setHttpProxySystemProperty(Landroid.net.ProxyProperties;)V"/>
+        <method signature="setHttpProxySystemProperty(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)V"/>
     </class>
     <class name="java.util.zip.ZipEntry">
-        <method signature="public setDataOffset(J)V"/>
-        <method signature="public getDataOffset()J"/>
+        <method signature="setDataOffset(J)V"/>
+        <method signature="getDataOffset()J"/>
     </class>
     <class name="java.lang.reflect.Method">
-        <method signature="public getDexMethodIndex()I"/>
+        <method signature="getDexMethodIndex()I"/>
     </class>
     <class name="android.widget.GridLayout">
-        <method signature="java.lang.Override protected onSetLayoutParams(Landroid.view.View;Landroid.view.ViewGroup.LayoutParams;)V"/>
+        <method signature="onSetLayoutParams(Landroid.view.View;Landroid.view.ViewGroup.LayoutParams;)V"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pGroup">
-        <method signature="public setNetworkName(Ljava.lang.String;)V"/>
-        <method signature="public setIsGroupOwner(Z)V"/>
-        <method signature="public setOwner(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
-        <method signature="public addClient(Ljava.lang.String;)V"/>
-        <method signature="public addClient(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
-        <method signature="public removeClient(Ljava.lang.String;)Z"/>
-        <method signature="public removeClient(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
-        <method signature="public isClientListEmpty()Z"/>
-        <method signature="public contains(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
-        <method signature="public setPassphrase(Ljava.lang.String;)V"/>
-        <method signature="public setInterface(Ljava.lang.String;)V"/>
-        <method signature="public getNetworkId()I"/>
-        <method signature="public setNetworkId(I)V"/>
+        <method signature="setNetworkName(Ljava.lang.String;)V"/>
+        <method signature="setIsGroupOwner(Z)V"/>
+        <method signature="setOwner(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
+        <method signature="addClient(Ljava.lang.String;)V"/>
+        <method signature="addClient(Landroid.net.wifi.p2p.WifiP2pDevice;)V"/>
+        <method signature="removeClient(Ljava.lang.String;)Z"/>
+        <method signature="removeClient(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
+        <method signature="isClientListEmpty()Z"/>
+        <method signature="contains(Landroid.net.wifi.p2p.WifiP2pDevice;)Z"/>
+        <method signature="setPassphrase(Ljava.lang.String;)V"/>
+        <method signature="setInterface(Ljava.lang.String;)V"/>
+        <method signature="getNetworkId()I"/>
+        <method signature="setNetworkId(I)V"/>
     </class>
     <class name="android.net.nsd.NsdManager">
-        <method signature="public setEnabled(Z)V"/>
+        <method signature="setEnabled(Z)V"/>
     </class>
     <class name="android.widget.RemoteViews">
-        <method signature="public setUser(Landroid.os.UserHandle;)V"/>
-        <method signature="public estimateMemoryUsage()I"/>
-        <method signature="public apply(Landroid.content.Context;Landroid.view.ViewGroup;Landroid.widget.RemoteViews.OnClickHandler;)Landroid.view.View;"/>
-        <method signature="public reapply(Landroid.content.Context;Landroid.view.View;Landroid.widget.RemoteViews.OnClickHandler;)V"/>
+        <method signature="setUser(Landroid.os.UserHandle;)V"/>
+        <method signature="estimateMemoryUsage()I"/>
+        <method signature="apply(Landroid.content.Context;Landroid.view.ViewGroup;Landroid.widget.RemoteViews.OnClickHandler;)Landroid.view.View;"/>
+        <method signature="reapply(Landroid.content.Context;Landroid.view.View;Landroid.widget.RemoteViews.OnClickHandler;)V"/>
     </class>
     <class name="android.telephony.CellInfoGsm">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.telephony.CellInfoGsm;)V"/>
-        <method signature="public setCellIdentity(Landroid.telephony.CellIdentityGsm;)V"/>
-        <method signature="public setCellSignalStrength(Landroid.telephony.CellSignalStrengthGsm;)V"/>
-        <method signature="protected static createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoGsm;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.telephony.CellInfoGsm;)V"/>
+        <method signature="setCellIdentity(Landroid.telephony.CellIdentityGsm;)V"/>
+        <method signature="setCellSignalStrength(Landroid.telephony.CellSignalStrengthGsm;)V"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoGsm;"/>
     </class>
     <class name="android.content.BroadcastReceiver.PendingResult">
-        <method signature="public &lt;init&gt;(ILjava.lang.String;Landroid.os.Bundle;IZZLandroid.os.IBinder;I)V"/>
-        <method signature="public setExtrasClassLoader(Ljava.lang.ClassLoader;)V"/>
-        <method signature="public sendFinished(Landroid.app.IActivityManager;)V"/>
-        <method signature="public getSendingUserId()I"/>
+        <method signature="&lt;init&gt;(ILjava.lang.String;Landroid.os.Bundle;IZZLandroid.os.IBinder;I)V"/>
+        <method signature="setExtrasClassLoader(Ljava.lang.ClassLoader;)V"/>
+        <method signature="sendFinished(Landroid.app.IActivityManager;)V"/>
+        <method signature="getSendingUserId()I"/>
     </class>
     <class name="android.os.AsyncTask">
-        <method signature="public static init()V"/>
-        <method signature="public static setDefaultExecutor(Ljava.util.concurrent.Executor;)V"/>
+        <method signature="init()V"/>
+        <method signature="setDefaultExecutor(Ljava.util.concurrent.Executor;)V"/>
     </class>
     <class name="android.test.mock.MockPackageManager">
-        <method signature="java.lang.Override public getLeanbackLaunchIntentForPackage(Ljava.lang.String;)Landroid.content.Intent;"/>
-        <method signature="java.lang.Override public getPackageUid(Ljava.lang.String;I)I"/>
-        <method signature="java.lang.Override public getInstalledPackages(II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public grantPermission(Ljava.lang.String;Ljava.lang.String;)V"/>
-        <method signature="java.lang.Override public revokePermission(Ljava.lang.String;Ljava.lang.String;)V"/>
-        <method signature="java.lang.Override public resolveActivityAsUser(Landroid.content.Intent;II)Landroid.content.pm.ResolveInfo;"/>
-        <method signature="java.lang.Override public queryIntentActivitiesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public queryBroadcastReceivers(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public queryIntentServicesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public queryIntentContentProvidersAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
-        <method signature="java.lang.Override public getHomeActivities(Ljava.util.List;)Landroid.content.ComponentName;"/>
+        <method signature="getLeanbackLaunchIntentForPackage(Ljava.lang.String;)Landroid.content.Intent;"/>
+        <method signature="getPackageUid(Ljava.lang.String;I)I"/>
+        <method signature="getInstalledPackages(II)Ljava.util.List;"/>
+        <method signature="grantPermission(Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="revokePermission(Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="resolveActivityAsUser(Landroid.content.Intent;II)Landroid.content.pm.ResolveInfo;"/>
+        <method signature="queryIntentActivitiesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="queryBroadcastReceivers(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="queryIntentServicesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="queryIntentContentProvidersAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
+        <method signature="getHomeActivities(Ljava.util.List;)Landroid.content.ComponentName;"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pManager.PersistentGroupInfoListener"/>
     <class name="android.net.NetworkInfo">
-        <method signature="public &lt;init&gt;(Landroid.net.NetworkInfo;)V"/>
-        <method signature="com.android.internal.annotations.VisibleForTesting public setRoaming(Z)V"/>
-        <method signature="com.android.internal.annotations.VisibleForTesting public isConnectedToProvisioningNetwork()Z"/>
-        <method signature="com.android.internal.annotations.VisibleForTesting public setIsConnectedToProvisioningNetwork(Z)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.NetworkInfo;)V"/>
+        <method signature="setRoaming(Z)V"/>
+        <method signature="isConnectedToProvisioningNetwork()Z"/>
+        <method signature="setIsConnectedToProvisioningNetwork(Z)V"/>
     </class>
     <class name="android.net.wifi.WifiManager.TxPacketCountListener"/>
     <class name="android.support.v4.util.TimeUtils">
-        <method signature="public static formatDuration(JLjava.lang.StringBuilder;)V"/>
-        <method signature="public static formatDuration(JLjava.io.PrintWriter;I)V"/>
-        <method signature="public static formatDuration(JLjava.io.PrintWriter;)V"/>
-        <method signature="public static formatDuration(JJLjava.io.PrintWriter;)V"/>
+        <method signature="formatDuration(JLjava.lang.StringBuilder;)V"/>
+        <method signature="formatDuration(JLjava.io.PrintWriter;I)V"/>
+        <method signature="formatDuration(JLjava.io.PrintWriter;)V"/>
+        <method signature="formatDuration(JJLjava.io.PrintWriter;)V"/>
     </class>
     <class name="android.content.pm.RegisteredServicesCache.ServiceInfo">
-        <method signature="public &lt;init&gt;(Ljava.lang.Object;Landroid.content.ComponentName;I)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.Object;Landroid.content.ComponentName;I)V"/>
     </class>
     <class name="android.support.v7.app.ActionBar.NavigationMode"/>
     <class name="android.support.v4.view.ViewCompat.ImportantForAccessibility"/>
     <class name="android.support.v4.view.ViewCompat.AccessibilityLiveRegion"/>
     <class name="android.renderscript.Double2">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Double2;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Double2;)V"/>
     </class>
     <class name="android.renderscript.Double4">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Double4;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Double4;)V"/>
     </class>
     <class name="android.view.WindowInsets">
-        <method signature="public &lt;init&gt;(Landroid.graphics.Rect;Landroid.graphics.Rect;)V"/>
-        <method signature="public &lt;init&gt;(Landroid.graphics.Rect;Z)V"/>
-        <method signature="public &lt;init&gt;(Landroid.graphics.Rect;Landroid.graphics.Rect;Z)V"/>
-        <method signature="public &lt;init&gt;(Landroid.graphics.Rect;)V"/>
+        <method signature="&lt;init&gt;(Landroid.graphics.Rect;Landroid.graphics.Rect;)V"/>
+        <method signature="&lt;init&gt;(Landroid.graphics.Rect;Z)V"/>
+        <method signature="&lt;init&gt;(Landroid.graphics.Rect;Landroid.graphics.Rect;Z)V"/>
+        <method signature="&lt;init&gt;(Landroid.graphics.Rect;)V"/>
     </class>
     <class name="android.renderscript.Double3">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Double3;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Double3;)V"/>
     </class>
     <class name="android.media.MediaRouter">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;)V"/>
-        <method signature="public getSelectedRoute()Landroid.media.MediaRouter.RouteInfo;"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;)V"/>
+        <method signature="getSelectedRoute()Landroid.media.MediaRouter.RouteInfo;"/>
     </class>
     <class name="android.app.Notification">
-        <method signature="public setUser(Landroid.os.UserHandle;)V"/>
+        <method signature="setUser(Landroid.os.UserHandle;)V"/>
     </class>
     <class name="android.view.DisplayAdjustments"/>
     <class name="android.view.Window">
-        <method signature="public final destroy()V"/>
-        <method signature="public final isDestroyed()Z"/>
-        <method signature="public final setOnWindowDismissedCallback(Landroid.view.Window.OnWindowDismissedCallback;)V"/>
-        <method signature="public final dispatchOnWindowDismissed()V"/>
-        <method signature="public addPrivateFlags(I)V"/>
-        <method signature="public setCloseOnTouchOutside(Z)V"/>
-        <method signature="public setCloseOnTouchOutsideIfNotSet(Z)V"/>
-        <method signature="public abstract alwaysReadCloseOnTouchAttr()V"/>
-        <method signature="public shouldCloseOnTouch(Landroid.content.Context;Landroid.view.MotionEvent;)Z"/>
-        <method signature="protected haveDimAmount()Z"/>
+        <method signature="destroy()V"/>
+        <method signature="isDestroyed()Z"/>
+        <method signature="setOnWindowDismissedCallback(Landroid.view.Window.OnWindowDismissedCallback;)V"/>
+        <method signature="dispatchOnWindowDismissed()V"/>
+        <method signature="addPrivateFlags(I)V"/>
+        <method signature="setCloseOnTouchOutside(Z)V"/>
+        <method signature="setCloseOnTouchOutsideIfNotSet(Z)V"/>
+        <method signature="alwaysReadCloseOnTouchAttr()V"/>
+        <method signature="shouldCloseOnTouch(Landroid.content.Context;Landroid.view.MotionEvent;)Z"/>
+        <method signature="haveDimAmount()Z"/>
     </class>
     <class name="android.bluetooth.BluetoothDevice">
-        <method signature="public getServiceChannel(Landroid.os.ParcelUuid;)I"/>
-        <method signature="public setPasskey(I)Z"/>
-        <method signature="public setRemoteOutOfBandData()Z"/>
-        <method signature="public cancelPairingUserInput()Z"/>
-        <method signature="public isBluetoothDock()Z"/>
+        <method signature="getServiceChannel(Landroid.os.ParcelUuid;)I"/>
+        <method signature="setPasskey(I)Z"/>
+        <method signature="setRemoteOutOfBandData()Z"/>
+        <method signature="cancelPairingUserInput()Z"/>
+        <method signature="isBluetoothDock()Z"/>
     </class>
     <class name="android.app.ActivityManager">
-        <method signature="public getFrontActivityScreenCompatMode()I"/>
-        <method signature="public setFrontActivityScreenCompatMode(I)V"/>
-        <method signature="public getPackageScreenCompatMode(Ljava.lang.String;)I"/>
-        <method signature="public setPackageScreenCompatMode(Ljava.lang.String;I)V"/>
-        <method signature="public getPackageAskScreenCompat(Ljava.lang.String;)Z"/>
-        <method signature="public setPackageAskScreenCompat(Ljava.lang.String;Z)V"/>
-        <method signature="static public staticGetMemoryClass()I"/>
-        <method signature="static public staticGetLargeMemoryClass()I"/>
-        <method signature="public static isLowRamDeviceStatic()Z"/>
-        <method signature="public getTaskThumbnails(I)Landroid.app.ActivityManager.TaskThumbnails;"/>
-        <method signature="public getTaskTopThumbnail(I)Landroid.graphics.Bitmap;"/>
-        <method signature="public static checkComponentPermission(Ljava.lang.String;IIZ)I"/>
-        <method signature="public static checkUidPermission(Ljava.lang.String;I)I"/>
-        <method signature="public static getCurrentUser()I"/>
+        <method signature="getFrontActivityScreenCompatMode()I"/>
+        <method signature="setFrontActivityScreenCompatMode(I)V"/>
+        <method signature="getPackageScreenCompatMode(Ljava.lang.String;)I"/>
+        <method signature="setPackageScreenCompatMode(Ljava.lang.String;I)V"/>
+        <method signature="getPackageAskScreenCompat(Ljava.lang.String;)Z"/>
+        <method signature="setPackageAskScreenCompat(Ljava.lang.String;Z)V"/>
+        <method signature="staticGetMemoryClass()I"/>
+        <method signature="staticGetLargeMemoryClass()I"/>
+        <method signature="isLowRamDeviceStatic()Z"/>
+        <method signature="getTaskThumbnails(I)Landroid.app.ActivityManager.TaskThumbnails;"/>
+        <method signature="getTaskTopThumbnail(I)Landroid.graphics.Bitmap;"/>
+        <method signature="checkComponentPermission(Ljava.lang.String;IIZ)I"/>
+        <method signature="checkUidPermission(Ljava.lang.String;I)I"/>
+        <method signature="getCurrentUser()I"/>
     </class>
     <class name="android.app.ApplicationPackageManager">
-        <method signature="java.lang.Override public getLeanbackLaunchIntentForPackage(Ljava.lang.String;)Landroid.content.Intent;"/>
-        <method signature="java.lang.Override public getInstalledPackages(II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public queryIntentActivitiesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
-        <method signature="java.lang.Override public getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
+        <method signature="getLeanbackLaunchIntentForPackage(Ljava.lang.String;)Landroid.content.Intent;"/>
+        <method signature="getInstalledPackages(II)Ljava.util.List;"/>
+        <method signature="queryIntentActivitiesAsUser(Landroid.content.Intent;II)Ljava.util.List;"/>
+        <method signature="getResourcesForApplicationAsUser(Ljava.lang.String;I)Landroid.content.res.Resources;"/>
     </class>
     <class name="android.net.wifi.p2p.nsd.WifiP2pServiceRequest">
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.net.nsd.NsdServiceInfo">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;Ljava.lang.String;)V"/>
-        <method signature="public setAttribute(Ljava.lang.String;[B)V"/>
-        <method signature="public getTxtRecord()[B"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="setAttribute(Ljava.lang.String;[B)V"/>
+        <method signature="getTxtRecord()[B"/>
     </class>
     <class name="android.content.UriPermission">
-        <method signature="public &lt;init&gt;(Landroid.net.Uri;IJ)V"/>
-        <method signature="public &lt;init&gt;(Landroid.os.Parcel;)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.Uri;IJ)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
     </class>
     <class name="android.filterpacks.videosink.MediaRecorderStopException"/>
     <class name="android.media.MediaPlayer">
-        <method signature="public setSubtitleAnchor(Landroid.media.SubtitleController;Landroid.media.SubtitleController.Anchor;)V"/>
-        <method signature="java.lang.Override public onSubtitleTrackSelected(Landroid.media.SubtitleTrack;)V"/>
-        <method signature="public addSubtitleSource(Ljava.io.InputStream;Landroid.media.MediaFormat;)V"/>
-        <method signature="public getMediaTimeProvider()Landroid.media.MediaTimeProvider;"/>
+        <method signature="setSubtitleAnchor(Landroid.media.SubtitleController;Landroid.media.SubtitleController.Anchor;)V"/>
+        <method signature="onSubtitleTrackSelected(Landroid.media.SubtitleTrack;)V"/>
+        <method signature="addSubtitleSource(Ljava.io.InputStream;Landroid.media.MediaFormat;)V"/>
+        <method signature="getMediaTimeProvider()Landroid.media.MediaTimeProvider;"/>
     </class>
     <class name="android.support.v4.widget.DrawerLayout.LockMode"/>
     <class name="com.android.internal.telephony.SmsUsageMonitor">
-        <method signature="public static mergeShortCodeCategories(II)I"/>
+        <method signature="mergeShortCodeCategories(II)I"/>
     </class>
     <class name="java.util.zip.ZipFile.ZipInflaterInputStream"/>
     <class name="android.app.IActivityManager">
-        <method signature="public createActivityContainer(LIBinder;LIActivityContainerCallback;)LIActivityContainer;"/>
-        <method signature="public deleteActivityContainer(LIActivityContainer;)V"/>
+        <method signature="createActivityContainer(LIBinder;LIActivityContainerCallback;)LIActivityContainer;"/>
+        <method signature="deleteActivityContainer(LIActivityContainer;)V"/>
     </class>
     <class name="android.view.inputmethod.InputMethodManager">
-        <method signature="public getClient()LIInputMethodClient;"/>
-        <method signature="public getInputContext()LIInputContext;"/>
-        <method signature="public setImeWindowStatus(Landroid.os.IBinder;II)V"/>
-        <method signature="public setFullscreenMode(Z)V"/>
-        <method signature="public registerSuggestionSpansForNotification([Landroid.text.style.SuggestionSpan;)V"/>
-        <method signature="public notifySuggestionPicked(Landroid.text.style.SuggestionSpan;Ljava.lang.String;I)V"/>
-        <method signature="public showSoftInputUnchecked(ILandroid.os.ResultReceiver;)V"/>
-        <method signature="public startGettingWindowFocus(Landroid.view.View;)V"/>
+        <method signature="getClient()LIInputMethodClient;"/>
+        <method signature="getInputContext()LIInputContext;"/>
+        <method signature="setImeWindowStatus(Landroid.os.IBinder;II)V"/>
+        <method signature="setFullscreenMode(Z)V"/>
+        <method signature="registerSuggestionSpansForNotification([Landroid.text.style.SuggestionSpan;)V"/>
+        <method signature="notifySuggestionPicked(Landroid.text.style.SuggestionSpan;Ljava.lang.String;I)V"/>
+        <method signature="showSoftInputUnchecked(ILandroid.os.ResultReceiver;)V"/>
+        <method signature="startGettingWindowFocus(Landroid.view.View;)V"/>
     </class>
     <class name="android.media.AudioManager">
-        <method signature="public getRingtonePlayer()LIRingtonePlayer;"/>
+        <method signature="getRingtonePlayer()LIRingtonePlayer;"/>
     </class>
     <class name="android.app.ApplicationThreadNative"/>
     <class name="android.telephony.TelephonyManager">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;)V"/>
-        <method signature="private &lt;init&gt;()V"/>
-        <method signature="public static getDefault()Landroid.telephony.TelephonyManager;"/>
-        <method signature="public static from(Landroid.content.Context;)Landroid.telephony.TelephonyManager;"/>
-        <method signature="public static getNetworkTypeName(I)Ljava.lang.String;"/>
-        <method signature="android.annotation.PrivateApi public dial(Ljava.lang.String;)V"/>
-        <method signature="android.annotation.PrivateApi public call(Ljava.lang.String;Ljava.lang.String;)V"/>
-        <method signature="android.annotation.PrivateApi public showCallScreen()Z"/>
-        <method signature="android.annotation.PrivateApi public showCallScreenWithDialpad(Z)Z"/>
-        <method signature="android.annotation.PrivateApi public endCall()Z"/>
-        <method signature="android.annotation.PrivateApi public answerRingingCall()V"/>
-        <method signature="android.annotation.PrivateApi public toggleHold()V"/>
-        <method signature="android.annotation.PrivateApi public merge()V"/>
-        <method signature="android.annotation.PrivateApi public swap()V"/>
-        <method signature="android.annotation.PrivateApi public mute(Z)V"/>
-        <method signature="android.annotation.PrivateApi public silenceRinger()V"/>
-        <method signature="android.annotation.PrivateApi public isOffhook()Z"/>
-        <method signature="android.annotation.PrivateApi public isRinging()Z"/>
-        <method signature="android.annotation.PrivateApi public isIdle()Z"/>
-        <method signature="android.annotation.PrivateApi public isRadioOn()Z"/>
-        <method signature="android.annotation.PrivateApi public isSimPinEnabled()Z"/>
-        <method signature="android.annotation.PrivateApi public cancelMissedCallsNotification()V"/>
-        <method signature="android.annotation.PrivateApi public supplyPin(Ljava.lang.String;)Z"/>
-        <method signature="android.annotation.PrivateApi public supplyPuk(Ljava.lang.String;Ljava.lang.String;)Z"/>
-        <method signature="android.annotation.PrivateApi public supplyPinReportResult(Ljava.lang.String;)[I"/>
-        <method signature="android.annotation.PrivateApi public supplyPukReportResult(Ljava.lang.String;Ljava.lang.String;)[I"/>
-        <method signature="android.annotation.PrivateApi public handlePinMmi(Ljava.lang.String;)Z"/>
-        <method signature="android.annotation.PrivateApi public toggleRadioOnOff()V"/>
-        <method signature="android.annotation.PrivateApi public setRadio(Z)Z"/>
-        <method signature="android.annotation.PrivateApi public setRadioPower(Z)Z"/>
-        <method signature="android.annotation.PrivateApi public updateServiceLocation()V"/>
-        <method signature="android.annotation.PrivateApi public enableApnType(Ljava.lang.String;)I"/>
-        <method signature="android.annotation.PrivateApi public disableApnType(Ljava.lang.String;)I"/>
-        <method signature="android.annotation.PrivateApi public enableDataConnectivity()Z"/>
-        <method signature="android.annotation.PrivateApi public disableDataConnectivity()Z"/>
-        <method signature="android.annotation.PrivateApi public isDataConnectivityPossible()Z"/>
-        <method signature="android.annotation.PrivateApi public needsOtaServiceProvisioning()Z"/>
-        <method signature="android.annotation.PrivateApi public playDtmfTone(CZ)V"/>
-        <method signature="android.annotation.PrivateApi public stopDtmfTone()V"/>
-        <method signature="android.annotation.PrivateApi public addCallStateListener(Landroid.telephony.CallStateListener;)V"/>
-        <method signature="android.annotation.PrivateApi public removeCallStateListener(Landroid.telephony.CallStateListener;)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;)V"/>
+        <method signature="getDefault()Landroid.telephony.TelephonyManager;"/>
+        <method signature="from(Landroid.content.Context;)Landroid.telephony.TelephonyManager;"/>
+        <method signature="getNetworkTypeName(I)Ljava.lang.String;"/>
+        <method signature="dial(Ljava.lang.String;)V"/>
+        <method signature="call(Ljava.lang.String;Ljava.lang.String;)V"/>
+        <method signature="showCallScreen()Z"/>
+        <method signature="showCallScreenWithDialpad(Z)Z"/>
+        <method signature="endCall()Z"/>
+        <method signature="answerRingingCall()V"/>
+        <method signature="toggleHold()V"/>
+        <method signature="merge()V"/>
+        <method signature="swap()V"/>
+        <method signature="mute(Z)V"/>
+        <method signature="silenceRinger()V"/>
+        <method signature="isOffhook()Z"/>
+        <method signature="isRinging()Z"/>
+        <method signature="isIdle()Z"/>
+        <method signature="isRadioOn()Z"/>
+        <method signature="isSimPinEnabled()Z"/>
+        <method signature="cancelMissedCallsNotification()V"/>
+        <method signature="supplyPin(Ljava.lang.String;)Z"/>
+        <method signature="supplyPuk(Ljava.lang.String;Ljava.lang.String;)Z"/>
+        <method signature="supplyPinReportResult(Ljava.lang.String;)[I"/>
+        <method signature="supplyPukReportResult(Ljava.lang.String;Ljava.lang.String;)[I"/>
+        <method signature="handlePinMmi(Ljava.lang.String;)Z"/>
+        <method signature="toggleRadioOnOff()V"/>
+        <method signature="setRadio(Z)Z"/>
+        <method signature="setRadioPower(Z)Z"/>
+        <method signature="updateServiceLocation()V"/>
+        <method signature="enableApnType(Ljava.lang.String;)I"/>
+        <method signature="disableApnType(Ljava.lang.String;)I"/>
+        <method signature="enableDataConnectivity()Z"/>
+        <method signature="disableDataConnectivity()Z"/>
+        <method signature="isDataConnectivityPossible()Z"/>
+        <method signature="needsOtaServiceProvisioning()Z"/>
+        <method signature="playDtmfTone(CZ)V"/>
+        <method signature="stopDtmfTone()V"/>
+        <method signature="addCallStateListener(Landroid.telephony.CallStateListener;)V"/>
+        <method signature="removeCallStateListener(Landroid.telephony.CallStateListener;)V"/>
     </class>
     <class name="android.media.WebVttRenderer"/>
     <class name="com.android.internal.telephony.gsm.SmsMessage">
-        <method signature="public static newFromCDS(Ljava.lang.String;)Lcom.android.internal.telephony.gsm.SmsMessage;"/>
+        <method signature="newFromCDS(Ljava.lang.String;)Lcom.android.internal.telephony.gsm.SmsMessage;"/>
     </class>
     <class name="android.content.pm.PackageStats">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;I)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;I)V"/>
     </class>
     <class name="android.content.res.ResourcesKey"/>
     <class name="android.support.v4.widget.DrawerLayout.EdgeGravity"/>
     <class name="android.net.DhcpInfo">
-        <method signature="public &lt;init&gt;(Landroid.net.DhcpInfo;)V"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="&lt;init&gt;(Landroid.net.DhcpInfo;)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.renderscript.Long3">
-        <method signature="public &lt;init&gt;(J)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Long3;)V"/>
+        <method signature="&lt;init&gt;(J)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Long3;)V"/>
     </class>
     <class name="android.renderscript.Int2">
-        <method signature="public &lt;init&gt;(I)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Int2;)V"/>
+        <method signature="&lt;init&gt;(I)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Int2;)V"/>
     </class>
     <class name="android.renderscript.Long2">
-        <method signature="public &lt;init&gt;(J)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Long2;)V"/>
+        <method signature="&lt;init&gt;(J)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Long2;)V"/>
     </class>
     <class name="android.content.pm.PackageCleanItem"/>
     <class name="android.renderscript.Int4">
-        <method signature="public &lt;init&gt;(I)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Int4;)V"/>
+        <method signature="&lt;init&gt;(I)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Int4;)V"/>
     </class>
     <class name="android.renderscript.Long4">
-        <method signature="public &lt;init&gt;(J)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Long4;)V"/>
+        <method signature="&lt;init&gt;(J)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Long4;)V"/>
     </class>
     <class name="android.renderscript.Int3">
-        <method signature="public &lt;init&gt;(I)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Int3;)V"/>
+        <method signature="&lt;init&gt;(I)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Int3;)V"/>
     </class>
     <class name="com.android.vcard.VCardEntry.NameData">
-        <method signature="public setFamily(Ljava.lang.String;)V"/>
-        <method signature="public setMiddle(Ljava.lang.String;)V"/>
-        <method signature="public setGiven(Ljava.lang.String;)V"/>
-        <method signature="public setPrefix(Ljava.lang.String;)V"/>
-        <method signature="public setSuffix(Ljava.lang.String;)V"/>
+        <method signature="setFamily(Ljava.lang.String;)V"/>
+        <method signature="setMiddle(Ljava.lang.String;)V"/>
+        <method signature="setGiven(Ljava.lang.String;)V"/>
+        <method signature="setPrefix(Ljava.lang.String;)V"/>
+        <method signature="setSuffix(Ljava.lang.String;)V"/>
     </class>
     <class name="android.provider.Settings.Secure">
-        <method signature="public static getMovedKeys(Ljava.util.HashSet;)V"/>
-        <method signature="public static getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
-        <method signature="public static putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
-        <method signature="public static getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)I"/>
-        <method signature="public static getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)I"/>
-        <method signature="public static putIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)Z"/>
-        <method signature="public static getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)J"/>
-        <method signature="public static getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)J"/>
-        <method signature="public static putLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)Z"/>
-        <method signature="public static getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)F"/>
-        <method signature="public static getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)F"/>
-        <method signature="public static putFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)Z"/>
+        <method signature="getMovedKeys(Ljava.util.HashSet;)V"/>
+        <method signature="getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
+        <method signature="putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
+        <method signature="getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)I"/>
+        <method signature="getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)I"/>
+        <method signature="putIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)Z"/>
+        <method signature="getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)J"/>
+        <method signature="getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)J"/>
+        <method signature="putLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)Z"/>
+        <method signature="getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)F"/>
+        <method signature="getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)F"/>
+        <method signature="putFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)Z"/>
     </class>
     <class name="android.provider.Settings.Global">
-        <method signature="public static getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
-        <method signature="public static putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
+        <method signature="getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
+        <method signature="putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
     </class>
     <class name="android.widget.RemoteViews.OnClickHandler"/>
     <class name="android.view.Window.OnWindowDismissedCallback"/>
     <class name="android.os.Registrant"/>
     <class name="android.media.WebVttCueListener"/>
     <class name="android.content.ClipDescription">
-        <method signature="public validate()V"/>
-        <method signature="public toShortString(Ljava.lang.StringBuilder;)Z"/>
+        <method signature="validate()V"/>
+        <method signature="toShortString(Ljava.lang.StringBuilder;)Z"/>
     </class>
     <class name="android.view.InputQueue.FinishedInputEventCallback"/>
     <class name="android.app.Activity">
         <method signature="onTranslucentConversionComplete(Z)V"/>
-        <method signature="public final getActivityToken()Landroid.os.IBinder;"/>
+        <method signature="getActivityToken()Landroid.os.IBinder;"/>
     </class>
     <class name="android.content.res.Resources">
-        <method signature="public static selectDefaultTheme(II)I"/>
-        <method signature="public static selectSystemTheme(IIIII)I"/>
+        <method signature="selectDefaultTheme(II)I"/>
+        <method signature="selectSystemTheme(IIIII)I"/>
     </class>
     <class name="android.content.ContentProviderOperation">
-        <method signature="public getType()I"/>
+        <method signature="getType()I"/>
     </class>
     <class name="android.content.pm.PermissionInfo">
-        <method signature="public static fixProtectionLevel(I)I"/>
-        <method signature="public static protectionToString(I)Ljava.lang.String;"/>
+        <method signature="fixProtectionLevel(I)I"/>
+        <method signature="protectionToString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.os.ParcelFileDescriptor">
-        <method signature="public &lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
-        <method signature="public &lt;init&gt;(Ljava.io.FileDescriptor;Ljava.io.FileDescriptor;)V"/>
+        <method signature="&lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
+        <method signature="&lt;init&gt;(Ljava.io.FileDescriptor;Ljava.io.FileDescriptor;)V"/>
     </class>
     <class name="android.renderscript.Short2">
-        <method signature="public &lt;init&gt;(S)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Short2;)V"/>
+        <method signature="&lt;init&gt;(S)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Short2;)V"/>
     </class>
     <class name="android.renderscript.Short3">
-        <method signature="public &lt;init&gt;(S)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Short3;)V"/>
+        <method signature="&lt;init&gt;(S)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Short3;)V"/>
     </class>
     <class name="android.net.wifi.p2p.nsd.WifiP2pServiceResponse.Status">
-        <method signature="public static toString(I)Ljava.lang.String;"/>
+        <method signature="toString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.renderscript.Short4">
-        <method signature="public &lt;init&gt;(S)V"/>
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Short4;)V"/>
+        <method signature="&lt;init&gt;(S)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Short4;)V"/>
     </class>
     <class name="android.app.ActivityManager.TaskThumbnails"/>
     <class name="android.app.WallpaperManager">
-        <method signature="public getIWallpaperManager()LIWallpaperManager;"/>
+        <method signature="getIWallpaperManager()LIWallpaperManager;"/>
     </class>
     <class name="android.os.Process">
-        <method signature="public static final native setUid(I)I"/>
-        <method signature="public static final native setGid(I)I"/>
-        <method signature="public static final native getFreeMemory()J"/>
-        <method signature="public static final native getTotalMemory()J"/>
-        <method signature="public static final native readProcLines(Ljava.lang.String;[Ljava.lang.String;[J)V"/>
-        <method signature="public static final native getPids(Ljava.lang.String;[I)[I"/>
-        <method signature="public static final native readProcFile(Ljava.lang.String;[I[Ljava.lang.String;[J[F)Z"/>
-        <method signature="public static final native parseProcLine([BII[I[Ljava.lang.String;[J[F)Z"/>
-        <method signature="public static final native getPidsForCommands([Ljava.lang.String;)[I"/>
+        <method signature="setUid(I)I"/>
+        <method signature="setGid(I)I"/>
+        <method signature="getFreeMemory()J"/>
+        <method signature="getTotalMemory()J"/>
+        <method signature="readProcLines(Ljava.lang.String;[Ljava.lang.String;[J)V"/>
+        <method signature="getPids(Ljava.lang.String;[I)[I"/>
+        <method signature="readProcFile(Ljava.lang.String;[I[Ljava.lang.String;[J[F)Z"/>
+        <method signature="parseProcLine([BII[I[Ljava.lang.String;[J[F)Z"/>
+        <method signature="getPidsForCommands([Ljava.lang.String;)[I"/>
     </class>
     <class name="android.nfc.tech.NfcV">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.text.Selection">
-        <method signature="public static moveToPreceding(Landroid.text.Spannable;Landroid.text.Selection.PositionIterator;Z)Z"/>
-        <method signature="public static moveToFollowing(Landroid.text.Spannable;Landroid.text.Selection.PositionIterator;Z)Z"/>
+        <method signature="moveToPreceding(Landroid.text.Spannable;Landroid.text.Selection.PositionIterator;Z)Z"/>
+        <method signature="moveToFollowing(Landroid.text.Spannable;Landroid.text.Selection.PositionIterator;Z)Z"/>
     </class>
     <class name="android.location.Geofence">
-        <method signature="public getType()I"/>
-        <method signature="public getLatitude()D"/>
-        <method signature="public getLongitude()D"/>
-        <method signature="public getRadius()F"/>
+        <method signature="getType()I"/>
+        <method signature="getLatitude()D"/>
+        <method signature="getLongitude()D"/>
+        <method signature="getRadius()F"/>
     </class>
     <class name="android.os.Looper">
-        <method signature="public getQueue()Landroid.os.MessageQueue;"/>
+        <method signature="getQueue()Landroid.os.MessageQueue;"/>
     </class>
     <class name="android.nfc.tech.IsoDep">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.view.inputmethod.BaseInputConnection">
-        <method signature="public static setComposingSpans(Landroid.text.Spannable;II)V"/>
+        <method signature="setComposingSpans(Landroid.text.Spannable;II)V"/>
     </class>
     <class name="android.graphics.Canvas">
-        <method signature="public &lt;init&gt;(J)V"/>
-        <method signature="public setScreenDensity(I)V"/>
+        <method signature="&lt;init&gt;(J)V"/>
+        <method signature="setScreenDensity(I)V"/>
     </class>
     <class name="android.net.wifi.WpsResult">
-        <method signature="public describeContents()I"/>
-        <method signature="public &lt;init&gt;(Landroid.net.wifi.WpsResult;)V"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="describeContents()I"/>
+        <method signature="&lt;init&gt;(Landroid.net.wifi.WpsResult;)V"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.util.TimeUtils">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public static formatDuration(JLjava.lang.StringBuilder;)V"/>
-        <method signature="public static formatDuration(JLjava.io.PrintWriter;I)V"/>
-        <method signature="public static formatDuration(JLjava.io.PrintWriter;)V"/>
-        <method signature="public static formatDuration(JJLjava.io.PrintWriter;)V"/>
-        <method signature="public static formatUptime(J)Ljava.lang.String;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="formatDuration(JLjava.lang.StringBuilder;)V"/>
+        <method signature="formatDuration(JLjava.io.PrintWriter;I)V"/>
+        <method signature="formatDuration(JLjava.io.PrintWriter;)V"/>
+        <method signature="formatDuration(JJLjava.io.PrintWriter;)V"/>
+        <method signature="formatUptime(J)Ljava.lang.String;"/>
     </class>
     <class name="com.android.server.TwilightCalculator"/>
     <class name="android.net.wifi.WifiConfiguration">
-        <method signature="public getPrintableSsid()Ljava.lang.String;"/>
-        <method signature="public getAuthType()I"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public &lt;init&gt;(Landroid.net.wifi.WifiConfiguration;)V"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="getPrintableSsid()Ljava.lang.String;"/>
+        <method signature="getAuthType()I"/>
+        <method signature="describeContents()I"/>
+        <method signature="&lt;init&gt;(Landroid.net.wifi.WifiConfiguration;)V"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.accounts.AccountManager">
-        <method signature="public getAccountsByTypeAsUser(Ljava.lang.String;Landroid.os.UserHandle;)[Landroid.accounts.Account;"/>
+        <method signature="getAccountsByTypeAsUser(Ljava.lang.String;Landroid.os.UserHandle;)[Landroid.accounts.Account;"/>
     </class>
     <class name="android.os.DropBoxManager">
-        <method signature="public &lt;init&gt;(LIDropBoxManagerService;)V"/>
+        <method signature="&lt;init&gt;(LIDropBoxManagerService;)V"/>
     </class>
     <class name="android.location.LocationRequest">
-        <method signature="public static createFromDeprecatedProvider(Ljava.lang.String;JFZ)Landroid.location.LocationRequest;"/>
-        <method signature="public static createFromDeprecatedCriteria(Landroid.location.Criteria;JFZ)Landroid.location.LocationRequest;"/>
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.location.LocationRequest;)V"/>
-        <method signature="public decrementNumUpdates()V"/>
-        <method signature="public setProvider(Ljava.lang.String;)Landroid.location.LocationRequest;"/>
-        <method signature="public getProvider()Ljava.lang.String;"/>
-        <method signature="public setSmallestDisplacement(F)Landroid.location.LocationRequest;"/>
-        <method signature="public getSmallestDisplacement()F"/>
-        <method signature="public getWorkSource()Landroid.os.WorkSource;"/>
-        <method signature="public getHideFromAppOps()Z"/>
-        <method signature="public static qualityToString(I)Ljava.lang.String;"/>
+        <method signature="createFromDeprecatedProvider(Ljava.lang.String;JFZ)Landroid.location.LocationRequest;"/>
+        <method signature="createFromDeprecatedCriteria(Landroid.location.Criteria;JFZ)Landroid.location.LocationRequest;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.location.LocationRequest;)V"/>
+        <method signature="decrementNumUpdates()V"/>
+        <method signature="setProvider(Ljava.lang.String;)Landroid.location.LocationRequest;"/>
+        <method signature="getProvider()Ljava.lang.String;"/>
+        <method signature="setSmallestDisplacement(F)Landroid.location.LocationRequest;"/>
+        <method signature="getSmallestDisplacement()F"/>
+        <method signature="getWorkSource()Landroid.os.WorkSource;"/>
+        <method signature="getHideFromAppOps()Z"/>
+        <method signature="qualityToString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.provider.Settings.System">
-        <method signature="public static getMovedKeys(Ljava.util.HashSet;)V"/>
-        <method signature="public static getNonLegacyMovedKeys(Ljava.util.HashSet;)V"/>
-        <method signature="public static getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
-        <method signature="public static putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
-        <method signature="public static getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)I"/>
-        <method signature="public static getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)I"/>
-        <method signature="public static putIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)Z"/>
-        <method signature="public static getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)J"/>
-        <method signature="public static getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)J"/>
-        <method signature="public static putLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)Z"/>
-        <method signature="public static getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)F"/>
-        <method signature="public static getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)F"/>
-        <method signature="public static putFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)Z"/>
-        <method signature="public static getConfigurationForUser(Landroid.content.ContentResolver;Landroid.content.res.Configuration;I)V"/>
-        <method signature="public static putConfigurationForUser(Landroid.content.ContentResolver;Landroid.content.res.Configuration;I)Z"/>
-        <method signature="public static hasInterestingConfigurationChanges(I)Z"/>
+        <method signature="getMovedKeys(Ljava.util.HashSet;)V"/>
+        <method signature="getNonLegacyMovedKeys(Ljava.util.HashSet;)V"/>
+        <method signature="getStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)Ljava.lang.String;"/>
+        <method signature="putStringForUser(Landroid.content.ContentResolver;Ljava.lang.String;Ljava.lang.String;I)Z"/>
+        <method signature="getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)I"/>
+        <method signature="getIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)I"/>
+        <method signature="putIntForUser(Landroid.content.ContentResolver;Ljava.lang.String;II)Z"/>
+        <method signature="getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)J"/>
+        <method signature="getLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)J"/>
+        <method signature="putLongForUser(Landroid.content.ContentResolver;Ljava.lang.String;JI)Z"/>
+        <method signature="getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)F"/>
+        <method signature="getFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;I)F"/>
+        <method signature="putFloatForUser(Landroid.content.ContentResolver;Ljava.lang.String;FI)Z"/>
+        <method signature="getConfigurationForUser(Landroid.content.ContentResolver;Landroid.content.res.Configuration;I)V"/>
+        <method signature="putConfigurationForUser(Landroid.content.ContentResolver;Landroid.content.res.Configuration;I)Z"/>
+        <method signature="hasInterestingConfigurationChanges(I)Z"/>
     </class>
     <class name="android.renderscript.Float3">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Float3;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Float3;)V"/>
     </class>
     <class name="android.renderscript.Float2">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Float2;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Float2;)V"/>
     </class>
     <class name="com.android.internal.telephony.PhoneProxy">
-        <method signature="java.lang.Override public getVoiceMessageCount()I"/>
+        <method signature="getVoiceMessageCount()I"/>
     </class>
     <class name="android.os.RegistrantList"/>
     <class name="android.support.v4.view.ViewCompat.ResolvedLayoutDirectionMode"/>
     <class name="android.renderscript.Float4">
-        <method signature="public &lt;init&gt;(Landroid.renderscript.Float4;)V"/>
+        <method signature="&lt;init&gt;(Landroid.renderscript.Float4;)V"/>
     </class>
     <class name="android.app.backup.BackupDataOutput">
-        <method signature="public &lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
-        <method signature="public setKeyPrefix(Ljava.lang.String;)V"/>
-        <method signature="protected finalize()V"/>
+        <method signature="&lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
+        <method signature="setKeyPrefix(Ljava.lang.String;)V"/>
+        <method signature="finalize()V"/>
     </class>
     <class name="android.opengl.EGLLogWrapper">
-        <method signature="public eglReleaseThread()Z"/>
+        <method signature="eglReleaseThread()Z"/>
     </class>
     <class name="android.support.v4.widget.DrawerLayout.State"/>
     <class name="android.preference.PreferenceFragment">
-        <method signature="public getListView()Landroid.widget.ListView;"/>
+        <method signature="getListView()Landroid.widget.ListView;"/>
     </class>
     <class name="android.media.SubtitleTrack.Cue"/>
     <class name="android.content.ClipData.Item">
-        <method signature="public toShortString(Ljava.lang.StringBuilder;)V"/>
+        <method signature="toShortString(Ljava.lang.StringBuilder;)V"/>
     </class>
     <class name="android.telephony.CellSignalStrength">
-        <method signature="protected &lt;init&gt;()V"/>
-        <method signature="public abstract setDefaultValues()V"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="setDefaultValues()V"/>
     </class>
     <class name="com.android.server.wm.WindowManagerService"/>
     <class name="android.telephony.SmsMessage">
-        <method signature="public static newFromParcel(Landroid.os.Parcel;)Landroid.telephony.SmsMessage;"/>
+        <method signature="newFromParcel(Landroid.os.Parcel;)Landroid.telephony.SmsMessage;"/>
     </class>
     <class name="android.graphics.drawable.LayerDrawable">
-        <method signature="java.lang.Override public setLayoutDirection(I)V"/>
+        <method signature="setLayoutDirection(I)V"/>
     </class>
     <class name="android.media.AudioService">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;)V"/>
     </class>
     <class name="javax.microedition.khronos.egl.EGL10">
         <method signature="eglReleaseThread()Z"/>
     </class>
     <class name="android.database.sqlite.SQLiteProgram">
-        <method signature="protected final getSession()Landroid.database.sqlite.SQLiteSession;"/>
-        <method signature="protected final getConnectionFlags()I"/>
-        <method signature="protected final onCorruption()V"/>
+        <method signature="getSession()Landroid.database.sqlite.SQLiteSession;"/>
+        <method signature="getConnectionFlags()I"/>
+        <method signature="onCorruption()V"/>
     </class>
     <class name="android.os.Environment">
-        <method signature="public static initForCurrentUser()V"/>
-        <method signature="public static getLegacyExternalStorageDirectory()Ljava.io.File;"/>
-        <method signature="public static getLegacyExternalStorageObbDirectory()Ljava.io.File;"/>
-        <method signature="public static getEmulatedStorageSource(I)Ljava.io.File;"/>
-        <method signature="public static getEmulatedStorageObbSource()Ljava.io.File;"/>
-        <method signature="public static setUserRequired(Z)V"/>
+        <method signature="initForCurrentUser()V"/>
+        <method signature="getLegacyExternalStorageDirectory()Ljava.io.File;"/>
+        <method signature="getLegacyExternalStorageObbDirectory()Ljava.io.File;"/>
+        <method signature="getEmulatedStorageSource(I)Ljava.io.File;"/>
+        <method signature="getEmulatedStorageObbSource()Ljava.io.File;"/>
+        <method signature="setUserRequired(Z)V"/>
     </class>
     <class name="android.app.ActivityView"/>
     <class name="android.app.Dialog">
-        <method signature="java.lang.Override public onWindowDismissed()V"/>
-        <method signature="public takeCancelAndDismissListeners(Ljava.lang.String;Landroid.content.DialogInterface.OnCancelListener;Landroid.content.DialogInterface.OnDismissListener;)Z"/>
+        <method signature="onWindowDismissed()V"/>
+        <method signature="takeCancelAndDismissListeners(Ljava.lang.String;Landroid.content.DialogInterface.OnCancelListener;Landroid.content.DialogInterface.OnDismissListener;)Z"/>
     </class>
     <class name="android.webkit.WebViewFactory">
-        <method signature="public static setUseExperimentalWebView(Z)V"/>
-        <method signature="public static useExperimentalWebView()Z"/>
-        <method signature="public static isUseExperimentalWebViewSet()Z"/>
+        <method signature="setUseExperimentalWebView(Z)V"/>
+        <method signature="useExperimentalWebView()Z"/>
+        <method signature="isUseExperimentalWebViewSet()Z"/>
     </class>
     <class name="android.os.Parcel">
-        <method signature="public final pushAllowFds(Z)Z"/>
-        <method signature="public final restoreAllowFds(Z)V"/>
-        <method signature="public final writeParcelableCreator(Landroid.os.Parcelable;)V"/>
-        <method signature="public final readRawFileDescriptor()Ljava.io.FileDescriptor;"/>
-        <method signature="public final readCreator(Landroid.os.Parcelable.Creator;Ljava.lang.ClassLoader;)Landroid.os.Parcelable;"/>
-        <method signature="public final readParcelableCreator(Ljava.lang.ClassLoader;)Landroid.os.Parcelable.Creator;"/>
-        <method signature="static protected final obtain(J)Landroid.os.Parcel;"/>
+        <method signature="pushAllowFds(Z)Z"/>
+        <method signature="restoreAllowFds(Z)V"/>
+        <method signature="writeParcelableCreator(Landroid.os.Parcelable;)V"/>
+        <method signature="readRawFileDescriptor()Ljava.io.FileDescriptor;"/>
+        <method signature="readCreator(Landroid.os.Parcelable.Creator;Ljava.lang.ClassLoader;)Landroid.os.Parcelable;"/>
+        <method signature="readParcelableCreator(Ljava.lang.ClassLoader;)Landroid.os.Parcelable.Creator;"/>
+        <method signature="obtain(J)Landroid.os.Parcel;"/>
     </class>
     <class name="android.app.backup.BackupDataInputStream">
         <method signature="&lt;init&gt;(Landroid.app.backup.BackupDataInput;)V"/>
     </class>
     <class name="android.content.IntentSender">
-        <method signature="public getTarget()LIIntentSender;"/>
-        <method signature="public &lt;init&gt;(LIIntentSender;)V"/>
-        <method signature="public &lt;init&gt;(Landroid.os.IBinder;)V"/>
+        <method signature="getTarget()LIIntentSender;"/>
+        <method signature="&lt;init&gt;(LIIntentSender;)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.IBinder;)V"/>
     </class>
     <class name="android.content.SyncStatusInfo"/>
     <class name="android.media.SubtitleTrack.Run"/>
     <class name="android.util.DebugUtils">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public static buildShortClassTag(Ljava.lang.Object;Ljava.lang.StringBuilder;)V"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="buildShortClassTag(Ljava.lang.Object;Ljava.lang.StringBuilder;)V"/>
     </class>
     <class name="android.appwidget.AppWidgetHostView">
-        <method signature="public setUserId(I)V"/>
+        <method signature="setUserId(I)V"/>
     </class>
     <class name="android.os.UserHandle">
-        <method signature="public static final isIsolated(I)Z"/>
-        <method signature="public static isApp(I)Z"/>
-        <method signature="public static final getCallingUserId()I"/>
-        <method signature="public &lt;init&gt;(I)V"/>
-        <method signature="public getIdentifier()I"/>
+        <method signature="isIsolated(I)Z"/>
+        <method signature="isApp(I)Z"/>
+        <method signature="getCallingUserId()I"/>
+        <method signature="&lt;init&gt;(I)V"/>
+        <method signature="getIdentifier()I"/>
     </class>
     <class name="android.telephony.CellSignalStrengthLte">
-        <method signature="java.lang.Override public setDefaultValues()V"/>
+        <method signature="setDefaultValues()V"/>
     </class>
     <class name="android.hardware.Sensor">
-        <method signature="public getHandle()I"/>
+        <method signature="getHandle()I"/>
     </class>
     <class name="android.app.DialogFragment">
-        <method signature="java.lang.Override public getLayoutInflater(Landroid.os.Bundle;)Landroid.view.LayoutInflater;"/>
+        <method signature="getLayoutInflater(Landroid.os.Bundle;)Landroid.view.LayoutInflater;"/>
     </class>
     <class name="com.android.internal.policy.impl.PhoneWindow">
-        <method signature="public alwaysReadCloseOnTouchAttr()V"/>
+        <method signature="alwaysReadCloseOnTouchAttr()V"/>
     </class>
     <class name="android.database.AbstractWindowedCursor">
-        <method signature="java.lang.Override protected onDeactivateOrClose()V"/>
+        <method signature="onDeactivateOrClose()V"/>
     </class>
     <class name="android.content.AsyncTaskLoader">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;Ljava.util.concurrent.Executor;)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;Ljava.util.concurrent.Executor;)V"/>
     </class>
     <class name="android.support.v7.media.MediaRouter.CallbackFlags"/>
     <class name="android.app.admin.DeviceAdminInfo.PolicyInfo"/>
     <class name="android.nfc.tech.NfcA">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.os.storage.StorageManager">
-        <method signature="public static from(Landroid.content.Context;)Landroid.os.storage.StorageManager;"/>
-        <method signature="public getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
-        <method signature="public static getPrimaryVolume([Landroid.os.storage.StorageVolume;)Landroid.os.storage.StorageVolume;"/>
+        <method signature="from(Landroid.content.Context;)Landroid.os.storage.StorageManager;"/>
+        <method signature="getPrimaryVolume()Landroid.os.storage.StorageVolume;"/>
+        <method signature="getPrimaryVolume([Landroid.os.storage.StorageVolume;)Landroid.os.storage.StorageVolume;"/>
     </class>
     <class name="android.webkit.WebStorage.Origin">
-        <method signature="protected &lt;init&gt;(Ljava.lang.String;JJ)V"/>
-        <method signature="protected &lt;init&gt;(Ljava.lang.String;J)V"/>
-        <method signature="protected &lt;init&gt;(Ljava.lang.String;)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;JJ)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;J)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;)V"/>
     </class>
     <class name="android.util.Xml">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.nfc.tech.NfcB">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.widget.SearchView">
-        <method signature="java.lang.Override public requestFocus(ILandroid.graphics.Rect;)Z"/>
-        <method signature="java.lang.Override public clearFocus()V"/>
+        <method signature="requestFocus(ILandroid.graphics.Rect;)Z"/>
+        <method signature="clearFocus()V"/>
     </class>
     <class name="android.util.EventLog">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.support.v7.app.ActionBar.DisplayOptions"/>
     <class name="android.os.WorkSource">
-        <method signature="public &lt;init&gt;(I)V"/>
-        <method signature="public &lt;init&gt;(ILjava.lang.String;)V"/>
-        <method signature="public size()I"/>
-        <method signature="public get(I)I"/>
-        <method signature="public getName(I)Ljava.lang.String;"/>
-        <method signature="public set(I)V"/>
-        <method signature="public set(ILjava.lang.String;)V"/>
-        <method signature="public setReturningDiffs(Landroid.os.WorkSource;)[Landroid.os.WorkSource;"/>
-        <method signature="public addReturningNewbs(Landroid.os.WorkSource;)Landroid.os.WorkSource;"/>
-        <method signature="public add(I)Z"/>
-        <method signature="public add(ILjava.lang.String;)Z"/>
-        <method signature="public addReturningNewbs(I)Landroid.os.WorkSource;"/>
-        <method signature="public stripNames()Landroid.os.WorkSource;"/>
+        <method signature="&lt;init&gt;(I)V"/>
+        <method signature="&lt;init&gt;(ILjava.lang.String;)V"/>
+        <method signature="size()I"/>
+        <method signature="get(I)I"/>
+        <method signature="getName(I)Ljava.lang.String;"/>
+        <method signature="set(I)V"/>
+        <method signature="set(ILjava.lang.String;)V"/>
+        <method signature="setReturningDiffs(Landroid.os.WorkSource;)[Landroid.os.WorkSource;"/>
+        <method signature="addReturningNewbs(Landroid.os.WorkSource;)Landroid.os.WorkSource;"/>
+        <method signature="add(I)Z"/>
+        <method signature="add(ILjava.lang.String;)Z"/>
+        <method signature="addReturningNewbs(I)Landroid.os.WorkSource;"/>
+        <method signature="stripNames()Landroid.os.WorkSource;"/>
     </class>
     <class name="android.media.SubtitleTrack">
-        <method signature="public final getFormat()Landroid.media.MediaFormat;"/>
-        <method signature="protected synchronized updateActiveCues(ZJ)V"/>
-        <method signature="protected synchronized clearActiveCues()V"/>
-        <method signature="protected scheduleTimedEvents()V"/>
-        <method signature="public show()V"/>
-        <method signature="public hide()V"/>
-        <method signature="protected synchronized addCue(Landroid.media.SubtitleTrack.Cue;)Z"/>
-        <method signature="public synchronized setTimeProvider(Landroid.media.MediaTimeProvider;)V"/>
-        <method signature="protected finishedRun(J)V"/>
-        <method signature="public setRunDiscardTimeMs(JJ)V"/>
+        <method signature="getFormat()Landroid.media.MediaFormat;"/>
+        <method signature="updateActiveCues(ZJ)V"/>
+        <method signature="clearActiveCues()V"/>
+        <method signature="scheduleTimedEvents()V"/>
+        <method signature="show()V"/>
+        <method signature="hide()V"/>
+        <method signature="addCue(Landroid.media.SubtitleTrack.Cue;)Z"/>
+        <method signature="setTimeProvider(Landroid.media.MediaTimeProvider;)V"/>
+        <method signature="finishedRun(J)V"/>
+        <method signature="setRunDiscardTimeMs(JJ)V"/>
     </class>
     <class name="android.bluetooth.BluetoothClass">
-        <method signature="public &lt;init&gt;(I)V"/>
+        <method signature="&lt;init&gt;(I)V"/>
     </class>
     <class name="android.net.wifi.WifiManager">
-        <method signature="public startScan(Landroid.os.WorkSource;)Z"/>
-        <method signature="public requestBatchedScan(Landroid.net.wifi.BatchedScanSettings;Landroid.os.WorkSource;)Z"/>
-        <method signature="public captivePortalCheckComplete()V"/>
+        <method signature="startScan(Landroid.os.WorkSource;)Z"/>
+        <method signature="requestBatchedScan(Landroid.net.wifi.BatchedScanSettings;Landroid.os.WorkSource;)Z"/>
+        <method signature="captivePortalCheckComplete()V"/>
     </class>
     <class name="android.telephony.SignalStrength">
-        <method signature="public getLteSignalStrength()I"/>
-        <method signature="public getLteRsrp()I"/>
-        <method signature="public getLteRsrq()I"/>
-        <method signature="public getLteRssnr()I"/>
-        <method signature="public getLteCqi()I"/>
+        <method signature="getLteSignalStrength()I"/>
+        <method signature="getLteRsrp()I"/>
+        <method signature="getLteRsrq()I"/>
+        <method signature="getLteRssnr()I"/>
+        <method signature="getLteCqi()I"/>
     </class>
     <class name="android.net.NetworkQuotaInfo">
-        <method signature="public &lt;init&gt;(JJJ)V"/>
-        <method signature="public &lt;init&gt;(Landroid.os.Parcel;)V"/>
+        <method signature="&lt;init&gt;(JJJ)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
     </class>
     <class name="android.view.InputQueue">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public dispose()V"/>
-        <method signature="public dispose(Z)V"/>
-        <method signature="public getNativePtr()J"/>
-        <method signature="public sendInputEvent(Landroid.view.InputEvent;Ljava.lang.Object;ZLandroid.view.InputQueue.FinishedInputEventCallback;)V"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="dispose()V"/>
+        <method signature="dispose(Z)V"/>
+        <method signature="getNativePtr()J"/>
+        <method signature="sendInputEvent(Landroid.view.InputEvent;Ljava.lang.Object;ZLandroid.view.InputQueue.FinishedInputEventCallback;)V"/>
     </class>
     <class name="android.net.wifi.p2p.WifiP2pManager">
-        <method signature="public listen(Landroid.net.wifi.p2p.WifiP2pManager.Channel;ZLandroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
-        <method signature="public setWifiP2pChannels(Landroid.net.wifi.p2p.WifiP2pManager.Channel;IILandroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
-        <method signature="public setWFDInfo(Landroid.net.wifi.p2p.WifiP2pManager.Channel;Landroid.net.wifi.p2p.WifiP2pWfdInfo;Landroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
-        <method signature="public setMiracastMode(I)V"/>
+        <method signature="listen(Landroid.net.wifi.p2p.WifiP2pManager.Channel;ZLandroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
+        <method signature="setWifiP2pChannels(Landroid.net.wifi.p2p.WifiP2pManager.Channel;IILandroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
+        <method signature="setWFDInfo(Landroid.net.wifi.p2p.WifiP2pManager.Channel;Landroid.net.wifi.p2p.WifiP2pWfdInfo;Landroid.net.wifi.p2p.WifiP2pManager.ActionListener;)V"/>
+        <method signature="setMiracastMode(I)V"/>
     </class>
     <class name="android.content.res.Configuration">
-        <method signature="static public resetScreenLayout(I)I"/>
-        <method signature="static public reduceScreenLayout(III)I"/>
-        <method signature="java.lang.Deprecated public makeDefault()V"/>
+        <method signature="resetScreenLayout(I)I"/>
+        <method signature="reduceScreenLayout(III)I"/>
+        <method signature="makeDefault()V"/>
     </class>
     <class name="android.content.SyncRequest">
-        <method signature="protected &lt;init&gt;(Landroid.content.SyncRequest.Builder;)V"/>
+        <method signature="&lt;init&gt;(Landroid.content.SyncRequest.Builder;)V"/>
     </class>
     <class name="com.android.internal.util.XmlUtils"/>
     <class name="android.nfc.tech.NfcF">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.telephony.CellInfoLte">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.telephony.CellInfoLte;)V"/>
-        <method signature="public setCellIdentity(Landroid.telephony.CellIdentityLte;)V"/>
-        <method signature="public setCellSignalStrength(Landroid.telephony.CellSignalStrengthLte;)V"/>
-        <method signature="protected static createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoLte;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.telephony.CellInfoLte;)V"/>
+        <method signature="setCellIdentity(Landroid.telephony.CellIdentityLte;)V"/>
+        <method signature="setCellSignalStrength(Landroid.telephony.CellSignalStrengthLte;)V"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoLte;"/>
     </class>
     <class name="android.widget.RemoteViewsAdapter"/>
     <class name="android.media.MediaPlayer.TimeProvider"/>
     <class name="android.app.AppOpsManager">
-        <method signature="public setMode(IILjava.lang.String;I)V"/>
-        <method signature="public resetAllModes()V"/>
-        <method signature="public noteOp(I)I"/>
-        <method signature="public static getToken(LIAppOpsService;)LIBinder;"/>
-        <method signature="public startOp(I)I"/>
-        <method signature="public finishOp(I)V"/>
+        <method signature="setMode(IILjava.lang.String;I)V"/>
+        <method signature="resetAllModes()V"/>
+        <method signature="noteOp(I)I"/>
+        <method signature="getToken(LIAppOpsService;)LIBinder;"/>
+        <method signature="startOp(I)I"/>
+        <method signature="finishOp(I)V"/>
     </class>
     <class name="android.telephony.CellSignalStrengthGsm">
-        <method signature="java.lang.Override public setDefaultValues()V"/>
+        <method signature="setDefaultValues()V"/>
     </class>
     <class name="android.view.SurfaceView">
-        <method signature="java.lang.Override protected setFrame(IIII)Z"/>
+        <method signature="setFrame(IIII)Z"/>
     </class>
     <class name="android.app.ContextImpl">
-        <method signature="java.lang.Override public getBasePackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public getOpPackageName()Ljava.lang.String;"/>
-        <method signature="java.lang.Override public startActivityAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public startActivityAsUser(Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public startActivitiesAsUser([Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
-        <method signature="java.lang.Override public bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
-        <method signature="public getUserId()I"/>
+        <method signature="getBasePackageName()Ljava.lang.String;"/>
+        <method signature="getOpPackageName()Ljava.lang.String;"/>
+        <method signature="startActivityAsUser(Landroid.content.Intent;Landroid.os.UserHandle;)V"/>
+        <method signature="startActivityAsUser(Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
+        <method signature="startActivitiesAsUser([Landroid.content.Intent;Landroid.os.Bundle;Landroid.os.UserHandle;)V"/>
+        <method signature="bindServiceAsUser(Landroid.content.Intent;Landroid.content.ServiceConnection;ILandroid.os.UserHandle;)Z"/>
+        <method signature="getUserId()I"/>
     </class>
     <class name="android.support.v4.app.DialogFragment.DialogStyle"/>
     <class name="java.net.URL">
-        <method signature="public getEffectivePort()I"/>
+        <method signature="getEffectivePort()I"/>
     </class>
     <class name="android.telephony.CellSignalStrengthCdma">
-        <method signature="java.lang.Override public setDefaultValues()V"/>
-        <method signature="public setCdmaDbm(I)V"/>
-        <method signature="public setCdmaEcio(I)V"/>
-        <method signature="public setEvdoDbm(I)V"/>
-        <method signature="public setEvdoEcio(I)V"/>
-        <method signature="public setEvdoSnr(I)V"/>
+        <method signature="setDefaultValues()V"/>
+        <method signature="setCdmaDbm(I)V"/>
+        <method signature="setCdmaEcio(I)V"/>
+        <method signature="setEvdoDbm(I)V"/>
+        <method signature="setEvdoEcio(I)V"/>
+        <method signature="setEvdoSnr(I)V"/>
     </class>
     <class name="com.android.internal.location.ProviderRequest"/>
     <class name="android.support.v7.media.MediaRouter.RouteInfo.PlaybackVolume"/>
     <class name="android.app.PendingIntent">
-        <method signature="public getTarget()LIIntentSender;"/>
+        <method signature="getTarget()LIIntentSender;"/>
     </class>
     <class name="android.nfc.tech.MifareUltralight">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="java.nio.DirectByteBuffer">
-        <method signature="java.lang.Override public final isValid()Z"/>
+        <method signature="isValid()Z"/>
     </class>
     <class name="android.app.StatusBarManager">
-        <method signature="public static windowStateToString(I)Ljava.lang.String;"/>
+        <method signature="windowStateToString(I)Ljava.lang.String;"/>
     </class>
     <class name="android.support.v4.app.DialogFragment">
-        <method signature="java.lang.Override public getLayoutInflater(Landroid.os.Bundle;)Landroid.view.LayoutInflater;"/>
+        <method signature="getLayoutInflater(Landroid.os.Bundle;)Landroid.view.LayoutInflater;"/>
     </class>
     <class name="android.app.backup.BackupDataInput">
-        <method signature="public &lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
-        <method signature="protected finalize()V"/>
+        <method signature="&lt;init&gt;(Ljava.io.FileDescriptor;)V"/>
+        <method signature="finalize()V"/>
     </class>
     <class name="android.preference.EditTextPreference">
-        <method signature="java.lang.Override protected needInputMethod()Z"/>
+        <method signature="needInputMethod()Z"/>
     </class>
     <class name="android.nfc.tech.BasicTagTechnology">
-        <method signature="java.lang.Override public reconnect()V"/>
+        <method signature="reconnect()V"/>
     </class>
     <class name="android.app.ActivityOptions">
-        <method signature="public &lt;init&gt;(Landroid.os.Bundle;)V"/>
-        <method signature="public getPackageName()Ljava.lang.String;"/>
-        <method signature="public getAnimationType()I"/>
-        <method signature="public getCustomEnterResId()I"/>
-        <method signature="public getCustomExitResId()I"/>
-        <method signature="public getThumbnail()Landroid.graphics.Bitmap;"/>
-        <method signature="public getStartX()I"/>
-        <method signature="public getStartY()I"/>
-        <method signature="public getStartWidth()I"/>
-        <method signature="public getStartHeight()I"/>
-        <method signature="public getOnAnimationStartListener()LIRemoteCallback;"/>
-        <method signature="public abort()V"/>
-        <method signature="public static abort(Landroid.os.Bundle;)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Bundle;)V"/>
+        <method signature="getPackageName()Ljava.lang.String;"/>
+        <method signature="getAnimationType()I"/>
+        <method signature="getCustomEnterResId()I"/>
+        <method signature="getCustomExitResId()I"/>
+        <method signature="getThumbnail()Landroid.graphics.Bitmap;"/>
+        <method signature="getStartX()I"/>
+        <method signature="getStartY()I"/>
+        <method signature="getStartWidth()I"/>
+        <method signature="getStartHeight()I"/>
+        <method signature="getOnAnimationStartListener()LIRemoteCallback;"/>
+        <method signature="abort()V"/>
+        <method signature="abort(Landroid.os.Bundle;)V"/>
     </class>
     <class name="android.os.PowerManager">
-        <method signature="public static validateWakeLockParameters(ILjava.lang.String;)V"/>
+        <method signature="validateWakeLockParameters(ILjava.lang.String;)V"/>
     </class>
     <class name="android.graphics.drawable.StateListDrawable">
-        <method signature="java.lang.Override public setLayoutDirection(I)V"/>
+        <method signature="setLayoutDirection(I)V"/>
     </class>
     <class name="android.view.ContextThemeWrapper">
-        <method signature="java.lang.Override public getThemeResId()I"/>
+        <method signature="getThemeResId()I"/>
     </class>
     <class name="android.view.View">
-        <method signature="public fitsSystemWindows()Z"/>
-        <method signature="public setDisabledSystemUiVisibility(I)V"/>
-        <method signature="public hackTurnOffWindowResizeAnim(Z)V"/>
+        <method signature="fitsSystemWindows()Z"/>
+        <method signature="setDisabledSystemUiVisibility(I)V"/>
+        <method signature="hackTurnOffWindowResizeAnim(Z)V"/>
     </class>
     <class name="android.support.v4.app.FragmentTransaction.Transit"/>
     <class name="java.net.URI">
-        <method signature="public getEffectivePort()I"/>
+        <method signature="getEffectivePort()I"/>
     </class>
     <class name="android.transition.TransitionSet">
-        <method signature="java.lang.Override public pause()V"/>
-        <method signature="java.lang.Override public resume()V"/>
-        <method signature="java.lang.Override protected cancel()V"/>
+        <method signature="pause()V"/>
+        <method signature="resume()V"/>
+        <method signature="cancel()V"/>
     </class>
     <class name="android.webkit.WebView">
-        <method signature="java.lang.Override protected onDrawVerticalScrollBar(Landroid.graphics.Canvas;Landroid.graphics.drawable.Drawable;IIII)V"/>
-        <method signature="java.lang.Override protected setFrame(IIII)Z"/>
+        <method signature="onDrawVerticalScrollBar(Landroid.graphics.Canvas;Landroid.graphics.drawable.Drawable;IIII)V"/>
+        <method signature="setFrame(IIII)Z"/>
     </class>
     <class name="android.webkit.WebSyncManager">
         <method signature="&lt;init&gt;(Ljava.lang.String;)V"/>
     </class>
     <class name="android.app.NotificationManager">
-        <method signature="static public getService()LINotificationManager;"/>
-        <method signature="public static from(Landroid.content.Context;)Landroid.app.NotificationManager;"/>
+        <method signature="getService()LINotificationManager;"/>
+        <method signature="from(Landroid.content.Context;)Landroid.app.NotificationManager;"/>
     </class>
     <class name="android.telephony.CellInfoCdma">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.telephony.CellInfoCdma;)V"/>
-        <method signature="public setCellIdentity(Landroid.telephony.CellIdentityCdma;)V"/>
-        <method signature="public setCellSignalStrength(Landroid.telephony.CellSignalStrengthCdma;)V"/>
-        <method signature="protected static createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoCdma;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.telephony.CellInfoCdma;)V"/>
+        <method signature="setCellIdentity(Landroid.telephony.CellIdentityCdma;)V"/>
+        <method signature="setCellSignalStrength(Landroid.telephony.CellSignalStrengthCdma;)V"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoCdma;"/>
     </class>
     <class name="android.telephony.ServiceState">
-        <method signature="public setVoiceRegState(I)V"/>
-        <method signature="public setDataRegState(I)V"/>
-        <method signature="public setRilVoiceRadioTechnology(I)V"/>
-        <method signature="public setRilDataRadioTechnology(I)V"/>
-        <method signature="public setCssIndicator(I)V"/>
-        <method signature="public setSystemAndNetworkId(II)V"/>
-        <method signature="public getRilVoiceRadioTechnology()I"/>
-        <method signature="public getRilDataRadioTechnology()I"/>
-        <method signature="public getDataNetworkType()I"/>
-        <method signature="public getVoiceNetworkType()I"/>
-        <method signature="public getCssIndicator()I"/>
-        <method signature="public getNetworkId()I"/>
-        <method signature="public getSystemId()I"/>
-        <method signature="public static isGsm(I)Z"/>
-        <method signature="public static isCdma(I)Z"/>
+        <method signature="setVoiceRegState(I)V"/>
+        <method signature="setDataRegState(I)V"/>
+        <method signature="setRilVoiceRadioTechnology(I)V"/>
+        <method signature="setRilDataRadioTechnology(I)V"/>
+        <method signature="setCssIndicator(I)V"/>
+        <method signature="setSystemAndNetworkId(II)V"/>
+        <method signature="getRilVoiceRadioTechnology()I"/>
+        <method signature="getRilDataRadioTechnology()I"/>
+        <method signature="getDataNetworkType()I"/>
+        <method signature="getVoiceNetworkType()I"/>
+        <method signature="getCssIndicator()I"/>
+        <method signature="getNetworkId()I"/>
+        <method signature="getSystemId()I"/>
+        <method signature="isGsm(I)Z"/>
+        <method signature="isCdma(I)Z"/>
     </class>
     <class name="android.filterpacks.videosink.MediaEncoderFilter"/>
     <class name="android.nfc.tech.MifareClassic">
-        <method signature="public &lt;init&gt;(Landroid.nfc.Tag;)V"/>
+        <method signature="&lt;init&gt;(Landroid.nfc.Tag;)V"/>
     </class>
     <class name="android.content.BroadcastReceiver">
-        <method signature="public getSendingUserId()I"/>
+        <method signature="getSendingUserId()I"/>
     </class>
     <class name="android.view.ViewGroup">
-        <method signature="java.lang.Override public findViewByAccessibilityIdTraversal(I)Landroid.view.View;"/>
-        <method signature="java.lang.Override protected hasHoveredChild()Z"/>
-        <method signature="protected onSetLayoutParams(Landroid.view.View;Landroid.view.ViewGroup.LayoutParams;)V"/>
+        <method signature="findViewByAccessibilityIdTraversal(I)Landroid.view.View;"/>
+        <method signature="hasHoveredChild()Z"/>
+        <method signature="onSetLayoutParams(Landroid.view.View;Landroid.view.ViewGroup.LayoutParams;)V"/>
     </class>
     <class name="android.media.SubtitleController">
-        <method signature="public selectDefaultTrack()V"/>
-        <method signature="public reset()V"/>
+        <method signature="selectDefaultTrack()V"/>
+        <method signature="reset()V"/>
     </class>
     <class name="android.util.StateSet">
-        <method signature="public &lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;()V"/>
     </class>
     <class name="android.app.DownloadManager">
-        <method signature="public static isActiveNetworkExpensive(Landroid.content.Context;)Z"/>
-        <method signature="public static getActiveNetworkWarningBytes(Landroid.content.Context;)J"/>
-        <method signature="public addCompletedDownload(Ljava.lang.String;Ljava.lang.String;ZLjava.lang.String;Ljava.lang.String;JZZ)J"/>
+        <method signature="isActiveNetworkExpensive(Landroid.content.Context;)Z"/>
+        <method signature="getActiveNetworkWarningBytes(Landroid.content.Context;)J"/>
+        <method signature="addCompletedDownload(Ljava.lang.String;Ljava.lang.String;ZLjava.lang.String;Ljava.lang.String;JZZ)J"/>
     </class>
     <class name="android.util.LogWriter"/>
     <class name="android.os.Broadcaster"/>
     <class name="com.android.internal.telephony.PhoneBase">
-        <method signature="java.lang.Override public getVoiceMessageCount()I"/>
+        <method signature="getVoiceMessageCount()I"/>
     </class>
     <class name="android.hardware.display.DisplayManager">
-        <method signature="public &lt;init&gt;(Landroid.content.Context;)V"/>
-        <method signature="public pauseWifiDisplay()V"/>
-        <method signature="public resumeWifiDisplay()V"/>
+        <method signature="&lt;init&gt;(Landroid.content.Context;)V"/>
+        <method signature="pauseWifiDisplay()V"/>
+        <method signature="resumeWifiDisplay()V"/>
     </class>
     <class name="android.support.v7.media.MediaRouter.RouteInfo.PlaybackType"/>
     <class name="android.content.ContentProviderClient">
         <method signature="&lt;init&gt;(Landroid.content.ContentResolver;Landroid.content.IContentProvider;Z)V"/>
-        <method signature="public setDetectNotResponding(J)V"/>
-        <method signature="public static releaseQuietly(Landroid.content.ContentProviderClient;)V"/>
+        <method signature="setDetectNotResponding(J)V"/>
+        <method signature="releaseQuietly(Landroid.content.ContentProviderClient;)V"/>
     </class>
     <class name="android.text.method.BaseMovementMethod">
-        <method signature="protected leftWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
-        <method signature="protected rightWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
+        <method signature="leftWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
+        <method signature="rightWord(Landroid.widget.TextView;Landroid.text.Spannable;)Z"/>
     </class>
     <class name="android.net.wifi.WifiManager.WpsListener"/>
     <class name="android.bluetooth.BluetoothSocket">
-        <method signature="java.lang.Override protected finalize()V"/>
+        <method signature="finalize()V"/>
     </class>
     <class name="android.content.Context">
-        <method signature="public abstract getBasePackageName()Ljava.lang.String;"/>
+        <method signature="getBasePackageName()Ljava.lang.String;"/>
     </class>
     <class name="android.media.TextTrackRegion"/>
     <class name="android.view.KeyEvent">
-        <method signature="java.lang.Override public copy()Landroid.view.KeyEvent;"/>
-        <method signature="java.lang.Override public final recycleIfNeededAfterDispatch()V"/>
-        <method signature="java.lang.Override public final isTainted()Z"/>
-        <method signature="java.lang.Override public final setTainted(Z)V"/>
-        <method signature="public final hasDefaultAction()Z"/>
-        <method signature="public static createFromParcelBody(Landroid.os.Parcel;)Landroid.view.KeyEvent;"/>
+        <method signature="copy()Landroid.view.KeyEvent;"/>
+        <method signature="recycleIfNeededAfterDispatch()V"/>
+        <method signature="isTainted()Z"/>
+        <method signature="setTainted(Z)V"/>
+        <method signature="hasDefaultAction()Z"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.view.KeyEvent;"/>
     </class>
     <class name="android.content.SyncAdapterType">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;Ljava.lang.String;ZZZZLjava.lang.String;)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;Ljava.lang.String;ZZZZLjava.lang.String;)V"/>
     </class>
     <class name="android.content.Intent">
-        <method signature="public setAllowFds(Z)V"/>
-        <method signature="public isExcludingStopped()Z"/>
-        <method signature="public toInsecureString()Ljava.lang.String;"/>
-        <method signature="public toInsecureStringWithClip()Ljava.lang.String;"/>
-        <method signature="public toShortString(ZZZZ)Ljava.lang.String;"/>
-        <method signature="public toShortString(Ljava.lang.StringBuilder;ZZZZ)V"/>
-        <method signature="protected &lt;init&gt;(Landroid.os.Parcel;)V"/>
+        <method signature="setAllowFds(Z)V"/>
+        <method signature="isExcludingStopped()Z"/>
+        <method signature="toInsecureString()Ljava.lang.String;"/>
+        <method signature="toInsecureStringWithClip()Ljava.lang.String;"/>
+        <method signature="toShortString(ZZZZ)Ljava.lang.String;"/>
+        <method signature="toShortString(Ljava.lang.StringBuilder;ZZZZ)V"/>
+        <method signature="&lt;init&gt;(Landroid.os.Parcel;)V"/>
     </class>
     <class name="android.media.MediaTimeProvider.OnMediaTimeListener"/>
     <class name="android.telephony.CellInfoWcdma">
-        <method signature="public &lt;init&gt;()V"/>
-        <method signature="public &lt;init&gt;(Landroid.telephony.CellInfoWcdma;)V"/>
-        <method signature="public setCellIdentity(Landroid.telephony.CellIdentityWcdma;)V"/>
-        <method signature="public setCellSignalStrength(Landroid.telephony.CellSignalStrengthWcdma;)V"/>
-        <method signature="protected static createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoWcdma;"/>
+        <method signature="&lt;init&gt;()V"/>
+        <method signature="&lt;init&gt;(Landroid.telephony.CellInfoWcdma;)V"/>
+        <method signature="setCellIdentity(Landroid.telephony.CellIdentityWcdma;)V"/>
+        <method signature="setCellSignalStrength(Landroid.telephony.CellSignalStrengthWcdma;)V"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.telephony.CellInfoWcdma;"/>
     </class>
     <class name="android.content.ClipData">
-        <method signature="public getIcon()Landroid.graphics.Bitmap;"/>
-        <method signature="public toShortString(Ljava.lang.StringBuilder;)V"/>
+        <method signature="getIcon()Landroid.graphics.Bitmap;"/>
+        <method signature="toShortString(Ljava.lang.StringBuilder;)V"/>
     </class>
     <class name="android.net.wifi.WifiSsid">
-        <method signature="public getOctets()[B"/>
-        <method signature="public getHexString()Ljava.lang.String;"/>
-        <method signature="public describeContents()I"/>
-        <method signature="public writeToParcel(Landroid.os.Parcel;I)V"/>
+        <method signature="getOctets()[B"/>
+        <method signature="getHexString()Ljava.lang.String;"/>
+        <method signature="describeContents()I"/>
+        <method signature="writeToParcel(Landroid.os.Parcel;I)V"/>
     </class>
     <class name="android.app.admin.DevicePolicyManager">
-        <method signature="public static create(Landroid.content.Context;Landroid.os.Handler;)Landroid.app.admin.DevicePolicyManager;"/>
-        <method signature="public getPasswordQuality(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumLength(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumUpperCase(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumLowerCase(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumLetters(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumNumeric(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumSymbols(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordMinimumNonLetter(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getPasswordHistoryLength(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getMaximumFailedPasswordsForWipe(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getMaximumTimeToLock(Landroid.content.ComponentName;I)J"/>
-        <method signature="public getStorageEncryptionStatus(I)I"/>
-        <method signature="public getCameraDisabled(Landroid.content.ComponentName;I)Z"/>
-        <method signature="public getKeyguardDisabledFeatures(Landroid.content.ComponentName;I)I"/>
-        <method signature="public getDeviceOwner()Ljava.lang.String;"/>
-        <method signature="public getDeviceOwnerName()Ljava.lang.String;"/>
+        <method signature="create(Landroid.content.Context;Landroid.os.Handler;)Landroid.app.admin.DevicePolicyManager;"/>
+        <method signature="getPasswordQuality(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumLength(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumUpperCase(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumLowerCase(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumLetters(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumNumeric(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumSymbols(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordMinimumNonLetter(Landroid.content.ComponentName;I)I"/>
+        <method signature="getPasswordHistoryLength(Landroid.content.ComponentName;I)I"/>
+        <method signature="getMaximumFailedPasswordsForWipe(Landroid.content.ComponentName;I)I"/>
+        <method signature="getMaximumTimeToLock(Landroid.content.ComponentName;I)J"/>
+        <method signature="getStorageEncryptionStatus(I)I"/>
+        <method signature="getCameraDisabled(Landroid.content.ComponentName;I)Z"/>
+        <method signature="getKeyguardDisabledFeatures(Landroid.content.ComponentName;I)I"/>
+        <method signature="getDeviceOwner()Ljava.lang.String;"/>
+        <method signature="getDeviceOwnerName()Ljava.lang.String;"/>
     </class>
     <class name="android.view.MotionEvent">
-        <method signature="java.lang.Override public copy()Landroid.view.MotionEvent;"/>
-        <method signature="java.lang.Override public final isTainted()Z"/>
-        <method signature="java.lang.Override public final setTainted(Z)V"/>
-        <method signature="public static createFromParcelBody(Landroid.os.Parcel;)Landroid.view.MotionEvent;"/>
+        <method signature="copy()Landroid.view.MotionEvent;"/>
+        <method signature="isTainted()Z"/>
+        <method signature="setTainted(Z)V"/>
+        <method signature="createFromParcelBody(Landroid.os.Parcel;)Landroid.view.MotionEvent;"/>
     </class>
     <class name="android.widget.VideoView">
-        <method signature="java.lang.Override public setSubtitleWidget(Landroid.media.SubtitleTrack.RenderingWidget;)V"/>
-        <method signature="java.lang.Override public getSubtitleLooper()Landroid.os.Looper;"/>
+        <method signature="setSubtitleWidget(Landroid.media.SubtitleTrack.RenderingWidget;)V"/>
+        <method signature="getSubtitleLooper()Landroid.os.Looper;"/>
     </class>
     <class name="android.content.pm.PackageParser.SplitPermissionInfo"/>
     <class name="android.os.Environment.UserEnvironment"/>
     <class name="android.support.v4.view.ViewCompat.LayerType"/>
     <class name="android.graphics.drawable.InsetDrawable">
-        <method signature="java.lang.Override public setLayoutDirection(I)V"/>
+        <method signature="setLayoutDirection(I)V"/>
     </class>
     <class name="android.app.AlarmManager">
-        <method signature="public set(IJJJLandroid.app.PendingIntent;Landroid.os.WorkSource;)V"/>
+        <method signature="set(IJJJLandroid.app.PendingIntent;Landroid.os.WorkSource;)V"/>
     </class>
     <class name="android.bluetooth.BluetoothAdapter">
-        <method signature="public setScanMode(I)Z"/>
-        <method signature="public getDiscoverableTimeout()I"/>
-        <method signature="public setDiscoverableTimeout(I)V"/>
+        <method signature="setScanMode(I)Z"/>
+        <method signature="getDiscoverableTimeout()I"/>
+        <method signature="setDiscoverableTimeout(I)V"/>
     </class>
     <class name="android.net.wifi.WifiEnterpriseConfig">
         <method signature="getKeyId(Landroid.net.wifi.WifiEnterpriseConfig;)Ljava.lang.String;"/>
     </class>
     <class name="android.widget.AbsListView">
-        <method signature="java.lang.Override public findViewByAccessibilityIdTraversal(I)Landroid.view.View;"/>
-        <method signature="java.lang.Override public showContextMenu(FFI)Z"/>
+        <method signature="findViewByAccessibilityIdTraversal(I)Landroid.view.View;"/>
+        <method signature="showContextMenu(FFI)Z"/>
     </class>
     <class name="android.text.Selection.PositionIterator"/>
     <class name="android.content.ContentProvider">
-        <method signature="protected enforceReadPermissionInner(Landroid.net.Uri;)V"/>
-        <method signature="protected enforceWritePermissionInner(Landroid.net.Uri;)V"/>
-        <method signature="public final setAppOps(II)V"/>
-        <method signature="public getAppOpsManager()Landroid.app.AppOpsManager;"/>
+        <method signature="enforceReadPermissionInner(Landroid.net.Uri;)V"/>
+        <method signature="enforceWritePermissionInner(Landroid.net.Uri;)V"/>
+        <method signature="setAppOps(II)V"/>
+        <method signature="getAppOpsManager()Landroid.app.AppOpsManager;"/>
     </class>
     <class name="android.telephony.CellSignalStrengthWcdma">
-        <method signature="java.lang.Override public setDefaultValues()V"/>
+        <method signature="setDefaultValues()V"/>
     </class>
     <class name="android.gesture.GestureLibrary">
-        <method signature="public getLearner()Landroid.gesture.Learner;"/>
+        <method signature="getLearner()Landroid.gesture.Learner;"/>
     </class>
     <class name="android.media.SubtitleTrack.CueList"/>
     <class name="android.service.notification.StatusBarNotification">
-        <method signature="public &lt;init&gt;(Ljava.lang.String;ILjava.lang.String;IIILandroid.app.Notification;Landroid.os.UserHandle;)V"/>
-        <method signature="public &lt;init&gt;(Ljava.lang.String;Ljava.lang.String;ILjava.lang.String;IIILandroid.app.Notification;Landroid.os.UserHandle;)V"/>
-        <method signature="public getUid()I"/>
-        <method signature="public getBasePkg()Ljava.lang.String;"/>
-        <method signature="public getInitialPid()I"/>
-        <method signature="public getScore()I"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;ILjava.lang.String;IIILandroid.app.Notification;Landroid.os.UserHandle;)V"/>
+        <method signature="&lt;init&gt;(Ljava.lang.String;Ljava.lang.String;ILjava.lang.String;IIILandroid.app.Notification;Landroid.os.UserHandle;)V"/>
+        <method signature="getUid()I"/>
+        <method signature="getBasePkg()Ljava.lang.String;"/>
+        <method signature="getInitialPid()I"/>
+        <method signature="getScore()I"/>
     </class>
 </hide>
